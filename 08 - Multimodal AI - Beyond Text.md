@@ -129,15 +129,17 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ---
 
-### Gemini 2.5 Pro Vision (Google)
+### Gemini 3 Pro Vision (Google)
 **Capabilities:**
-- First publicly available multi-agent model
+- Latest flagship model (released November 18, 2025)
+- "Best model in the world for multimodal understanding"
+- Achieved 1501 Elo on LMArena (first model to surpass 1500)
 - Natively multimodal: text, images, audio, and video
 - 1M token context window (~11 hours audio or 1 hour video)
-- Multiple reasoning agents work in parallel
-- Only model handling all modalities natively
+- Enhanced reasoning with Gemini 3 Deep Think mode
+- Record benchmark scores across multiple tests
 
-**Best For:** Complex multimodal tasks, long video analysis, unified processing
+**Best For:** Complex multimodal tasks requiring highest performance, long video analysis, unified processing
 
 ---
 
@@ -220,11 +222,12 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ## Video Understanding
 
-### Gemini 1.5/2.5
+### Gemini 3 Pro / Gemini 2.5 Pro
 - Analyze entire videos (up to 1 hour)
 - Answer questions about content
 - Find specific moments
 - Summarize long videos
+- Gemini 3 Pro offers enhanced multimodal understanding (1501 LMArena Elo)
 
 **Example:** Upload meeting recording, ask "What were the action items?", get timestamped list
 
@@ -290,18 +293,21 @@ Video generation has matured but still has constraints:
 
 ---
 
-## Gemini 2.5 Pro (Google)
+## Gemini 3 Pro (Google)
 **Modalities:** Text + Images + Video + Audio (all natively)
 
-**Key Innovation:** First publicly available multi-agent model
+**Key Innovation:** Highest performing multimodal model (1501 LMArena Elo, first to surpass 1500)
 
 **Capabilities:**
+- "Best model in the world for multimodal understanding" (released November 18, 2025)
 - Only model handling ALL major modalities natively together
 - 1M token context (11 hours audio or 1 hour video)
-- Multiple reasoning agents work in parallel
+- Enhanced reasoning with Gemini 3 Deep Think mode
+- Record benchmark scores across multiple tests
 - True multimodal understanding
+- Competitive pricing: $2/$12 per million tokens
 
-**Best For:** Complex multimodal tasks, video understanding, unified processing
+**Best For:** Complex multimodal tasks requiring highest performance, video understanding, unified processing, cost-conscious deployments
 
 ---
 
@@ -346,21 +352,21 @@ Video generation has matured but still has constraints:
 
 ---
 
-# Comparison Table (October 2025)
+# Comparison Table (November 2025)
 
 | **Modality** | **Task** | **Best Tools (2025)** | **Maturity** | **Cost** |
 |---|---|---|---|---|
-| **Text** | Generation, analysis | GPT-5, Claude 4, Gemini 2.5 | Very Mature | $ |
+| **Text** | Generation, analysis | GPT-5.1, Claude Opus 4.5, Gemini 3 Pro | Very Mature | $ |
 | **Image** | Generation | Midjourney V7, DALL-E 3, SDXL | Very Mature | $ - $$ |
-| **Image** | Understanding | GPT-5 Vision, Gemini 2.5, Claude 4 | Very Mature | $ |
+| **Image** | Understanding | Gemini 3 Pro, GPT-5.1 Vision, Claude Opus 4.5 | Very Mature | $ |
 | **Audio** | Speech-to-Text | Whisper, Google STT | Very Mature | $ |
 | **Audio** | Text-to-Speech | ElevenLabs V3, Fish Audio 4B, OpenAI | Very Mature | $ - $$ |
 | **Audio** | Music Generation | Suno, Udio, Stable Audio | Mature | $$ |
-| **Video** | Understanding | Gemini 2.5 Pro | Mature | $$ |
+| **Video** | Understanding | Gemini 3 Pro | Mature | $ |
 | **Video** | Generation | Sora 2.0, Runway Gen-3/4, Pika 2.5, Veo 2 | Maturing | $$ - $$$ |
-| **Combined** | Multi-input/output | Gemini 2.5 Pro, GPT-5, Claude 4, Llama 4 | Mature | $ - $$ |
+| **Combined** | Multi-input/output | Gemini 3 Pro, GPT-5.1, Claude Opus 4.5, Llama 4 | Very Mature | $ - $$ |
 
-> 📈 **2025 Progress:** Every modality has matured significantly. Image generation and understanding are production-ready. Video has moved from experimental to professional-grade. The biggest leap is in combined multimodal models - Gemini 2.5 Pro natively handles ALL modalities simultaneously.
+> 📈 **November 2025 Progress:** Every modality has matured significantly. Image generation and understanding are production-ready. Video has moved from experimental to professional-grade. The biggest leap is in combined multimodal models - Gemini 3 Pro achieved record 1501 LMArena Elo and natively handles ALL modalities simultaneously with exceptional performance.
 
 ---
 
@@ -424,35 +430,36 @@ Video generation has matured but still has constraints:
 🔊 **...generate speech** → ElevenLabs (quality), Fish Audio 4B (#1 leaderboard), OpenAI TTS (balance)
 🎵 **...create music** → Suno, Udio
 🎬 **...generate video** → Sora 2.0 (premium), Runway (creative), Pika (value)
-📹 **...analyze video** → Gemini 2.5 Pro
-🌍 **...work across modalities** → Gemini 2.5 Pro (all modalities), GPT-5, Claude 4
+📹 **...analyze video** → Gemini 3 Pro (highest performance), Gemini 2.5 Pro
+🌍 **...work across modalities** → Gemini 3 Pro (record benchmarks), GPT-5.1, Claude Opus 4.5
 
 ---
 
-> 🎯 **Key Takeaway** (Updated October 2025)
+> 🎯 **Key Takeaway** (Updated November 2025)
 >
-> Multimodal AI has matured dramatically in 2025:
+> Multimodal AI has reached new heights in November 2025:
 >
 > **Current State:**
-> - **Text:** Very mature (GPT-5, Claude 4, Gemini 2.5)
+> - **Text:** Very mature (GPT-5.1, Claude Opus 4.5, Gemini 3 Pro)
 > - **Images:** Very mature for generation and understanding
 > - **Audio:** Very mature for speech, mature for music
 > - **Video:** Maturing rapidly - 2025 brought massive improvements
-> - **Combined:** Mature (Gemini 2.5 Pro handles all modalities natively)
+> - **Combined:** Very mature (Gemini 3 Pro leads with record 1501 LMArena Elo)
 >
 > **Practical Guidance:**
 > - **For generation:**
 >   - Images: Midjourney V7 (artistic), DALL-E 3 (precise), SDXL (control)
 >   - Voice: ElevenLabs V3 (best quality), Fish Audio 4B (#1 leaderboard)
 >   - Video: Sora 2.0 (premium), Runway Gen-3/4 (creative), Pika 2.5 (value)
-> - **For understanding:** Gemini 2.5 Pro (all modalities + 1M context), GPT-5, Claude 4
+> - **For understanding:** Gemini 3 Pro (highest performance + all modalities + 1M context + affordable), GPT-5.1, Claude Opus 4.5
 >
-> **The 2025 Reality:**
-> The multimodal future has arrived. Gemini 2.5 Pro and Llama 4's native multimodal capabilities signal AI that seamlessly processes text, images, audio, and video in unified workflows.
+> **The November 2025 Reality:**
+> The multimodal future has fully arrived. Gemini 3 Pro's record-breaking performance (first model to surpass 1500 LMArena Elo) combined with Llama 4's open-source multimodal capabilities signal AI that seamlessly processes text, images, audio, and video in unified workflows at unprecedented quality levels.
 >
 > **What's Next (2026 Predictions):**
 > - Full-length video generation with perfect consistency
 > - Real-time multimodal interaction becomes standard
 > - Single models handle all content types better than today's specialists
+> - Even higher benchmark scores and more affordable pricing
 >
-> **Remember:** Every modality is now production-ready. Match the modality and tool to the task for optimal results.
+> **Remember:** Every modality is now production-ready. Gemini 3 Pro sets the bar for multimodal understanding. Match the modality and tool to the task for optimal results.

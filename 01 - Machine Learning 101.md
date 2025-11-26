@@ -325,10 +325,10 @@ Previous ML required training a separate model for each task. LLMs can perform h
 
 ### Examples
 
-- **GPT-4** (OpenAI) - Powers ChatGPT
-- **Claude** (Anthropic) - Powers this conversation and Claude Code
-- **Gemini** (Google) - Multimodal LLM
-- **Llama** (Meta) - Open-source LLM
+- **GPT-5.1** (OpenAI) - Latest model powering ChatGPT (released November 2025)
+- **Claude Opus 4.5** (Anthropic) - Best coding model, powers Claude Code (released November 2025)
+- **Gemini 3 Pro** (Google) - Highest performing multimodal LLM (released November 2025)
+- **Llama 4** (Meta) - Open-source multimodal LLM
 
 > 📚 **Learn More:** For a deeper dive into how LLMs work, see [02 - LLMs 101](./02%20-%20LLMs%20101.md).
 
@@ -390,7 +390,7 @@ Previous ML required training a separate model for each task. LLMs can perform h
 **Scale:**
 - Traditional ML: Hundreds to thousands of parameters
 - Deep Learning: Millions to billions of parameters
-- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion)
+- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion; newer models like GPT-5.1, Claude Opus 4.5, and Gemini 3 Pro have undisclosed parameter counts)
 
 ## Training vs. Inference
 
@@ -570,7 +570,7 @@ Read about [07 - Automation, AI Workflows, and AI Agents](./07%20-%20Automation,
 
 Fine-tuning is a machine learning technique where you take a pre-trained model and continue training it on specialized data.
 
-**Example:** Fine-tuning GPT-4 on your company's documentation to create a company-specific assistant
+**Example:** Fine-tuning GPT-5.1 on your company's documentation to create a company-specific assistant
 
 ## ML → Context Engineering
 

@@ -19,8 +19,11 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## OpenAI (GPT Family)
 
 ### Models
-- **GPT-5** - Latest flagship model (released August 7, 2025)
-- **GPT-5 Pro** - Extended reasoning version for Pro subscribers
+- **GPT-5.1** - Latest flagship model (released November 12-13, 2025)
+- **GPT-5.1 Instant** - Warmer, more conversational, adaptive reasoning
+- **GPT-5.1 Thinking** - Enhanced reasoning mode with dynamic thinking time
+- **GPT-5.1 Codex** - Optimized for long-running, agentic coding tasks
+- **GPT-5.1 Codex Mini** - Lighter coding-focused variant
 - **GPT-4o** - Multimodal predecessor, still widely used
 - **GPT-4 Turbo** - Faster, cheaper variant
 - **GPT-3.5** - Older, budget-friendly option
@@ -28,12 +31,14 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Whisper** - Speech-to-text
 
 ### Strengths
-- **Best-in-class reasoning** - GPT-5 achieves 94.6% on AIME 2025, 74.9% on SWE-bench
+- **Adaptive reasoning** - GPT-5.1 Instant can decide when to think before responding
+- **Improved conversational ability** - Warmer, more playful, more natural interactions
+- **Tone customization** - New presets: Professional, Candid, Quirky, plus existing options
 - **Unified system** - Smart router automatically selects between fast responses and deep thinking
-- **Reduced hallucinations** - 45% fewer factual errors with web search (80% with thinking mode)
 - **Multimodal** - Native text, image, and audio understanding
 - **Largest ecosystem** - Most third-party integrations and tools
 - **Broad knowledge** - Well-rounded across domains
+- **Flexible reasoning modes** - Can disable reasoning for latency-sensitive use cases
 
 ### Best For
 - Complex reasoning and analysis tasks
@@ -41,8 +46,9 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - General-purpose applications with broad requirements
 - Prototyping (extensive ecosystem support)
 
-### Pricing (as of October 2025)
-- GPT-5: ~$22-52 per million tokens (26% price reduction from GPT-4)
+### Pricing (as of November 2025)
+- GPT-5.1: ~$22-52 per million tokens
+- GPT-5.1 Codex: Optimized for agentic coding workflows
 - GPT-4o: ~$25-50 per million tokens
 - GPT-3.5: ~$0.50-1.50 per million tokens
 
@@ -51,32 +57,37 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Anthropic (Claude Family)
 
 ### Models
-- **Claude Sonnet 4.5** - Most powerful model (released September 2025)
-- **Claude Opus 4.1** - Best coding model worldwide (released August 2025)
+- **Claude Opus 4.5** - Most powerful model, "best in the world for coding, agents, and computer use" (released November 24, 2025)
+- **Claude Sonnet 4.5** - Balanced performance with long autonomous runtime (released September 2025)
+- **Claude Opus 4.1** - Previous flagship coding model (released August 2025)
 - **Claude Opus 4** - Flagship with extended thinking (released May 2025)
 - **Claude Sonnet 4** - Balanced performance (released May 2025)
 - **Claude Haiku 4.5** - Fast, efficient for simple tasks (released October 2025)
 
 ### Strengths
-- **World's best coding model** - Opus 4 leads SWE-bench (72.5%) and Terminal-bench (43.2%)
-- **Longest autonomous runtime** - Sonnet 4.5 runs autonomously for 30 hours (vs. 7 hours for Opus 4)
+- **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
+- **Top performance on engineering tests** - Scored higher than any human candidate on Anthropic's performance engineer exam
+- **Extended context window** - 200,000 tokens (entire codebases)
+- **Large output capacity** - 64,000 token output limit
+- **Knowledge cutoff** - March 2025 (most current among major models)
 - **Hybrid reasoning** - Near-instant responses or extended thinking modes
 - **Extended thinking with tools** - Can use web search, file access during reasoning
-- **Longest context window** - 200,000 tokens (entire codebases)
 - **Superior memory** - Maintains continuity and builds knowledge over time
 - **Safety-focused** - Less likely to produce harmful content
 - **Excellent instruction-following** - More compliant, precise execution
+- **Price reduction** - 67% price drop from previous Opus pricing
 
 ### Best For
-- Complex coding projects and software development
-- Long-running autonomous tasks (up to 30 hours)
+- Complex coding projects and software development (industry-leading SWE-bench performance)
+- Agentic workflows and computer use tasks
 - Long documents requiring deep analysis (200k context)
 - When you need precise instruction-following
 - Enterprises prioritizing safety and reliability
+- Teams requiring most current knowledge (March 2025 cutoff)
 
-### Pricing (as of October 2025)
+### Pricing (as of November 2025)
+- Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
 - Claude Sonnet 4/4.5: ~$3-15 per million tokens
-- Claude Opus 4/4.1: ~$15-75 per million tokens
 - Claude Haiku 4.5: ~$0.25-1.25 per million tokens
 
 ---
@@ -84,30 +95,37 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Google (Gemini Family)
 
 ### Models
-- **Gemini 2.5 Pro** - Most intelligent model with thinking capabilities (released 2025)
+- **Gemini 3 Pro** - Latest flagship model, "best model in the world for multimodal understanding" (released November 18, 2025)
+- **Gemini 3 Deep Think** - Enhanced reasoning mode for complex tasks
+- **Gemini 2.5 Pro** - Previous generation with thinking capabilities
 - **Gemini 2.5 Flash** - Fast, efficient variant
 - **Gemini Nano** - Runs on-device (phones, edge devices)
 
 ### Strengths
-- **Best thinking model** - Ranks #1 on LMArena by significant margin
-- **Deep Think mode** - Parallel thinking with multiple hypotheses (Google AI Ultra exclusive)
+- **Highest LMArena ranking** - Gemini 3 Pro achieved 1501 Elo, first model to surpass 1500
+- **Best multimodal understanding** - Designed from scratch for text, images, audio, video
+- **Record benchmark scores** - Industry-leading performance across multiple benchmarks
+- **Deep Think mode** - Enhanced reasoning with extended thinking capabilities
 - **Largest context window** - 1 million tokens (11 hours audio, 1 hour video)
-- **Multimodal native** - Designed from scratch for text, images, audio, video
 - **Top web development** - #1 on WebDev Arena leaderboard
-- **Superior benchmarks** - Leads in math/science (GPQA, AIME 2025)
 - **Native audio output** - Dialogue with customizable tone, accent, speaking style
-- **Google integration** - Deep ties to Google services and products
+- **Google integration** - Deep ties to Google services and products, including Search (day-one rollout)
+- **Competitive pricing** - $2/$12 per million tokens (lower than competitors)
 - **Free tier** - Generous free usage in Google AI Studio
+- **New coding platform** - Google Antigravity for agentic development
 
 ### Best For
 - Multimodal tasks combining text, images, audio, and video
+- When you need the highest benchmark performance
 - Exploring vast datasets (1M token context)
 - Complex reasoning requiring deep thinking
 - Web development and app generation
 - Google Workspace integration
+- Cost-conscious deployments (competitive pricing)
 - Prototyping (generous free tier)
 
-### Pricing (as of October 2025)
+### Pricing (as of November 2025)
+- Gemini 3 Pro: $2/$12 per million tokens (highly competitive pricing)
 - Gemini 2.5 Flash: ~$0.40-1.20 per million tokens
 - Gemini 2.5 Pro: Included in Google AI Pro ($20/month) and AI Ultra ($30/month) subscriptions
 
@@ -208,13 +226,13 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ---
 
-# Model Comparison Table (October 2025)
+# Model Comparison Table (November 2025)
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5 | Best reasoning, reduced hallucinations | 128k tokens | $$$ | No |
-| Anthropic | Claude Sonnet 4.5 | Best coding (72.5% SWE-bench), 30hr autonomy | 200k tokens | $$$ | No |
-| Google | Gemini 2.5 Pro | Largest context (1M), deep thinking, multimodal | 1M tokens | $$ | No |
+| OpenAI | GPT-5.1 | Adaptive reasoning, conversational, tone customization | 128k tokens | $$$ | No |
+| Anthropic | Claude Opus 4.5 | Best coding (80.9% SWE-bench), agents, computer use | 200k tokens | $$ (67% price drop) | No |
+| Google | Gemini 3 Pro | Highest LMArena (1501), multimodal, record benchmarks | 1M tokens | $ (most affordable) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
 
