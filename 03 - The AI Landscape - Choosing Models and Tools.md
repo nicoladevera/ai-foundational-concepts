@@ -19,11 +19,10 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## OpenAI (GPT Family)
 
 ### Models
-- **GPT-5.1** - Latest flagship model (released November 12-13, 2025)
-- **GPT-5.1 Instant** - Warmer, more conversational, adaptive reasoning
-- **GPT-5.1 Thinking** - Enhanced reasoning mode with dynamic thinking time
-- **GPT-5.1 Codex** - Optimized for long-running, agentic coding tasks
-- **GPT-5.1 Codex Mini** - Lighter coding-focused variant
+- **GPT-5.2** - Latest flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
+- **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning
+- **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning
+- **GPT-5.2 Pro** - Smartest and most trustworthy option for difficult questions requiring highest quality
 - **GPT-4o** - Multimodal predecessor, still widely used
 - **GPT-4 Turbo** - Faster, cheaper variant
 - **GPT-3.5** - Older, budget-friendly option
@@ -31,24 +30,27 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Whisper** - Speech-to-text
 
 ### Strengths
-- **Adaptive reasoning** - GPT-5.1 Instant can decide when to think before responding
-- **Improved conversational ability** - Warmer, more playful, more natural interactions
-- **Tone customization** - New presets: Professional, Candid, Quirky, plus existing options
-- **Unified system** - Smart router automatically selects between fast responses and deep thinking
-- **Multimodal** - Native text, image, and audio understanding
+- **Massive context window** - 400,000 tokens (can ingest hundreds of documents or large code repositories at once)
+- **Large output capacity** - 128,000 token output limit
+- **Professional knowledge work** - Beats or ties top industry professionals on 70.9% of GDPval comparisons
+- **Enhanced coding** - 55.6% on SWE-bench Pro (state-of-the-art agentic coding)
+- **Superior accuracy** - 38% fewer hallucinations than GPT-5.1, perfect score on AIME 2025 (100%)
+- **Advanced reasoning** - GPT-5.2 Thinking excels at structured work, math, and planning
+- **Multimodal** - Native text, image, and audio understanding with halved error rates in graph reasoning
 - **Largest ecosystem** - Most third-party integrations and tools
-- **Broad knowledge** - Well-rounded across domains
-- **Flexible reasoning modes** - Can disable reasoning for latency-sensitive use cases
+- **Knowledge cutoff** - August 31, 2025
 
 ### Best For
-- Complex reasoning and analysis tasks
-- When you need the most capable model available
+- Professional knowledge work requiring highest accuracy
+- Processing large codebases or extensive documentation (400k context)
+- Complex reasoning, coding, and structured work
+- Tasks requiring minimal hallucinations and maximum reliability
 - General-purpose applications with broad requirements
 - Prototyping (extensive ecosystem support)
 
-### Pricing (as of November 2025)
-- GPT-5.1: ~$22-52 per million tokens
-- GPT-5.1 Codex: Optimized for agentic coding workflows
+### Pricing (as of December 2025)
+- GPT-5.2 Thinking: $1.75 input / $14 output per million tokens
+- GPT-5.2 Pro: $21 input / $168 output per million tokens
 - GPT-4o: ~$25-50 per million tokens
 - GPT-3.5: ~$0.50-1.50 per million tokens
 
@@ -226,11 +228,11 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ---
 
-# Model Comparison Table (November 2025)
+# Model Comparison Table (December 2025)
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.1 | Adaptive reasoning, conversational, tone customization | 128k tokens | $$$ | No |
+| OpenAI | GPT-5.2 | Professional knowledge work (70.9% GDPval), 400k context, 38% fewer hallucinations | 400k tokens | $$ | No |
 | Anthropic | Claude Opus 4.5 | Best coding (80.9% SWE-bench), agents, computer use | 200k tokens | $$ (67% price drop) | No |
 | Google | Gemini 3 Pro | Highest LMArena (1501), multimodal, record benchmarks | 1M tokens | $ (most affordable) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
