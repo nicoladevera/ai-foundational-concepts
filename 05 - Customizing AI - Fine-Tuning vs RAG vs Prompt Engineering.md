@@ -35,23 +35,35 @@ Using better instructions, examples, and formatting to get the AI to behave how 
 
 ## Advantages
 ✅ **Instant** - Works immediately
+
 ✅ **Free** - No additional costs beyond API usage
+
 ✅ **Flexible** - Easy to adjust and iterate
+
 ✅ **No technical complexity** - Anyone can do it
+
 ✅ **No training data needed** - Just write better instructions
 
 ## Disadvantages
 ❌ **Limited knowledge** - Can't add facts the model doesn't know
+
 ❌ **Token overhead** - Instructions count toward context limit
+
 ❌ **Inconsistent** - Results can vary
+
 ❌ **Doesn't scale** - Complex instructions get unwieldy
+
 ❌ **Can't override training** - Hard to completely change style
 
 ## Best For
 ✅ Formatting and structure
+
 ✅ Tone and style adjustments
+
 ✅ Task framing
+
 ✅ Examples-based guidance
+
 ✅ Quick iteration
 
 ## Cost
@@ -73,26 +85,41 @@ Automatically finding and inserting relevant information from your documents int
 
 ## Advantages
 ✅ **Access to specific knowledge** - Works with your proprietary data
+
 ✅ **Always current** - Update documents, answers update
+
 ✅ **Cites sources** - Can show where information came from
+
 ✅ **Scales to large knowledge bases** - Thousands of documents
+
 ✅ **Reduces hallucinations** - Grounds answers in real documents
+
 ✅ **No model retraining** - Use any LLM
+
 ✅ **Cost-effective** - Cheaper than fine-tuning
 
 ## Disadvantages
 ❌ **Setup complexity** - Requires infrastructure (vector DB, embeddings)
+
 ❌ **Retrieval quality matters** - Bad search = bad answers
+
 ❌ **Context window limits** - Can only include limited chunks
+
 ❌ **Doesn't change model behavior** - Still uses model's base style
+
 ❌ **Added latency** - Search step adds ~100-500ms
 
 ## Best For
 ✅ Company knowledge bases
+
 ✅ Customer support FAQs
+
 ✅ Research and analysis
+
 ✅ Current information
+
 ✅ Compliance (grounding in official documents)
+
 ✅ Large document collections
 
 ## Cost
@@ -129,25 +156,39 @@ Continuing to train an existing model on your specific data to teach it new beha
 
 ## Advantages
 ✅ **Changes model behavior** - Can teach consistent style/personality
+
 ✅ **Specialized performance** - Excellent at specific tasks
+
 ✅ **No retrieval needed** - Knowledge baked into model
+
 ✅ **Faster inference** - No RAG search overhead
+
 ✅ **Better at niche tasks** - Outperforms general models in domain
 
 ## Disadvantages
 ❌ **Expensive** - $100s to $1000s per training run
+
 ❌ **Time-consuming** - Weeks to get right
+
 ❌ **Requires expertise** - ML knowledge helpful
+
 ❌ **Needs lots of quality data** - 100s to 1000s of examples
+
 ❌ **Hard to update** - Need to retrain to add new info
+
 ❌ **Can forget** - May lose some general capabilities
+
 ❌ **Overfitting risk** - Might memorize training data
 
 ## Best For
 ✅ Consistent style/tone (brand voice, personality)
+
 ✅ Specialized domain (medical, legal, technical jargon)
+
 ✅ Format compliance (always output specific structure)
+
 ✅ High volume, specific task (same task 1000s of times)
+
 ✅ Efficiency (make smaller models perform like larger ones)
 
 ## Cost
@@ -218,12 +259,19 @@ Always try approaches in this order:
 **I want to...**
 
 🎯 **...control output format** → Prompt Engineering
+
 📖 **...answer questions from my docs** → RAG
+
 ✍️ **...match my brand voice consistently** → Fine-Tuning (or try prompts first)
+
 📅 **...work with current information** → RAG
+
 🎭 **...change personality/tone** → Prompts (simple) or Fine-Tuning (complex)
+
 📚 **...use my knowledge base** → RAG
+
 🎨 **...generate creative content** → Prompt Engineering
+
 🔒 **...handle proprietary terminology** → RAG (for facts) or Fine-Tuning (for usage)
 
 ---

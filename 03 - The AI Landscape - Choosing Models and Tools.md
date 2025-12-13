@@ -278,14 +278,23 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 **I want to...**
 
 💬 **...build a chatbot for customer service** → Claude Sonnet or GPT-3.5
+
 💻 **...build a coding assistant** → Claude Code, GitHub Copilot
+
 🖼️ **...generate images** → DALL-E 3, Midjourney, Stable Diffusion
+
 📚 **...search my company documents** → Any LLM + RAG
+
 🔒 **...handle sensitive medical data** → Self-hosted Llama 3
+
 🌍 **...translate content** → DeepL or Google Translate
+
 📊 **...analyze financial data** → BloombergGPT or GPT-4
+
 ✍️ **...write marketing copy** → GPT-4 or Claude Opus
+
 🧪 **...prototype and experiment** → GPT-4 or Claude
+
 💰 **...optimize costs at scale** → Test cheaper alternatives, consider open-source
 
 ---

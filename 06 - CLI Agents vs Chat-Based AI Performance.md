@@ -144,20 +144,32 @@ CLI agents have purpose-built tools for specific tasks. Chat apps only have text
 
 ## Best Use Cases for CLI Agents
 ✅ Multi-step tasks
+
 ✅ Code refactoring
+
 ✅ Debugging
+
 ✅ File operations
+
 ✅ Testing
+
 ✅ Project setup
+
 ✅ Batch operations
 
 ## Best Use Cases for Chat-Based AI
 ✅ Quick questions
+
 ✅ Brainstorming
+
 ✅ Learning concepts
+
 ✅ Code explanation
+
 ✅ Architecture discussions
+
 ✅ One-off snippets
+
 ✅ Mobile/tablet use
 
 ---

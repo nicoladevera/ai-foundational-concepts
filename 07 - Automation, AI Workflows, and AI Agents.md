@@ -42,12 +42,14 @@ Following pre-programmed rules to complete repetitive tasks, with no learning or
 
 ## When to Use Automation
 ✅ **Best for:**
+
 - Highly repetitive, identical tasks
 - Processes needing complete predictability
 - Workflows with clear, unchanging rules
 - Operations where consistency > creativity
 
 ❌ **Not ideal for:**
+
 - Situations requiring context/nuance
 - Tasks where the "right" answer varies
 - Complex decision-making
@@ -73,6 +75,7 @@ A sequence of connected steps where AI is used at specific points, but humans co
 
 ## When to Use AI Workflows
 ✅ **Best for:**
+
 - Processes where AI accelerates specific steps but humans maintain control
 - Tasks requiring both consistency (structure) and creativity (content)
 - Workflows where quality control is essential
@@ -80,6 +83,7 @@ A sequence of connected steps where AI is used at specific points, but humans co
 - Regulated industries requiring human oversight
 
 ❌ **Not ideal for:**
+
 - Simple repetitive tasks (use automation)
 - Situations requiring immediate autonomous responses
 - Tasks where the workflow itself needs to change
@@ -107,6 +111,7 @@ AI systems that can independently make decisions, take actions, use tools, and a
 
 ## When to Use AI Agents
 ✅ **Best for:**
+
 - Complex, multi-step tasks where path varies
 - Research and analysis requiring synthesis
 - Tasks where you want to delegate entire process
@@ -115,6 +120,7 @@ AI systems that can independently make decisions, take actions, use tools, and a
 - Exploratory work
 
 ❌ **Not ideal for:**
+
 - High-stakes decisions without oversight (legal, medical, financial)
 - Tasks requiring empathy
 - Operations needing identical execution every time
@@ -245,12 +251,19 @@ Expand to complex, high-value work.
 **I want to...**
 
 📋 **...save attachments from emails** → Automation (Zapier)
+
 ✍️ **...generate first drafts of blog posts** → AI Workflow (Jasper, Notion AI)
+
 🔍 **...research 50 customers and summarize** → AI Agent (Clay, 11x.ai)
+
 📧 **...send welcome emails to subscribers** → Automation (Mailchimp)
+
 🎨 **...create marketing graphics** → AI Workflow (Canva)
+
 📊 **...analyze sales data and identify trends** → AI Agent (Relevance AI)
+
 ⏰ **...schedule meetings** → Automation (Calendly)
+
 💬 **...draft personalized outreach** → AI Workflow (HubSpot)
 
 ---
