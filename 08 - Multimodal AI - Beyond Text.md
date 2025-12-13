@@ -429,12 +429,19 @@ Video generation has matured but still has constraints:
 **I want to...**
 
 🖼️ **...generate images** → DALL-E 3 (precision), Midjourney (artistic), Stable Diffusion (control)
+
 👁️ **...analyze images** → GPT-5.2 Vision (400k context), Gemini 3 Pro (best multimodal), Claude Opus 4.5 (technical)
+
 🎤 **...transcribe audio** → Whisper (best accuracy), Google STT (real-time)
+
 🔊 **...generate speech** → ElevenLabs (quality), Fish Audio 4B (#1 leaderboard), OpenAI TTS (balance)
+
 🎵 **...create music** → Suno, Udio
+
 🎬 **...generate video** → Sora 2.0 (premium), Runway (creative), Pika (value)
+
 📹 **...analyze video** → Gemini 3 Pro (highest performance), Gemini 2.5 Pro
+
 🌍 **...work across modalities** → Gemini 3 Pro (record benchmarks), GPT-5.2 (400k context), Claude Opus 4.5
 
 ---
