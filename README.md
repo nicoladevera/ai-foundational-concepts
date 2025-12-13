@@ -49,7 +49,7 @@ These pages are designed to build on each other, taking you from foundational co
 
 **Sets up:** Practical knowledge of available options before learning to use them
 
-**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.2, Claude Opus 4.5, Gemini 3 Pro, and when to choose each.
+**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.2, GPT-5.1, Claude Opus 4.5, Gemini 3 Pro, and when to choose each.
 
 ---
 

@@ -23,6 +23,9 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning
 - **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning
 - **GPT-5.2 Pro** - Smartest and most trustworthy option for difficult questions requiring highest quality
+- **GPT-5.1** - Previous flagship with adaptive reasoning (released November 12-13, 2025)
+- **GPT-5.1 Instant** - Warmer, more conversational variant
+- **GPT-5.1 Thinking** - Enhanced reasoning mode with dynamic thinking time
 - **GPT-4o** - Multimodal predecessor, still widely used
 - **GPT-4 Turbo** - Faster, cheaper variant
 - **GPT-3.5** - Older, budget-friendly option
@@ -51,6 +54,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ### Pricing (as of December 2025)
 - GPT-5.2 Thinking: $1.75 input / $14 output per million tokens
 - GPT-5.2 Pro: $21 input / $168 output per million tokens
+- GPT-5.1: ~$22-52 per million tokens (still available)
 - GPT-4o: ~$25-50 per million tokens
 - GPT-3.5: ~$0.50-1.50 per million tokens
 

@@ -325,7 +325,8 @@ Previous ML required training a separate model for each task. LLMs can perform h
 
 ### Examples
 
-- **GPT-5.2** (OpenAI) - Latest model powering ChatGPT (released December 2025)
+- **GPT-5.2** (OpenAI) - Latest model powering ChatGPT, 400k context (released December 2025)
+- **GPT-5.1** (OpenAI) - Previous flagship with adaptive reasoning (released November 2025)
 - **Claude Opus 4.5** (Anthropic) - Best coding model, powers Claude Code (released November 2025)
 - **Gemini 3 Pro** (Google) - Highest performing multimodal LLM (released November 2025)
 - **Llama 4** (Meta) - Open-source multimodal LLM
@@ -390,7 +391,7 @@ Previous ML required training a separate model for each task. LLMs can perform h
 **Scale:**
 - Traditional ML: Hundreds to thousands of parameters
 - Deep Learning: Millions to billions of parameters
-- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion; newer models like GPT-5.2, Claude Opus 4.5, and Gemini 3 Pro have undisclosed parameter counts)
+- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion; newer models like GPT-5.2, GPT-5.1, Claude Opus 4.5, and Gemini 3 Pro have undisclosed parameter counts)
 
 ## Training vs. Inference
 
