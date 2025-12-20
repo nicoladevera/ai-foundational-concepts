@@ -101,7 +101,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Google (Gemini Family)
 
 ### Models
-- **Gemini 3 Pro** - Latest flagship model, "best model in the world for multimodal understanding" (released November 18, 2025)
+- **Gemini 3 Pro** - Flagship model, "best model in the world for multimodal understanding" (released November 18, 2025)
+- **Gemini 3 Flash** - Frontier intelligence built for speed, default model in Gemini app (released December 17, 2025)
 - **Gemini 3 Deep Think** - Enhanced reasoning mode for complex tasks
 - **Gemini 2.5 Pro** - Previous generation with thinking capabilities
 - **Gemini 2.5 Flash** - Fast, efficient variant
@@ -111,28 +112,35 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Highest LMArena ranking** - Gemini 3 Pro achieved 1501 Elo, first model to surpass 1500
 - **Best multimodal understanding** - Designed from scratch for text, images, audio, video
 - **Record benchmark scores** - Industry-leading performance across multiple benchmarks
+- **Gemini 3 Flash performance** - Outperforms 2.5 Pro while being 3x faster at a fraction of the cost
+- **Agentic coding excellence** - Gemini 3 Flash achieves 78% on SWE-bench Verified
+- **PhD-level reasoning** - Gemini 3 Flash scores 90.4% on GPQA Diamond, 81.2% on MMMU-Pro
 - **Deep Think mode** - Enhanced reasoning with extended thinking capabilities
-- **Largest context window** - 1 million tokens (11 hours audio, 1 hour video)
+- **Largest context window** - 1 million tokens input, 65,536 tokens output (11 hours audio, 1 hour video)
+- **Advanced visual reasoning** - Code execution to zoom, count, and edit visual inputs
 - **Top web development** - #1 on WebDev Arena leaderboard
 - **Native audio output** - Dialogue with customizable tone, accent, speaking style
 - **Google integration** - Deep ties to Google services and products, including Search (day-one rollout)
-- **Competitive pricing** - $2/$12 per million tokens (lower than competitors)
+- **Competitive pricing** - Highly affordable across model tiers
 - **Free tier** - Generous free usage in Google AI Studio
 - **New coding platform** - Google Antigravity for agentic development
 
 ### Best For
 - Multimodal tasks combining text, images, audio, and video
-- When you need the highest benchmark performance
+- When you need the highest benchmark performance (Gemini 3 Pro)
+- Fast, complex agentic workflows with frontier-level reasoning (Gemini 3 Flash)
 - Exploring vast datasets (1M token context)
 - Complex reasoning requiring deep thinking
+- Agentic coding and software development (78% SWE-bench Verified)
 - Web development and app generation
 - Google Workspace integration
-- Cost-conscious deployments (competitive pricing)
+- Cost-conscious deployments (Gemini 3 Flash offers best performance-per-dollar)
 - Prototyping (generous free tier)
 
-### Pricing (as of November 2025)
+### Pricing (as of December 2025)
 - Gemini 3 Pro: $2/$12 per million tokens (highly competitive pricing)
-- Gemini 2.5 Flash: ~$0.40-1.20 per million tokens
+- Gemini 3 Flash: $0.50/$3.00 per million tokens (frontier performance at fraction of cost)
+- Gemini 2.5 Flash: $0.30/$2.50 per million tokens
 - Gemini 2.5 Pro: Included in Google AI Pro ($20/month) and AI Ultra ($30/month) subscriptions
 
 ---
@@ -238,7 +246,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 |---|---|---|---|---|---|
 | OpenAI | GPT-5.2 | Professional knowledge work (70.9% GDPval), 400k context, 38% fewer hallucinations | 400k tokens | $$ | No |
 | Anthropic | Claude Opus 4.5 | Best coding (80.9% SWE-bench), agents, computer use | 200k tokens | $$ (67% price drop) | No |
-| Google | Gemini 3 Pro | Highest LMArena (1501), multimodal, record benchmarks | 1M tokens | $ (most affordable) | No |
+| Google | Gemini 3 Flash | Frontier intelligence at speed, 78% SWE-bench, 3x faster than 2.5 Pro | 1M tokens input, 65k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
 
