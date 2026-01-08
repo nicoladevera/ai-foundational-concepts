@@ -31,12 +31,13 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **GPT-3.5** - Older, budget-friendly option
 - **DALL-E 3** - Image generation
 - **Whisper** - Speech-to-text
+- **GPT-5.2-Codex** - Agentic coding model optimized for Codex (released December 18, 2025)
 
 ### Strengths
 - **Massive context window** - 400,000 tokens (can ingest hundreds of documents or large code repositories at once)
 - **Large output capacity** - 128,000 token output limit
 - **Professional knowledge work** - Beats or ties top industry professionals on 70.9% of GDPval comparisons
-- **Enhanced coding** - 55.6% on SWE-bench Pro (state-of-the-art agentic coding)
+- **Enhanced coding** - GPT-5.2-Codex achieves 56.4% on SWE-bench Pro, 64% on Terminal-Bench 2.0, 87% on CVE-Bench
 - **Superior accuracy** - 38% fewer hallucinations than GPT-5.1, perfect score on AIME 2025 (100%)
 - **Advanced reasoning** - GPT-5.2 Thinking excels at structured work, math, and planning
 - **Multimodal** - Native text, image, and audio understanding with halved error rates in graph reasoning
@@ -69,6 +70,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Claude Opus 4** - Flagship with extended thinking (released May 2025)
 - **Claude Sonnet 4** - Balanced performance (released May 2025)
 - **Claude Haiku 4.5** - Fast, efficient for simple tasks (released October 2025)
+- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.5)
+- **Claude Haiku 3.5** - *Deprecated* (upgrade to Haiku 4.5)
 
 ### Strengths
 - **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
@@ -240,11 +243,11 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ---
 
-# Model Comparison Table (December 2025)
+# Model Comparison Table (January 2026)
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.2 | Professional knowledge work (70.9% GDPval), 400k context, 38% fewer hallucinations | 400k tokens | $$ | No |
+| OpenAI | GPT-5.2 / GPT-5.2-Codex | Professional knowledge work, best agentic coding (56.4% SWE-bench Pro), 400k context | 400k tokens | $$ | No |
 | Anthropic | Claude Opus 4.5 | Best coding (80.9% SWE-bench), agents, computer use | 200k tokens | $$ (67% price drop) | No |
 | Google | Gemini 3 Flash | Frontier intelligence at speed, 78% SWE-bench, 3x faster than 2.5 Pro | 1M tokens input, 65k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |

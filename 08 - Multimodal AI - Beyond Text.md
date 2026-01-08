@@ -375,7 +375,7 @@ Video generation has matured but still has constraints:
 
 ---
 
-# Comparison Table (December 2025)
+# Comparison Table (January 2026)
 
 | **Modality** | **Task** | **Best Tools (2025)** | **Maturity** | **Cost** |
 |---|---|---|---|---|
@@ -465,7 +465,7 @@ Video generation has matured but still has constraints:
 
 ---
 
-> 🎯 **Key Takeaway** (Updated December 2025)
+> 🎯 **Key Takeaway** (Updated January 2026)
 >
 > Multimodal AI has reached new heights in late 2025 with major releases in mid-December:
 >

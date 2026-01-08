@@ -326,6 +326,7 @@ Previous ML required training a separate model for each task. LLMs can perform h
 ### Examples
 
 - **GPT-5.2** (OpenAI) - Latest model powering ChatGPT, 400k context (released December 2025)
+- **GPT-5.2-Codex** (OpenAI) - Agentic coding model, 56.4% SWE-bench Pro (released December 2025)
 - **GPT-5.1** (OpenAI) - Previous flagship with adaptive reasoning (released November 2025)
 - **Claude Opus 4.5** (Anthropic) - Best coding model, powers Claude Code (released November 2025)
 - **Gemini 3 Pro** (Google) - Highest performing multimodal LLM (released November 2025)
