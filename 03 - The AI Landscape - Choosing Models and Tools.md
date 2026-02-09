@@ -31,12 +31,16 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **GPT-3.5** - Older, budget-friendly option
 - **DALL-E 3** - Image generation
 - **Whisper** - Speech-to-text
+- **GPT-5.3-Codex** - Most powerful agentic coding model, "first model that helped build itself", 25% faster (released February 5, 2026)
 - **GPT-5.2-Codex** - Agentic coding model optimized for Codex (released December 18, 2025)
 
 ### Strengths
 - **Massive context window** - 400,000 tokens (can ingest hundreds of documents or large code repositories at once)
 - **Large output capacity** - 128,000 token output limit
 - **Professional knowledge work** - Beats or ties top industry professionals on 70.9% of GDPval comparisons
+- **Industry-leading agentic coding** - GPT-5.3-Codex achieves 77.3% on Terminal-Bench 2.0, 64.7% on OSWorld-Verified, new industry high on SWE-bench Pro
+- **25% faster performance** - GPT-5.3-Codex combines frontier coding + reasoning + professional knowledge with 25% speed improvement
+- **Self-building AI** - GPT-5.3-Codex is the first OpenAI model that helped debug its own training, manage deployment, and diagnose test results
 - **Enhanced coding** - GPT-5.2-Codex achieves 56.4% on SWE-bench Pro, 64% on Terminal-Bench 2.0, 87% on CVE-Bench
 - **Superior accuracy** - 38% fewer hallucinations than GPT-5.1, perfect score on AIME 2025 (100%)
 - **Advanced reasoning** - GPT-5.2 Thinking excels at structured work, math, and planning
@@ -52,7 +56,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - General-purpose applications with broad requirements
 - Prototyping (extensive ecosystem support)
 
-### Pricing (as of December 2025)
+### Pricing (as of February 2026)
+- GPT-5.3-Codex: Pricing TBD - Available to paid ChatGPT plans (Codex app, CLI, IDE extension, web); API access planned
 - GPT-5.2 Thinking: $1.75 input / $14 output per million tokens
 - GPT-5.2 Pro: $21 input / $168 output per million tokens
 - GPT-5.1: ~$22-52 per million tokens (still available)
@@ -64,37 +69,46 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Anthropic (Claude Family)
 
 ### Models
+- **Claude Opus 4.6** - Latest flagship model with 1 million token context and adaptive thinking (released February 5, 2026)
 - **Claude Opus 4.5** - Most powerful model, "best in the world for coding, agents, and computer use" (released November 24, 2025)
 - **Claude Sonnet 4.5** - Balanced performance with long autonomous runtime (released September 2025)
 - **Claude Opus 4.1** - Previous flagship coding model (released August 2025)
 - **Claude Opus 4** - Flagship with extended thinking (released May 2025)
 - **Claude Sonnet 4** - Balanced performance (released May 2025)
 - **Claude Haiku 4.5** - Fast, efficient for simple tasks (released October 2025)
-- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.5)
+- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.6)
 - **Claude Haiku 3.5** - *Deprecated* (upgrade to Haiku 4.5)
 
 ### Strengths
 - **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
+- **Massive 1 million token context** - Opus 4.6 extends context from 200k to 1 million tokens with 128,000 token output
+- **Adaptive thinking** - Opus 4.6 is the first Anthropic model with adaptive thinking that adjusts effort based on prompt complexity
+- **Record reasoning performance** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2, 45.1% for Gemini 3 Pro)
+- **Enhanced agentic capabilities** - Opus 4.6 scores 65.4% on Terminal-Bench (up from 59.8%) and 72.7% on OSWorld (up from 66.3%)
+- **Superior long-context retrieval** - Opus 4.6 achieves 76% on MRCR v2 benchmark (vs 18.5% for Sonnet 4.5)
+- **Enterprise knowledge work leadership** - Opus 4.6 outperforms GPT-5.2 by 144 Elo points on GDPval-AA
+- **Agent teams** - Claude Code with Opus 4.6 enables parallel task execution
 - **Top performance on engineering tests** - Scored higher than any human candidate on Anthropic's performance engineer exam
-- **Extended context window** - 200,000 tokens (entire codebases)
-- **Large output capacity** - 64,000 token output limit
 - **Knowledge cutoff** - March 2025 (most current among major models)
 - **Hybrid reasoning** - Near-instant responses or extended thinking modes
 - **Extended thinking with tools** - Can use web search, file access during reasoning
 - **Superior memory** - Maintains continuity and builds knowledge over time
 - **Safety-focused** - Less likely to produce harmful content
 - **Excellent instruction-following** - More compliant, precise execution
-- **Price reduction** - 67% price drop from previous Opus pricing
+- **Price reduction** - 67% price drop from previous Opus pricing (maintained with 4.6)
 
 ### Best For
 - Complex coding projects and software development (industry-leading SWE-bench performance)
-- Agentic workflows and computer use tasks
-- Long documents requiring deep analysis (200k context)
+- Agentic workflows and computer use tasks with parallel execution
+- Extra-long documents and massive codebases (1M token context with Opus 4.6)
+- Complex reasoning tasks requiring adaptive thinking
+- Enterprise knowledge work requiring highest accuracy (144 Elo advantage over GPT-5.2)
 - When you need precise instruction-following
 - Enterprises prioritizing safety and reliability
 - Teams requiring most current knowledge (March 2025 cutoff)
 
-### Pricing (as of November 2025)
+### Pricing (as of February 2026)
+- Claude Opus 4.6: $5/$25 per million tokens (same as 4.5)
 - Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
 - Claude Sonnet 4/4.5: ~$3-15 per million tokens
 - Claude Haiku 4.5: ~$0.25-1.25 per million tokens
@@ -243,12 +257,12 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ---
 
-# Model Comparison Table (January 2026)
+# Model Comparison Table (February 2026)
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.2 / GPT-5.2-Codex | Professional knowledge work, best agentic coding (56.4% SWE-bench Pro), 400k context | 400k tokens | $$ | No |
-| Anthropic | Claude Opus 4.5 | Best coding (80.9% SWE-bench), agents, computer use | 200k tokens | $$ (67% price drop) | No |
+| OpenAI | GPT-5.3-Codex | Industry-leading agentic coding (77.3% Terminal-Bench), 25% faster, 400k context | 400k tokens | $$ (API TBD) | No |
+| Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, best reasoning (68.8% ARC AGI 2), +144 Elo vs GPT-5.2 | 1M tokens | $$ (67% price drop) | No |
 | Google | Gemini 3 Flash | Frontier intelligence at speed, 78% SWE-bench, 3x faster than 2.5 Pro | 1M tokens input, 65k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
