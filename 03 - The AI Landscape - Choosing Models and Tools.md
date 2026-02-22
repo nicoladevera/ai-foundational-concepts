@@ -70,6 +70,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ### Models
 - **Claude Opus 4.6** - Latest flagship model with 1 million token context and adaptive thinking (released February 5, 2026)
+- **Claude Sonnet 4.6** - Near-Opus performance at Sonnet pricing, default model on claude.ai (released February 17, 2026)
 - **Claude Opus 4.5** - Most powerful model, "best in the world for coding, agents, and computer use" (released November 24, 2025)
 - **Claude Sonnet 4.5** - Balanced performance with long autonomous runtime (released September 2025)
 - **Claude Opus 4.1** - Previous flagship coding model (released August 2025)
@@ -83,7 +84,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
 - **Massive 1 million token context** - Opus 4.6 extends context from 200k to 1 million tokens with 128,000 token output
 - **Adaptive thinking** - Opus 4.6 is the first Anthropic model with adaptive thinking that adjusts effort based on prompt complexity
-- **Record reasoning performance** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2, 45.1% for Gemini 3 Pro)
+- **Record reasoning performance** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2)
+- **Near-Opus performance at Sonnet cost** - Sonnet 4.6 achieves 79.6% SWE-bench Verified, 72.5% OSWorld, and 58.3% ARC-AGI-2 at $3/$15/M tokens (vs Opus 4.6's $5/$25/M tokens)
 - **Enhanced agentic capabilities** - Opus 4.6 scores 65.4% on Terminal-Bench (up from 59.8%) and 72.7% on OSWorld (up from 66.3%)
 - **Superior long-context retrieval** - Opus 4.6 achieves 76% on MRCR v2 benchmark (vs 18.5% for Sonnet 4.5)
 - **Enterprise knowledge work leadership** - Opus 4.6 outperforms GPT-5.2 by 144 Elo points on GDPval-AA
@@ -110,6 +112,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ### Pricing (as of February 2026)
 - Claude Opus 4.6: $5/$25 per million tokens (same as 4.5)
 - Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
+- Claude Sonnet 4.6: $3/$15 per million tokens (same as Sonnet 4.5, near-Opus performance)
 - Claude Sonnet 4/4.5: ~$3-15 per million tokens
 - Claude Haiku 4.5: ~$0.25-1.25 per million tokens
 
@@ -118,7 +121,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Google (Gemini Family)
 
 ### Models
-- **Gemini 3 Pro** - Flagship model, "best model in the world for multimodal understanding" (released November 18, 2025)
+- **Gemini 3.1 Pro** - Latest flagship, #1 ARC-AGI-2 reasoning (77.1%), dynamic thinking (released February 19, 2026)
+- **Gemini 3 Pro** - Previous flagship, "best model in the world for multimodal understanding" (released November 18, 2025)
 - **Gemini 3 Flash** - Frontier intelligence built for speed, default model in Gemini app (released December 17, 2025)
 - **Gemini 3 Deep Think** - Enhanced reasoning mode for complex tasks
 - **Gemini 2.5 Pro** - Previous generation with thinking capabilities
@@ -126,6 +130,10 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Gemini Nano** - Runs on-device (phones, edge devices)
 
 ### Strengths
+- **World-leading reasoning** - Gemini 3.1 Pro achieves 77.1% ARC-AGI-2 (surpassing all frontier models), up from Gemini 3 Pro's 31.1%
+- **Best-in-class coding** - Gemini 3.1 Pro achieves 80.6% SWE-Bench Verified, 68.5% Terminal-Bench 2.0
+- **Agentic web research** - 85.9% on BrowseComp (up from 59.2% for Gemini 3 Pro)
+- **Adaptive reasoning** - Dynamic thinking with new thinking_level parameter (low/medium/high/max)
 - **Highest LMArena ranking** - Gemini 3 Pro achieved 1501 Elo, first model to surpass 1500
 - **Best multimodal understanding** - Designed from scratch for text, images, audio, video
 - **Record benchmark scores** - Industry-leading performance across multiple benchmarks
@@ -154,7 +162,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - Cost-conscious deployments (Gemini 3 Flash offers best performance-per-dollar)
 - Prototyping (generous free tier)
 
-### Pricing (as of December 2025)
+### Pricing (as of February 2026)
+- Gemini 3.1 Pro: $2/$12 per million tokens (same as Gemini 3 Pro)
 - Gemini 3 Pro: $2/$12 per million tokens (highly competitive pricing)
 - Gemini 3 Flash: $0.50/$3.00 per million tokens (frontier performance at fraction of cost)
 - Gemini 2.5 Flash: $0.30/$2.50 per million tokens
@@ -262,8 +271,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
 | OpenAI | GPT-5.3-Codex | Industry-leading agentic coding (77.3% Terminal-Bench), 25% faster, 400k context | 400k tokens | $$ (API TBD) | No |
-| Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, best reasoning (68.8% ARC AGI 2), +144 Elo vs GPT-5.2 | 1M tokens | $$ (67% price drop) | No |
-| Google | Gemini 3 Flash | Frontier intelligence at speed, 78% SWE-bench, 3x faster than 2.5 Pro | 1M tokens input, 65k output | $ (best value) | No |
+| Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, 68.8% ARC AGI 2, +144 Elo vs GPT-5.2; Sonnet 4.6 offers near-Opus performance at lower cost | 1M tokens | $$ (67% price drop) | No |
+| Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking | 1M tokens input, 64k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
 

@@ -142,10 +142,11 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ---
 
-### Gemini 3 Flash / Gemini 3 Pro Vision (Google)
+### Gemini 3.1 Pro / Gemini 3 Flash / Gemini 3 Pro Vision (Google)
 **Capabilities:**
-- Gemini 3 Flash: Latest default model (released December 17, 2025), 78% SWE-bench Verified
-- Gemini 3 Pro: Flagship model (released November 18, 2025), "Best model in the world for multimodal understanding"
+- Gemini 3.1 Pro: Latest flagship (released February 19, 2026), #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench Verified, dynamic thinking
+- Gemini 3 Flash: Default model (released December 17, 2025), 78% SWE-bench Verified
+- Gemini 3 Pro: Previous flagship (released November 18, 2025), "Best model in the world for multimodal understanding"
 - Achieved 1501 Elo on LMArena (first model to surpass 1500)
 - Natively multimodal: text, images, audio, and video
 - 1M token context window (~11 hours audio or 1 hour video)
