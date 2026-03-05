@@ -54,7 +54,7 @@ AI that creates images from text descriptions ("text-to-image").
 
 **Example:** "A serene mountain lake at sunset, realistic photography" → AI generates unique image
 
-## Major Tools (December 2025)
+## Major Tools (February 2026)
 
 ### GPT Image 1.5 (OpenAI)
 **Strengths:**
@@ -68,6 +68,26 @@ AI that creates images from text descriptions ("text-to-image").
 
 **Best For:** Fast generation, precise editing, complex instructions, marketing materials, images with text
 **Pricing:** ChatGPT Plus $20/month, available via API
+
+---
+
+### Nano Banana 2 / Gemini 3.1 Flash Image (Google)
+**Strengths:**
+- Latest state-of-the-art image model (released February 26, 2026), ranked #1 on Arena and ArtificialAnalysis benchmarks
+- Nano Banana Pro quality at Gemini Flash speed (4-6 second generation time)
+- Advanced world knowledge grounded in real-time web search for accurate infographics, diagrams, and real-world subjects
+- Pro-level text rendering: generate, translate, and localize text within images
+- Subject consistency: maintain up to 5 characters and 14 objects across a single workflow
+- Production-ready specs: 14 aspect ratios, 512px to 4K widescreen resolution
+- Enhanced instruction following: captures complex nuances precisely
+- Now the default image model across Gemini app (Fast/Thinking/Pro), Google Search, Flow, and Google Ads
+- SynthID + C2PA Content Credentials for AI provenance verification
+- 37-50% cheaper than Nano Banana Pro
+
+**Best For:** Fast, high-quality generation; storytelling and storyboarding; marketing assets; infographics; any workflow needing speed without sacrificing Pro-tier quality
+**Pricing (API, per image):** $0.045 (512px) · $0.067 (1K) · $0.101 (2K) · $0.151 (4K); 50% batch discount; included in Gemini AI Pro ($19.99/mo) and AI Ultra ($124.99/mo)
+
+---
 
 ### DALL-E 3 (OpenAI - Previous Model)
 **Strengths:**
@@ -115,7 +135,8 @@ AI that creates images from text descriptions ("text-to-image").
 ---
 
 > 🎨 **Choosing image generators:**
-> - **Need speed & precision?** → GPT Image 1.5 (4x faster)
+> - **Want #1 quality + speed?** → Nano Banana 2 (ranked #1 Arena & ArtificialAnalysis, Flash-tier speed, free in Gemini app)
+> - **Need speed & precision?** → GPT Image 1.5 (4x faster, strong text rendering)
 > - **Want artistic quality?** → Midjourney
 > - **Need control/privacy?** → Stable Diffusion
 > - **Corporate/commercial?** → Adobe Firefly
@@ -391,7 +412,7 @@ Video generation has matured but still has constraints:
 | **Modality** | **Task** | **Best Tools (2026)** | **Maturity** | **Cost** |
 |---|---|---|---|---|
 | **Text** | Generation, analysis | GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash/Pro | Very Mature | $ |
-| **Image** | Generation | GPT Image 1.5, Midjourney V7, SDXL | Very Mature | $ - $$ |
+| **Image** | Generation | Nano Banana 2, GPT Image 1.5, Midjourney V7, SDXL | Very Mature | $ - $$ |
 | **Image** | Understanding | Gemini 3 Flash/Pro, GPT-5.3-Codex, Claude Opus 4.6 | Very Mature | $ |
 | **Audio** | Speech-to-Text | Whisper, Google STT | Very Mature | $ |
 | **Audio** | Text-to-Speech | ElevenLabs V3, Fish Audio 4B, OpenAI | Very Mature | $ - $$ |
@@ -400,7 +421,7 @@ Video generation has matured but still has constraints:
 | **Video** | Generation | Sora 2.0, Runway Gen-3/4, Pika 2.5, Veo 2 | Maturing | $$ - $$$ |
 | **Combined** | Multi-input/output | GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
 
-> 📈 **February 2026 Progress:** Every modality continues maturing rapidly. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extends context to 1M tokens with adaptive thinking, while OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities.
+> 📈 **February 2026 Progress:** Every modality continues maturing rapidly. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extends context to 1M tokens with adaptive thinking, while OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks — delivering Nano Banana Pro quality at Flash speed across the Gemini app, Google Search, and Google Ads.
 
 ---
 
