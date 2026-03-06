@@ -19,8 +19,9 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## OpenAI (GPT Family)
 
 ### Models
+- **GPT-5.3 Instant** - Everyday conversational model focused on directness and reduced hallucinations (released March 3, 2026)
 - **GPT-5.2** - Latest flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
-- **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning
+- **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning *(legacy — available until June 3, 2026)*
 - **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning
 - **GPT-5.2 Pro** - Smartest and most trustworthy option for difficult questions requiring highest quality
 - **GPT-5.1** - Previous flagship with adaptive reasoning (released November 12-13, 2025)
@@ -43,6 +44,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Self-building AI** - GPT-5.3-Codex is the first OpenAI model that helped debug its own training, manage deployment, and diagnose test results
 - **Enhanced coding** - GPT-5.2-Codex achieves 56.4% on SWE-bench Pro, 64% on Terminal-Bench 2.0, 87% on CVE-Bench
 - **Superior accuracy** - 38% fewer hallucinations than GPT-5.1, perfect score on AIME 2025 (100%)
+- **Improved everyday quality** - GPT-5.3 Instant reduces hallucinations by 26.8% in high-stakes domains (medicine, law, finance) and delivers more direct, natural responses without defensive preambles
 - **Advanced reasoning** - GPT-5.2 Thinking excels at structured work, math, and planning
 - **Multimodal** - Native text, image, and audio understanding with halved error rates in graph reasoning
 - **Largest ecosystem** - Most third-party integrations and tools
@@ -56,10 +58,12 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - General-purpose applications with broad requirements
 - Prototyping (extensive ecosystem support)
 
-### Pricing (as of February 2026)
+### Pricing (as of March 2026)
+- GPT-5.3 Instant: Available via ChatGPT and API as `gpt-5.3-chat-latest`
 - GPT-5.3-Codex: Pricing TBD - Available to paid ChatGPT plans (Codex app, CLI, IDE extension, web); API access planned
 - GPT-5.2 Thinking: $1.75 input / $14 output per million tokens
 - GPT-5.2 Pro: $21 input / $168 output per million tokens
+- GPT-5.2 Instant: Legacy model — available to paid users until June 3, 2026
 - GPT-5.1: ~$22-52 per million tokens (still available)
 - GPT-4o: ~$25-50 per million tokens
 - GPT-3.5: ~$0.50-1.50 per million tokens
@@ -109,7 +113,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - Enterprises prioritizing safety and reliability
 - Teams requiring most current knowledge (March 2025 cutoff)
 
-### Pricing (as of February 2026)
+### Pricing (as of March 2026)
 - Claude Opus 4.6: $5/$25 per million tokens (same as 4.5)
 - Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
 - Claude Sonnet 4.6: $3/$15 per million tokens (same as Sonnet 4.5, near-Opus performance)
@@ -121,6 +125,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Google (Gemini Family)
 
 ### Models
+- **Gemini 3.1 Flash-Lite** - Fastest, most cost-efficient model in the Gemini 3 series, optimized for high-volume developer workloads (released March 3, 2026)
 - **Gemini 3.1 Pro** - Latest flagship, #1 ARC-AGI-2 reasoning (77.1%), dynamic thinking (released February 19, 2026)
 - **Gemini 3 Pro** - Previous flagship, "best model in the world for multimodal understanding" (released November 18, 2025)
 - **Gemini 3 Flash** - Frontier intelligence built for speed, default model in Gemini app (released December 17, 2025)
@@ -142,27 +147,32 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **PhD-level reasoning** - Gemini 3 Flash scores 90.4% on GPQA Diamond, 81.2% on MMMU-Pro
 - **Deep Think mode** - Enhanced reasoning with extended thinking capabilities
 - **Largest context window** - 1 million tokens input, 65,536 tokens output (11 hours audio, 1 hour video)
+- **Gemini 3.1 Flash-Lite speed** - 45% faster output and 2.5x faster time-to-first-token vs Gemini 2.5 Flash; tunable thinking levels (low/medium/high/max)
+- **Gemini 3.1 Flash-Lite benchmark edge** - Outperforms GPT-5 mini and Claude 4.5 Haiku on 6 of 11 benchmarks including GPQA Diamond
 - **Advanced visual reasoning** - Code execution to zoom, count, and edit visual inputs
 - **Top web development** - #1 on WebDev Arena leaderboard
 - **Native audio output** - Dialogue with customizable tone, accent, speaking style
 - **Google integration** - Deep ties to Google services and products, including Search (day-one rollout)
-- **Competitive pricing** - Highly affordable across model tiers
+- **Competitive pricing** - Highly affordable across model tiers, from $0.25/M tokens (Flash-Lite) to $2/M tokens (3.1 Pro)
 - **Free tier** - Generous free usage in Google AI Studio
 - **New coding platform** - Google Antigravity for agentic development
 
 ### Best For
 - Multimodal tasks combining text, images, audio, and video
-- When you need the highest benchmark performance (Gemini 3 Pro)
+- When you need the highest benchmark performance (Gemini 3.1 Pro)
 - Fast, complex agentic workflows with frontier-level reasoning (Gemini 3 Flash)
+- High-volume workloads needing maximum speed and lowest cost (Gemini 3.1 Flash-Lite)
+- Translation, content moderation, code generation, and UI creation at scale (Gemini 3.1 Flash-Lite)
 - Exploring vast datasets (1M token context)
 - Complex reasoning requiring deep thinking
 - Agentic coding and software development (78% SWE-bench Verified)
 - Web development and app generation
 - Google Workspace integration
-- Cost-conscious deployments (Gemini 3 Flash offers best performance-per-dollar)
+- Cost-conscious deployments (Gemini 3.1 Flash-Lite at $0.25/M input tokens)
 - Prototyping (generous free tier)
 
-### Pricing (as of February 2026)
+### Pricing (as of March 2026)
+- Gemini 3.1 Flash-Lite: $0.25/$1.50 per million tokens (fastest, most cost-efficient; preview via Google AI Studio and Vertex AI)
 - Gemini 3.1 Pro: $2/$12 per million tokens (same as Gemini 3 Pro)
 - Gemini 3 Pro: $2/$12 per million tokens (highly competitive pricing)
 - Gemini 3 Flash: $0.50/$3.00 per million tokens (frontier performance at fraction of cost)
@@ -266,15 +276,20 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 ---
 
-# Model Comparison Table (February 2026)
+# Model Comparison Table (March 2026)
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.3-Codex | Industry-leading agentic coding (77.3% Terminal-Bench), 25% faster, 400k context | 400k tokens | $$ (API TBD) | No |
+| OpenAI | GPT-5.3-Codex | Industry-leading agentic coding (77.3% Terminal-Bench), 25% faster, 400k context; GPT-5.3 Instant for everyday use (26.8% fewer hallucinations) | 400k tokens | $$ (API TBD) | No |
 | Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, 68.8% ARC AGI 2, +144 Elo vs GPT-5.2; Sonnet 4.6 offers near-Opus performance at lower cost | 1M tokens | $$ (67% price drop) | No |
-| Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking | 1M tokens input, 64k output | $ (best value) | No |
+| Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking; Flash-Lite offers fastest + cheapest option | 1M tokens input, 64k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
+
+| **Provider** | **Speed/Cost Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
+|---|---|---|---|---|---|
+| OpenAI | GPT-5.3 Instant | Everyday conversational quality, 26.8% fewer hallucinations, direct responses (released March 3, 2026) | 400k tokens | $ | No |
+| Google | Gemini 3.1 Flash-Lite | Fastest Gemini 3 model (45% faster output, 2.5x faster TTFT), outperforms GPT-5 mini and Claude 4.5 Haiku on 6/11 benchmarks (released March 3, 2026) | 1M tokens input, 64k output | $ ($0.25/$1.50 per M tokens) | No |
 
 ---
 
