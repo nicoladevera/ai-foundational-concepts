@@ -19,10 +19,12 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## OpenAI (GPT Family)
 
 ### Models
+- **GPT-5.4** - Latest frontier model for professional work; merges coding, reasoning, and knowledge work; native computer use; 1.05M context (released March 5, 2026)
+- **GPT-5.4 Pro** - Maximum performance tier for the most complex tasks (released March 5, 2026)
 - **GPT-5.3 Instant** - Everyday conversational model focused on directness and reduced hallucinations (released March 3, 2026)
-- **GPT-5.2** - Latest flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
+- **GPT-5.2** - Previous flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
 - **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning *(legacy — available until June 3, 2026)*
-- **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning
+- **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning *(legacy — available until June 5, 2026)*
 - **GPT-5.2 Pro** - Smartest and most trustworthy option for difficult questions requiring highest quality
 - **GPT-5.1** - Previous flagship with adaptive reasoning (released November 12-13, 2025)
 - **GPT-5.1 Instant** - Warmer, more conversational variant
@@ -32,36 +34,41 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **GPT-3.5** - Older, budget-friendly option
 - **DALL-E 3** - Image generation
 - **Whisper** - Speech-to-text
-- **GPT-5.3-Codex** - Most powerful agentic coding model, "first model that helped build itself", 25% faster (released February 5, 2026)
+- **GPT-5.3-Codex** - Agentic coding model, coding strengths now incorporated into GPT-5.4 (released February 5, 2026)
 - **GPT-5.2-Codex** - Agentic coding model optimized for Codex (released December 18, 2025)
 
 ### Strengths
-- **Massive context window** - 400,000 tokens (can ingest hundreds of documents or large code repositories at once)
+- **Expanded context window** - GPT-5.4 supports 1,050,000 tokens (1.05M) — a major leap from GPT-5.2's 400k; can now ingest massive codebases, lengthy research corpora, or entire enterprise document sets
 - **Large output capacity** - 128,000 token output limit
-- **Professional knowledge work** - Beats or ties top industry professionals on 70.9% of GDPval comparisons
-- **Industry-leading agentic coding** - GPT-5.3-Codex achieves 77.3% on Terminal-Bench 2.0, 64.7% on OSWorld-Verified, new industry high on SWE-bench Pro
-- **25% faster performance** - GPT-5.3-Codex combines frontier coding + reasoning + professional knowledge with 25% speed improvement
-- **Self-building AI** - GPT-5.3-Codex is the first OpenAI model that helped debug its own training, manage deployment, and diagnose test results
-- **Enhanced coding** - GPT-5.2-Codex achieves 56.4% on SWE-bench Pro, 64% on Terminal-Bench 2.0, 87% on CVE-Bench
-- **Superior accuracy** - 38% fewer hallucinations than GPT-5.1, perfect score on AIME 2025 (100%)
+- **Industry-leading professional knowledge work** - GPT-5.4 achieves 83% on GDPval (matching or exceeding professionals in 83% of comparisons across 44 occupations), up from GPT-5.2's 70.9%
+- **Native computer use** - GPT-5.4 is OpenAI's first general-purpose model with native computer-use capabilities; 75.0% OSWorld-Verified (surpasses human performance at 72.4%); 67.3% WebArena-Verified
+- **State-of-the-art coding** - GPT-5.4 achieves 57.7% SWE-Bench Pro and 75.1% Terminal-Bench 2.0, matching or outperforming GPT-5.3-Codex
+- **Most factual model yet** - GPT-5.4 individual claims are 33% less likely to be false vs GPT-5.2; full responses 18% less likely to contain errors
+- **Superior web research** - GPT-5.4 achieves 82.7% BrowseComp (+17% abs over GPT-5.2); GPT-5.4 Pro sets new SOTA at 89.3%
+- **Tool search** - New capability that reduces token usage by 47% on MCP-heavy workflows; agents can work across much larger tool ecosystems efficiently
+- **Token efficiency** - GPT-5.4 solves problems with significantly fewer tokens than GPT-5.2, reducing cost and improving speed
+- **Self-building AI** - GPT-5.3-Codex was the first OpenAI model that helped debug its own training; GPT-5.4 incorporates those capabilities
 - **Improved everyday quality** - GPT-5.3 Instant reduces hallucinations by 26.8% in high-stakes domains (medicine, law, finance) and delivers more direct, natural responses without defensive preambles
-- **Advanced reasoning** - GPT-5.2 Thinking excels at structured work, math, and planning
-- **Multimodal** - Native text, image, and audio understanding with halved error rates in graph reasoning
+- **Advanced visual perception** - GPT-5.4 achieves 81.2% MMMU-Pro; new `original` image detail level supports up to 10.24M pixels for high-fidelity analysis
+- **Multimodal** - Native text, image, and audio understanding
 - **Largest ecosystem** - Most third-party integrations and tools
 - **Knowledge cutoff** - August 31, 2025
 
 ### Best For
-- Professional knowledge work requiring highest accuracy
-- Processing large codebases or extensive documentation (400k context)
+- Professional knowledge work requiring highest accuracy (83% GDPval with GPT-5.4)
+- Processing massive codebases, lengthy research, or enterprise documentation (1.05M context with GPT-5.4)
 - Complex reasoning, coding, and structured work
-- Tasks requiring minimal hallucinations and maximum reliability
+- Computer use and agentic workflows across applications and websites (GPT-5.4)
+- Tasks requiring minimal hallucinations and maximum factual reliability
 - General-purpose applications with broad requirements
 - Prototyping (extensive ecosystem support)
 
 ### Pricing (as of March 2026)
+- GPT-5.4: $2.50 input / $0.25 cached / $15.00 output per million tokens (API: `gpt-5.4`)
+- GPT-5.4 Pro: $30.00 input / $180.00 output per million tokens (API: `gpt-5.4-pro`)
+  - Note: prompts >272K input tokens billed at 2x input, 1.5x output for the full session
 - GPT-5.3 Instant: Available via ChatGPT and API as `gpt-5.3-chat-latest`
-- GPT-5.3-Codex: Pricing TBD - Available to paid ChatGPT plans (Codex app, CLI, IDE extension, web); API access planned
-- GPT-5.2 Thinking: $1.75 input / $14 output per million tokens
+- GPT-5.2 Thinking: $1.75 input / $14 output per million tokens *(legacy — retiring June 5, 2026)*
 - GPT-5.2 Pro: $21 input / $168 output per million tokens
 - GPT-5.2 Instant: Legacy model — available to paid users until June 3, 2026
 - GPT-5.1: ~$22-52 per million tokens (still available)
@@ -280,7 +287,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.3-Codex | Industry-leading agentic coding (77.3% Terminal-Bench), 25% faster, 400k context; GPT-5.3 Instant for everyday use (26.8% fewer hallucinations) | 400k tokens | $$ (API TBD) | No |
+| OpenAI | GPT-5.4 | 83% GDPval, native computer use (75% OSWorld, surpasses humans), 1.05M context, most factual model (33% fewer false claims) | 1.05M tokens | $$ ($2.50/$15 per M tokens) | No |
 | Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, 68.8% ARC AGI 2, +144 Elo vs GPT-5.2; Sonnet 4.6 offers near-Opus performance at lower cost | 1M tokens | $$ (67% price drop) | No |
 | Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking; Flash-Lite offers fastest + cheapest option | 1M tokens input, 64k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |

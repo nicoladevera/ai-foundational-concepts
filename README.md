@@ -49,7 +49,7 @@ These pages are designed to build on each other, taking you from foundational co
 
 **Sets up:** Practical knowledge of available options before learning to use them
 
-**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.6, Claude Sonnet 4.6, Gemini 3.1 Pro, Gemini 3.1 Flash-Lite, Gemini 3 Flash, and when to choose each.
+**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.4, GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.6, Claude Sonnet 4.6, Gemini 3.1 Pro, Gemini 3.1 Flash-Lite, Gemini 3 Flash, and when to choose each.
 
 ---
 

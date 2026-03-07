@@ -150,16 +150,15 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ## Major Tools (October 2025)
 
-### GPT-4o/GPT-5.2 Vision (OpenAI)
+### GPT-5.4 / GPT-4o / GPT-5.2 Vision (OpenAI)
 **Capabilities:**
-- Natively multimodal: text, images, and audio inputs
-- Describe image content in detail
-- Answer questions about images
-- Advanced OCR (read text in images)
-- Analyze charts, diagrams, screenshots
+- GPT-5.4: Latest frontier model (released March 5, 2026); 81.2% MMMU-Pro visual reasoning; new `original` image detail level supporting up to 10.24M pixels for full-fidelity analysis; 1.05M token context window
+- GPT-5.4: Natively multimodal; excels at complex frontend tasks, dense document parsing, and UI navigation via computer use
 - GPT-5.2: 400k token context window, halved error rates in graph reasoning
+- GPT-4o: Natively multimodal text, images, and audio inputs
+- Advanced OCR (read text in images), chart and diagram analysis
 
-**Best For:** General-purpose image analysis, multimodal applications, processing extensive visual documentation
+**Best For:** General-purpose image analysis, high-fidelity image understanding (GPT-5.4 with `original` detail), multimodal applications, processing extensive visual documentation
 
 ---
 
@@ -322,23 +321,19 @@ Video generation has matured but still has constraints:
 
 # Combined Multimodal Models
 
-## GPT-5.3-Codex & GPT-5.2 (OpenAI)
+## GPT-5.4 / GPT-5.3-Codex / GPT-5.2 (OpenAI)
 **Modalities:** Text + Images + Audio (natively multimodal)
 
 **Capabilities:**
-- GPT-5.3-Codex: Latest flagship agentic coding model (released February 5, 2026)
-- 77.3% on Terminal-Bench 2.0, 64.7% on OSWorld-Verified
-- 25% faster with combined coding + reasoning + professional knowledge
-- First OpenAI model that helped build itself
-- Natively processes text, images, and voice together
+- GPT-5.4: Latest frontier model (released March 5, 2026); 1.05M token context; 83% GDPval; native computer use (75% OSWorld-Verified, surpasses humans at 72.4%); 57.7% SWE-Bench Pro; 81.2% MMMU-Pro; most factual model (33% fewer false claims vs GPT-5.2); tool search reduces token usage 47% on MCP-heavy workflows
+- GPT-5.4: Excels at complex frontend development, spreadsheets, presentations, documents, and agentic browser workflows
+- GPT-5.3-Codex: Previous agentic coding leader (released February 5, 2026), 77.3% Terminal-Bench 2.0; coding strengths now incorporated into GPT-5.4
 - GPT-5.2: 400,000 token context window (3.1x larger than GPT-5.1)
-- Chat with images in context
-- Analyze and reason about images
+- Natively processes text, images, and voice together
 - Halved error rates in multimodal tasks (graph reasoning, interface navigation)
-- 38% fewer hallucinations than previous generation
 - More natural interaction across modalities
 
-**Best For:** Agentic coding workflows, general-purpose multimodal applications, processing large volumes of visual + text content
+**Best For:** Professional knowledge work requiring highest accuracy, agentic workflows across applications and websites (GPT-5.4 computer use), agentic coding (GPT-5.4 / GPT-5.3-Codex), processing massive volumes of visual + text content (1.05M context)
 
 ---
 
@@ -412,17 +407,17 @@ Video generation has matured but still has constraints:
 
 | **Modality** | **Task** | **Best Tools (2026)** | **Maturity** | **Cost** |
 |---|---|---|---|---|
-| **Text** | Generation, analysis | GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash/Pro | Very Mature | $ |
+| **Text** | Generation, analysis | GPT-5.4, GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash/Pro | Very Mature | $ |
 | **Image** | Generation | Nano Banana 2, GPT Image 1.5, Midjourney V7, SDXL | Very Mature | $ - $$ |
-| **Image** | Understanding | Gemini 3 Flash/Pro, GPT-5.3-Codex, Claude Opus 4.6 | Very Mature | $ |
+| **Image** | Understanding | GPT-5.4 (high-fidelity, computer use), Gemini 3 Flash/Pro, Claude Opus 4.6 | Very Mature | $ |
 | **Audio** | Speech-to-Text | Whisper, Google STT | Very Mature | $ |
 | **Audio** | Text-to-Speech | ElevenLabs V3, Fish Audio 4B, OpenAI | Very Mature | $ - $$ |
 | **Audio** | Music Generation | Suno, Udio, Stable Audio | Mature | $$ |
 | **Video** | Understanding | Gemini 3 Flash, Gemini 3 Pro | Mature | $ |
 | **Video** | Generation | Sora 2.0, Runway Gen-3/4, Pika 2.5, Veo 2 | Maturing | $$ - $$$ |
-| **Combined** | Multi-input/output | GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
+| **Combined** | Multi-input/output | GPT-5.4, Claude Opus 4.6, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
 
-> 📈 **March 2026 Progress:** The pace of multimodal AI releases continues accelerating. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extends context to 1M tokens with adaptive thinking, while OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks. March 3, 2026 added two new releases: OpenAI's GPT-5.3 Instant (26.8% fewer hallucinations, more direct conversational quality) and Google's Gemini 3.1 Flash-Lite (45% faster output, 2.5x faster time-to-first-token, $0.25/M input tokens — the fastest and most cost-efficient multimodal model in the Gemini 3 family).
+> 📈 **March 2026 Progress:** The pace of multimodal AI releases continues accelerating. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extends context to 1M tokens with adaptive thinking, while OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks. March 3, 2026 added OpenAI's GPT-5.3 Instant and Google's Gemini 3.1 Flash-Lite. March 5, 2026 brought OpenAI's GPT-5.4 — the first general-purpose model with native computer-use capabilities (75% OSWorld-Verified, surpassing human performance), 1.05M context window, 83% GDPval, and the title of most factual OpenAI model to date (33% fewer false claims vs GPT-5.2).
 
 ---
 
@@ -482,7 +477,7 @@ Video generation has matured but still has constraints:
 
 🖼️ **...generate images** → GPT Image 1.5 (4x faster, best editing), Midjourney (artistic), Stable Diffusion (control)
 
-👁️ **...analyze images** → Gemini 3 Flash (fastest + frontier performance), GPT-5.3-Codex (agentic coding), Claude Opus 4.6 (1M context + technical)
+👁️ **...analyze images** → GPT-5.4 (highest fidelity + computer use), Gemini 3 Flash (fastest + frontier performance), Claude Opus 4.6 (1M context + technical)
 
 🎤 **...transcribe audio** → Whisper (best accuracy), Google STT (real-time)
 
@@ -494,20 +489,20 @@ Video generation has matured but still has constraints:
 
 📹 **...analyze video** → Gemini 3 Flash (default, 3x faster), Gemini 3 Pro (highest performance)
 
-🌍 **...work across modalities** → Gemini 3 Flash (best value + speed), Gemini 3 Pro (record benchmarks), Claude Opus 4.6 (1M context + adaptive thinking), GPT-5.3-Codex (agentic coding)
+🌍 **...work across modalities** → GPT-5.4 (professional work + computer use + 1.05M context), Gemini 3 Flash (best value + speed), Gemini 3.1 Pro (record benchmarks), Claude Opus 4.6 (1M context + adaptive thinking)
 
 ---
 
 > 🎯 **Key Takeaway** (Updated March 2026)
 >
-> Multimodal AI reached new milestones in early 2026 with major releases in February and March:
+> Multimodal AI reached new milestones in early 2026 with major releases throughout February and March:
 >
 > **Current State:**
-> - **Text:** Very mature (GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.6, Gemini 3 Flash/Pro)
-> - **Images:** Very mature for generation and understanding
+> - **Text:** Very mature (GPT-5.4, GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.6, Gemini 3 Flash/Pro)
+> - **Images:** Very mature for generation and understanding; GPT-5.4 brings highest-fidelity vision (10.24M pixel support)
 > - **Audio:** Very mature for speech, mature for music
 > - **Video:** Maturing rapidly - 2025-2026 brought massive improvements
-> - **Combined:** Very mature (models now feature 1M context, adaptive thinking, agentic capabilities)
+> - **Combined:** Very mature (models now feature 1M+ context, adaptive thinking, native computer use)
 >
 > **February 2026 Releases:**
 > - **Claude Opus 4.6** (Feb 5): 1M token context, adaptive thinking, 68.8% ARC AGI 2, agent teams
@@ -516,7 +511,8 @@ Video generation has matured but still has constraints:
 >
 > **March 2026 Releases:**
 > - **GPT-5.3 Instant** (Mar 3): Everyday conversational quality, 26.8% fewer hallucinations in high-stakes domains, more direct responses without defensive preambles
-> - **Gemini 3.1 Flash-Lite** (Mar 3): Fastest, most cost-efficient Gemini 3 model — 45% faster output, 2.5x faster TTFT, 1M context, $0.25/M input tokens; beats GPT-5 mini and Claude 4.5 Haiku on 6 of 11 benchmarks
+> - **Gemini 3.1 Flash-Lite** (Mar 3): Fastest, most cost-efficient Gemini 3 model — 45% faster output, 2.5x faster TTFT, 1M context, $0.25/M input tokens
+> - **GPT-5.4** (Mar 5): OpenAI's most capable frontier model — 1.05M context, native computer use (75% OSWorld-Verified, surpasses humans at 72.4%), 83% GDPval, 33% fewer false claims, tool search, 81.2% MMMU-Pro visual reasoning
 >
 > **Practical Guidance:**
 > - **For generation:**
@@ -524,16 +520,17 @@ Video generation has matured but still has constraints:
 >   - Voice: ElevenLabs V3 (best quality), Fish Audio 4B (#1 leaderboard)
 >   - Video: Sora 2.0 (premium), Runway Gen-3/4 (creative), Pika 2.5 (value)
 > - **For understanding:**
+>   - Best professional + computer use: GPT-5.4 (83% GDPval, native computer use, 1.05M context)
 >   - Best everyday chat: GPT-5.3 Instant (reduced hallucinations, direct responses)
 >   - Best value + speed: Gemini 3.1 Flash-Lite (fastest + affordable at $0.25/M input)
 >   - Best frontier value: Gemini 3 Flash (frontier performance + affordable)
 >   - Best multimodal: Gemini 3.1 Pro (#1 ARC-AGI-2, 80.6% SWE-bench, all modalities)
->   - Largest context: Claude Opus 4.6 (1M tokens + adaptive thinking)
->   - Best agentic coding: GPT-5.3-Codex (77.3% Terminal-Bench + 25% faster)
+>   - Largest context: GPT-5.4 (1.05M tokens) / Claude Opus 4.6 (1M tokens + adaptive thinking)
+>   - Best agentic coding: GPT-5.4 (57.7% SWE-Bench Pro) / GPT-5.3-Codex (77.3% Terminal-Bench)
 >   - Best reasoning: Claude Opus 4.6 (68.8% ARC AGI 2)
 >
 > **The March 2026 Reality:**
-> Multimodal AI continues accelerating. Claude Opus 4.6 extends context to 1 million tokens with adaptive thinking. GPT-5.3-Codex leads agentic coding (77.3% Terminal-Bench). GPT-5.3 Instant improves everyday conversations with dramatically fewer hallucinations. Google's Gemini 3.1 Flash-Lite brings the fastest and cheapest multimodal option to date. These advances signal AI that seamlessly processes text, images, audio, and video with human-level reasoning and execution.
+> Multimodal AI continues accelerating. GPT-5.4 redefines the frontier with native computer use (surpassing human performance on OSWorld), a 1.05M context window, and the highest professional knowledge work scores yet. Claude Opus 4.6 leads on long-context reasoning. Google's Gemini 3.1 Flash-Lite brings the fastest and cheapest multimodal option. These advances signal AI that seamlessly processes text, images, audio, and video while operating computers autonomously.
 >
 > **What's Next (2026 Trends):**
 > - Even larger context windows (beyond 1M tokens)
@@ -542,4 +539,4 @@ Video generation has matured but still has constraints:
 > - Adaptive reasoning across all modalities
 > - Even higher benchmark scores and more affordable pricing
 >
-> **Remember:** Every modality is production-ready. Gemini 3.1 Flash-Lite for highest speed and lowest cost, Gemini 3 Flash for best frontier value, Claude Opus 4.6 for massive context and reasoning, GPT-5.3-Codex for agentic coding, GPT-5.3 Instant for everyday chat quality, Gemini 3.1 Pro for record multimodal performance, GPT Image 1.5 for fast image generation. Match the modality and tool to the task for optimal results.
+> **Remember:** Every modality is production-ready. GPT-5.4 for professional work, computer use, and highest-fidelity vision; Gemini 3.1 Flash-Lite for highest speed and lowest cost; Gemini 3 Flash for best frontier value; Claude Opus 4.6 for massive context and reasoning; GPT-5.3 Instant for everyday chat quality; Gemini 3.1 Pro for record multimodal performance; GPT Image 1.5 for fast image generation. Match the modality and tool to the task for optimal results.
