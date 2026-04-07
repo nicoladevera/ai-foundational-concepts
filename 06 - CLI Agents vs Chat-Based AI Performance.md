@@ -76,7 +76,7 @@ CLI agents can directly interact with your computer's files and programs. Chat-b
 ### What This Means
 **Parallel** = Doing multiple things simultaneously. CLI agents can perform multiple operations at once. Chat apps require sequential manual work.
 
-> ⚡ **Parallelism = massive speedup:** When CLI agents can do 5 things simultaneously, they collapse 10 minutes of sequential back-and-forth into 30 seconds of parallel execution.
+> ⚡ **Parallelism = massive speedup:** When CLI agents can do 5 things simultaneously, they collapse 10 minutes of sequential back-and-forth into 30 seconds of parallel execution. This is increasingly powered by high-efficiency models like **GPT-5.4 mini/nano** and **Claude 4.5 Haiku**, which offer near-frontier reasoning at 2-5x the speed of flagship models.
 
 ---
 
@@ -85,7 +85,7 @@ CLI agents can directly interact with your computer's files and programs. Chat-b
 ### What This Means
 **Iteration** = Try, check if it worked, adjust, try again. CLI agents can test their own work and fix mistakes independently.
 
-> 🔄 **Iteration without friction:** Debugging often requires 5-10 attempts. With chat, that's 5-10 rounds of copy-paste-run-report (20+ minutes). With CLI agents, it's autonomous (2-3 minutes total).
+> 🔄 **Iteration without friction:** Debugging often requires 5-10 attempts. With chat, that's 5-10 rounds of copy-paste-run-report (20+ minutes). With CLI agents, it's autonomous (2-3 minutes total). Modern models like **Claude 4.5 Haiku (73.3% SWE-bench Verified)** and **GPT-5.4 mini (54.4% SWE-bench Pro)** are specifically designed to iterate through these cycles with extremely high reliability.
 
 ---
 

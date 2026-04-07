@@ -19,8 +19,10 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## OpenAI (GPT Family)
 
 ### Models
-- **GPT-5.4** - Latest frontier model for professional work; merges coding, reasoning, and knowledge work; native computer use; 1.05M context (released March 5, 2026)
+- **GPT-5.4** - Latest flagship model for professional work; merges coding, reasoning, and knowledge work; native computer use; 1.05M context (released March 5, 2026)
 - **GPT-5.4 Pro** - Maximum performance tier for the most complex tasks (released March 5, 2026)
+- **GPT-5.4 mini** - High-efficiency frontier model; 2x faster than GPT-5 mini; 54.4% SWE-bench Pro; 400k context (released March 17, 2026)
+- **GPT-5.4 nano** - Fastest and most affordable OpenAI model series; 52.4% SWE-bench Pro; optimized for subagents; 400k context (released March 17, 2026)
 - **GPT-5.3 Instant** - Everyday conversational model focused on directness and reduced hallucinations (released March 3, 2026)
 - **GPT-5.2** - Previous flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
 - **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning *(legacy — available until June 3, 2026)*
@@ -42,7 +44,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Large output capacity** - 128,000 token output limit
 - **Industry-leading professional knowledge work** - GPT-5.4 achieves 83% on GDPval (matching or exceeding professionals in 83% of comparisons across 44 occupations), up from GPT-5.2's 70.9%
 - **Native computer use** - GPT-5.4 is OpenAI's first general-purpose model with native computer-use capabilities; 75.0% OSWorld-Verified (surpasses human performance at 72.4%); 67.3% WebArena-Verified
-- **State-of-the-art coding** - GPT-5.4 achieves 57.7% SWE-Bench Pro and 75.1% Terminal-Bench 2.0, matching or outperforming GPT-5.3-Codex
+- **State-of-the-art coding** - GPT-5.4 achieves 57.7% SWE-Bench Pro and 75.1% Terminal-Bench 2.0; **GPT-5.4 mini and nano** achieve 54.4% and 52.4% SWE-Bench Pro respectively, surpassing previous standard flagships.
 - **Most factual model yet** - GPT-5.4 individual claims are 33% less likely to be false vs GPT-5.2; full responses 18% less likely to contain errors
 - **Superior web research** - GPT-5.4 achieves 82.7% BrowseComp (+17% abs over GPT-5.2); GPT-5.4 Pro sets new SOTA at 89.3%
 - **Tool search** - New capability that reduces token usage by 47% on MCP-heavy workflows; agents can work across much larger tool ecosystems efficiently
@@ -66,7 +68,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ### Pricing (as of March 2026)
 - GPT-5.4: $2.50 input / $0.25 cached / $15.00 output per million tokens (API: `gpt-5.4`)
 - GPT-5.4 Pro: $30.00 input / $180.00 output per million tokens (API: `gpt-5.4-pro`)
-  - Note: prompts >272K input tokens billed at 2x input, 1.5x output for the full session
+- GPT-5.4 mini: $0.75 input / $4.50 output per million tokens (API: `gpt-5.4-mini`)
+- GPT-5.4 nano: $0.20 input / $1.25 output per million tokens (API: `gpt-5.4-nano`)
 - GPT-5.3 Instant: Available via ChatGPT and API as `gpt-5.3-chat-latest`
 - GPT-5.2 Thinking: $1.75 input / $14 output per million tokens *(legacy — retiring June 5, 2026)*
 - GPT-5.2 Pro: $21 input / $168 output per million tokens
@@ -87,7 +90,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Claude Opus 4.1** - Previous flagship coding model (released August 2025)
 - **Claude Opus 4** - Flagship with extended thinking (released May 2025)
 - **Claude Sonnet 4** - Balanced performance (released May 2025)
-- **Claude Haiku 4.5** - Fast, efficient for simple tasks (released October 2025)
+- **Claude Haiku 4.5** - High-efficiency "coding powerhouse"; 73.3% SWE-bench Verified; matches earlier Sonnet models in capability (released October 15, 2025)
 - **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.6)
 - **Claude Haiku 3.5** - *Deprecated* (upgrade to Haiku 4.5)
 
@@ -107,7 +110,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Extended thinking with tools** - Can use web search, file access during reasoning
 - **Superior memory** - Maintains continuity and builds knowledge over time
 - **Safety-focused** - Less likely to produce harmful content
-- **Excellent instruction-following** - More compliant, precise execution
+- **World's best high-efficiency coding** - Haiku 4.5 achieves 73.3% on SWE-bench Verified, outperforming many flagship models from previous generations
+- **Superior instruction-following** - More compliant, precise execution
 - **Price reduction** - 67% price drop from previous Opus pricing (maintained with 4.6)
 
 ### Best For
@@ -125,7 +129,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
 - Claude Sonnet 4.6: $3/$15 per million tokens (same as Sonnet 4.5, near-Opus performance)
 - Claude Sonnet 4/4.5: ~$3-15 per million tokens
-- Claude Haiku 4.5: ~$0.25-1.25 per million tokens
+- Claude Haiku 4.5: $1.00/$5.00 per million tokens (extremely high performance-per-dollar)
 
 ---
 
@@ -295,8 +299,10 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 | **Provider** | **Speed/Cost Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
-| OpenAI | GPT-5.3 Instant | Everyday conversational quality, 26.8% fewer hallucinations, direct responses (released March 3, 2026) | 400k tokens | $ | No |
-| Google | Gemini 3.1 Flash-Lite | Fastest Gemini 3 model (45% faster output, 2.5x faster TTFT), outperforms GPT-5 mini and Claude 4.5 Haiku on 6/11 benchmarks (released March 3, 2026) | 1M tokens input, 64k output | $ ($0.25/$1.50 per M tokens) | No |
+| OpenAI | GPT-5.4 mini | 54.4% SWE-bench Pro, 2x faster than GPT-5 mini, supports computer use (released March 17, 2026) | 400k tokens | $ ($0.75/$4.50) | No |
+| OpenAI | GPT-5.4 nano | Fastest OpenAI model, 52.4% SWE-bench Pro, optimized for subagents (released March 17, 2026) | 400k tokens | $ ($0.20/$1.25) | No |
+| Anthropic | Claude 4.5 Haiku | 73.3% SWE-bench Verified (highest in class), coding powerhouse, near-Sonnet intelligence | 200k tokens | $ ($1.00/$5.00) | No |
+| Google | Gemini 3.1 Flash-Lite | Fastest Gemini 3 model (45% faster output), outperforms 3.0 models on reasoning | 1M tokens input, 64k output | $ ($0.25/$1.50) | No |
 
 ---
 
