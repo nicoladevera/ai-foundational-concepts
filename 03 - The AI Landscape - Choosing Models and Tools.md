@@ -1,387 +1,370 @@
 # The AI Landscape: Choosing Models and Tools
 
-**Learning goal:** Navigate the AI ecosystem confidently - choosing the right models, tools, and providers for your specific needs.
+Last updated: April 2026
+
+**Learning goal:** Navigate the current AI ecosystem without getting trapped by hype, stale recommendations, or provider marketing.
 
 ---
 
-# Understanding the AI Ecosystem
+# How to Read This Page
 
-## The Current State
+This chapter is intentionally more time-sensitive than the rest of the repo.
 
-The AI landscape has matured significantly in 2025. Major providers now offer frontier models with advanced reasoning, multimodal understanding, and context windows reaching 1 million tokens. This guide helps you navigate the dozens of large language models, hundreds of specialized AI tools, and emerging capabilities to make informed decisions.
+Use it for:
+- a current snapshot of the market
+- rough provider positioning
+- practical selection guidance
 
-> 🗺️ **Why this matters:** Choosing the wrong AI tool is like using a sledgehammer for brain surgery - expensive, ineffective, and potentially damaging. Understanding the landscape helps you match tools to tasks, avoid overpaying, and get better results.
+Do not treat it as timeless:
+- model availability changes
+- product names change
+- pricing changes
+- benchmark leadership changes
 
----
-
-# Major LLM Providers
-
-## OpenAI (GPT Family)
-
-### Models
-- **GPT-5.4** - Latest flagship model for professional work; merges coding, reasoning, and knowledge work; native computer use; 1.05M context (released March 5, 2026)
-- **GPT-5.4 Pro** - Maximum performance tier for the most complex tasks (released March 5, 2026)
-- **GPT-5.4 mini** - High-efficiency frontier model; 2x faster than GPT-5 mini; 54.4% SWE-bench Pro; 400k context (released March 17, 2026)
-- **GPT-5.4 nano** - Fastest and most affordable OpenAI model series; 52.4% SWE-bench Pro; optimized for subagents; 400k context (released March 17, 2026)
-- **GPT-5.3 Instant** - Everyday conversational model focused on directness and reduced hallucinations (released March 3, 2026)
-- **GPT-5.2** - Previous flagship model, "most capable model series yet for professional knowledge work" (released December 11, 2025)
-- **GPT-5.2 Instant** - Fast, capable workhorse for everyday work and learning *(legacy — available until June 3, 2026)*
-- **GPT-5.2 Thinking** - Designed for deeper work and complex tasks with enhanced reasoning *(legacy — available until June 5, 2026)*
-- **GPT-5.2 Pro** - Smartest and most trustworthy option for difficult questions requiring highest quality
-- **GPT-5.1** - Previous flagship with adaptive reasoning (released November 12-13, 2025)
-- **GPT-5.1 Instant** - Warmer, more conversational variant
-- **GPT-5.1 Thinking** - Enhanced reasoning mode with dynamic thinking time
-- **GPT-4o** - Multimodal predecessor, still widely used
-- **GPT-4 Turbo** - Faster, cheaper variant
-- **GPT-3.5** - Older, budget-friendly option
-- **DALL-E 3** - Image generation
-- **Whisper** - Speech-to-text
-- **GPT-5.3-Codex** - Agentic coding model, coding strengths now incorporated into GPT-5.4 (released February 5, 2026)
-- **GPT-5.2-Codex** - Agentic coding model optimized for Codex (released December 18, 2025)
-
-### Strengths
-- **Expanded context window** - GPT-5.4 supports 1,050,000 tokens (1.05M) — a major leap from GPT-5.2's 400k; can now ingest massive codebases, lengthy research corpora, or entire enterprise document sets
-- **Large output capacity** - 128,000 token output limit
-- **Industry-leading professional knowledge work** - GPT-5.4 achieves 83% on GDPval (matching or exceeding professionals in 83% of comparisons across 44 occupations), up from GPT-5.2's 70.9%
-- **Native computer use** - GPT-5.4 is OpenAI's first general-purpose model with native computer-use capabilities; 75.0% OSWorld-Verified (surpasses human performance at 72.4%); 67.3% WebArena-Verified
-- **State-of-the-art coding** - GPT-5.4 achieves 57.7% SWE-Bench Pro and 75.1% Terminal-Bench 2.0; **GPT-5.4 mini and nano** achieve 54.4% and 52.4% SWE-Bench Pro respectively, surpassing previous standard flagships.
-- **Most factual model yet** - GPT-5.4 individual claims are 33% less likely to be false vs GPT-5.2; full responses 18% less likely to contain errors
-- **Superior web research** - GPT-5.4 achieves 82.7% BrowseComp (+17% abs over GPT-5.2); GPT-5.4 Pro sets new SOTA at 89.3%
-- **Tool search** - New capability that reduces token usage by 47% on MCP-heavy workflows; agents can work across much larger tool ecosystems efficiently
-- **Token efficiency** - GPT-5.4 solves problems with significantly fewer tokens than GPT-5.2, reducing cost and improving speed
-- **Self-building AI** - GPT-5.3-Codex was the first OpenAI model that helped debug its own training; GPT-5.4 incorporates those capabilities
-- **Improved everyday quality** - GPT-5.3 Instant reduces hallucinations by 26.8% in high-stakes domains (medicine, law, finance) and delivers more direct, natural responses without defensive preambles
-- **Advanced visual perception** - GPT-5.4 achieves 81.2% MMMU-Pro; new `original` image detail level supports up to 10.24M pixels for high-fidelity analysis
-- **Multimodal** - Native text, image, and audio understanding
-- **Largest ecosystem** - Most third-party integrations and tools
-- **Knowledge cutoff** - August 31, 2025
-
-### Best For
-- Professional knowledge work requiring highest accuracy (83% GDPval with GPT-5.4)
-- Processing massive codebases, lengthy research, or enterprise documentation (1.05M context with GPT-5.4)
-- Complex reasoning, coding, and structured work
-- Computer use and agentic workflows across applications and websites (GPT-5.4)
-- Tasks requiring minimal hallucinations and maximum factual reliability
-- General-purpose applications with broad requirements
-- Prototyping (extensive ecosystem support)
-
-### Pricing (as of March 2026)
-- GPT-5.4: $2.50 input / $0.25 cached / $15.00 output per million tokens (API: `gpt-5.4`)
-- GPT-5.4 Pro: $30.00 input / $180.00 output per million tokens (API: `gpt-5.4-pro`)
-- GPT-5.4 mini: $0.75 input / $4.50 output per million tokens (API: `gpt-5.4-mini`)
-- GPT-5.4 nano: $0.20 input / $1.25 output per million tokens (API: `gpt-5.4-nano`)
-- GPT-5.3 Instant: Available via ChatGPT and API as `gpt-5.3-chat-latest`
-- GPT-5.2 Thinking: $1.75 input / $14 output per million tokens *(legacy — retiring June 5, 2026)*
-- GPT-5.2 Pro: $21 input / $168 output per million tokens
-- GPT-5.2 Instant: Legacy model — available to paid users until June 3, 2026
-- GPT-5.1: ~$22-52 per million tokens (still available)
-- GPT-4o: ~$25-50 per million tokens
-- GPT-3.5: ~$0.50-1.50 per million tokens
+For current decisions, always confirm against the provider's official docs.
 
 ---
 
-## Anthropic (Claude Family)
+# The Current State of the Market
 
-### Models
-- **Claude Opus 4.7** - Current flagship; 1 million token context, adaptive thinking, stronger agentic coding and high-resolution vision than Opus 4.6 (released April 16, 2026); API `claude-opus-4-7`
-- **Claude Opus 4.6** - Previous Opus flagship; 1 million token context and adaptive thinking (released February 5, 2026); still available
-- **Claude Sonnet 4.6** - Near-Opus performance at Sonnet pricing, default model on claude.ai (released February 17, 2026)
-- **Claude Opus 4.5** - Most powerful model, "best in the world for coding, agents, and computer use" (released November 24, 2025)
-- **Claude Sonnet 4.5** - Balanced performance with long autonomous runtime (released September 2025)
-- **Claude Opus 4.1** - Previous flagship coding model (released August 2025)
-- **Claude Opus 4** - Flagship with extended thinking (released May 2025)
-- **Claude Sonnet 4** - Balanced performance (released May 2025)
-- **Claude Haiku 4.5** - High-efficiency "coding powerhouse"; 73.3% SWE-bench Verified; matches earlier Sonnet models in capability (released October 15, 2025)
-- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.7)
-- **Claude Haiku 3.5** - *Deprecated* (upgrade to Haiku 4.5)
+As of April 2026, the frontier has a few clear patterns:
 
-### Strengths
-- **Current Opus flagship (4.7)** - Anthropic's most capable generally available model as of April 2026: improved long-horizon agentic coding, higher-resolution image understanding (up to ~2576px on the long edge), and sharper instruction-following than Opus 4.6; same $5/$25 pricing; maintains 1M context and 128k max output
-- **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
-- **Massive 1 million token context** - Opus 4.6 extended context from 200k to 1 million tokens with 128,000 token output; Opus 4.7 keeps the same window
-- **Adaptive thinking** - Introduced with Opus 4.6; adjusts effort based on prompt complexity (Opus 4.7 continues with adaptive thinking)
-- **Record reasoning performance (Opus 4.6)** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2)
-- **Near-Opus performance at Sonnet cost** - Sonnet 4.6 achieves 79.6% SWE-bench Verified, 72.5% OSWorld, and 58.3% ARC-AGI-2 at $3/$15/M tokens (vs Opus 4.6's $5/$25/M tokens)
-- **Enhanced agentic capabilities (Opus 4.6)** - Opus 4.6 scores 65.4% on Terminal-Bench (up from 59.8%) and 72.7% on OSWorld (up from 66.3%)
-- **Superior long-context retrieval (Opus 4.6)** - Opus 4.6 achieves 76% on MRCR v2 benchmark (vs 18.5% for Sonnet 4.5)
-- **Enterprise knowledge work leadership (Opus 4.6)** - Opus 4.6 outperforms GPT-5.2 by 144 Elo points on GDPval-AA
-- **Agent teams** - Claude Code with Opus 4.7 / 4.6 enables parallel task execution
-- **Top performance on engineering tests** - Scored higher than any human candidate on Anthropic's performance engineer exam
-- **Knowledge cutoff** - Opus 4.7: reliable knowledge through January 2026 (training data through January 2026 per Anthropic); older Claude 4 variants vary
-- **Hybrid reasoning** - Near-instant responses or extended thinking modes
-- **Extended thinking with tools** - Can use web search, file access during reasoning
-- **Superior memory** - Maintains continuity and builds knowledge over time
-- **Safety-focused** - Less likely to produce harmful content
-- **World's best high-efficiency coding** - Haiku 4.5 achieves 73.3% on SWE-bench Verified, outperforming many flagship models from previous generations
-- **Superior instruction-following** - More compliant, precise execution
-- **Price reduction** - 67% price drop from previous Opus pricing (maintained with Opus 4.6 and 4.7)
+- Closed frontier models from OpenAI, Anthropic, and Google dominate general-purpose cloud usage
+- Open-weight families from Meta, Mistral, and others remain important for self-hosting, privacy, and custom deployment
+- Tool use now matters as much as raw model quality for many real workloads
+- Multimodal capability is no longer niche; text-plus-image is normal, and audio/video support is expanding quickly
+- Product availability differs by surface: API, web app, enterprise plan, and coding-agent product often expose different models or limits
 
-### Best For
-- Complex coding projects and software development (industry-leading SWE-bench performance)
-- Agentic workflows and computer use tasks with parallel execution
-- Extra-long documents and massive codebases (1M token context with Opus 4.7 / 4.6)
-- Complex reasoning tasks requiring adaptive thinking
-- Enterprise knowledge work requiring highest accuracy (144 Elo advantage over GPT-5.2)
-- When you need precise instruction-following
-- Enterprises prioritizing safety and reliability
-- Teams requiring strong recency (Opus 4.7: knowledge through January 2026)
+The right question is usually not:
+- "Which model is best?"
 
-### Pricing (as of March 2026)
-- Claude Opus 4.7: $5/$25 per million tokens (same as 4.6; API `claude-opus-4-7`)
-- Claude Opus 4.6: $5/$25 per million tokens (same as 4.5)
-- Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
-- Claude Sonnet 4.6: $3/$15 per million tokens (same as Sonnet 4.5, near-Opus performance)
-- Claude Sonnet 4/4.5: ~$3-15 per million tokens
-- Claude Haiku 4.5: $1.00/$5.00 per million tokens (extremely high performance-per-dollar)
+It is:
+- "Which model and interface fit this workflow, budget, and risk profile?"
 
 ---
 
-## Google (Gemini Family)
+# The Main Provider Buckets
 
-### Models
-- **Gemini 3.1 Flash-Lite** - Fastest, most cost-efficient model in the Gemini 3 series, optimized for high-volume developer workloads (released March 3, 2026)
-- **Gemini 3.1 Pro** - Latest flagship, #1 ARC-AGI-2 reasoning (77.1%), dynamic thinking (released February 19, 2026)
-- **Gemini 3 Pro** - Previous flagship, "best model in the world for multimodal understanding" (released November 18, 2025)
-- **Gemini 3 Flash** - Frontier intelligence built for speed, default model in Gemini app (released December 17, 2025)
-- **Gemini 3 Deep Think** - Enhanced reasoning mode for complex tasks
-- **Gemini 2.5 Pro** - Previous generation with thinking capabilities
-- **Gemini 2.5 Flash** - Fast, efficient variant
-- **Gemini Nano** - Runs on-device (phones, edge devices)
+## 1. Frontier General-Purpose Cloud Models
 
-### Strengths
-- **World-leading reasoning** - Gemini 3.1 Pro achieves 77.1% ARC-AGI-2 (surpassing all frontier models), up from Gemini 3 Pro's 31.1%
-- **Best-in-class coding** - Gemini 3.1 Pro achieves 80.6% SWE-Bench Verified, 68.5% Terminal-Bench 2.0
-- **Agentic web research** - 85.9% on BrowseComp (up from 59.2% for Gemini 3 Pro)
-- **Adaptive reasoning** - Dynamic thinking with new thinking_level parameter (low/medium/high/max)
-- **Highest LMArena ranking** - Gemini 3 Pro achieved 1501 Elo, first model to surpass 1500
-- **Best multimodal understanding** - Designed from scratch for text, images, audio, video
-- **Record benchmark scores** - Industry-leading performance across multiple benchmarks
-- **Gemini 3 Flash performance** - Outperforms 2.5 Pro while being 3x faster at a fraction of the cost
-- **Agentic coding excellence** - Gemini 3 Flash achieves 78% on SWE-bench Verified
-- **PhD-level reasoning** - Gemini 3 Flash scores 90.4% on GPQA Diamond, 81.2% on MMMU-Pro
-- **Deep Think mode** - Enhanced reasoning with extended thinking capabilities
-- **Largest context window** - 1 million tokens input, 65,536 tokens output (11 hours audio, 1 hour video)
-- **Gemini 3.1 Flash-Lite speed** - 45% faster output and 2.5x faster time-to-first-token vs Gemini 2.5 Flash; tunable thinking levels (low/medium/high/max)
-- **Gemini 3.1 Flash-Lite benchmark edge** - Outperforms GPT-5 mini and Claude 4.5 Haiku on 6 of 11 benchmarks including GPQA Diamond
-- **Advanced visual reasoning** - Code execution to zoom, count, and edit visual inputs
-- **Top web development** - #1 on WebDev Arena leaderboard
-- **Native audio output** - Dialogue with customizable tone, accent, speaking style
-- **Google integration** - Deep ties to Google services and products, including Search (day-one rollout)
-- **Competitive pricing** - Highly affordable across model tiers, from $0.25/M tokens (Flash-Lite) to $2/M tokens (3.1 Pro)
-- **Free tier** - Generous free usage in Google AI Studio
-- **New coding platform** - Google Antigravity for agentic development
+These are the default starting point for most teams that want strong quality with minimal infrastructure.
 
-### Best For
-- Multimodal tasks combining text, images, audio, and video
-- When you need the highest benchmark performance (Gemini 3.1 Pro)
-- Fast, complex agentic workflows with frontier-level reasoning (Gemini 3 Flash)
-- High-volume workloads needing maximum speed and lowest cost (Gemini 3.1 Flash-Lite)
-- Translation, content moderation, code generation, and UI creation at scale (Gemini 3.1 Flash-Lite)
-- Exploring vast datasets (1M token context)
-- Complex reasoning requiring deep thinking
-- Agentic coding and software development (78% SWE-bench Verified)
-- Web development and app generation
-- Google Workspace integration
-- Cost-conscious deployments (Gemini 3.1 Flash-Lite at $0.25/M input tokens)
-- Prototyping (generous free tier)
+### OpenAI
 
-### Pricing (as of March 2026)
-- Gemini 3.1 Flash-Lite: $0.25/$1.50 per million tokens (fastest, most cost-efficient; preview via Google AI Studio and Vertex AI)
-- Gemini 3.1 Pro: $2/$12 per million tokens (same as Gemini 3 Pro)
-- Gemini 3 Pro: $2/$12 per million tokens (highly competitive pricing)
-- Gemini 3 Flash: $0.50/$3.00 per million tokens (frontier performance at fraction of cost)
-- Gemini 2.5 Flash: $0.30/$2.50 per million tokens
-- Gemini 2.5 Pro: Included in Google AI Pro ($20/month) and AI Ultra ($30/month) subscriptions
+Current positioning:
+- Strong flagship for complex reasoning, coding, professional workflows, and computer use
+- Strong small-model tier for cost-sensitive coding, tool use, and subagent patterns
+- Broadest mainstream ecosystem across ChatGPT, API, and coding products
 
----
+Useful April 2026 reference points:
+- `gpt-5.4` is OpenAI's flagship for reasoning, coding, and agentic workflows
+- `gpt-5.4-mini` and `gpt-5.4-nano` are the smaller cost and latency tiers
+- `gpt-5.3-chat-latest` is the API alias for the GPT-5.3 Instant chat model
 
-## Meta (Llama Family)
+What OpenAI is especially strong at:
+- coding workflows
+- tool-heavy agent systems
+- computer use
+- document and spreadsheet-style knowledge work
 
-### Models
-- **Llama 4 Scout** - 109B total parameters, 17B active, 10M token context
-- **Llama 4 Maverick** - 400B total parameters, 17B active, 1M token context
-- **Llama 4 Behemoth** - ~2T total parameters, 288B active (in training)
+Important caveat:
+- ChatGPT and API availability are not the same. For example, GPT-4o and several older ChatGPT models were retired from ChatGPT on February 13, 2026, while remaining available in the API.
 
-### Strengths
-- **Open-source** - Completely free to download, use, and modify
-- **First open-source MoE architecture** - Mixture-of-experts design in Llama family
-- **Multimodal** - Analyzes and understands text, images, and video
-- **Massive training data** - Trained on 30+ trillion tokens (2x Llama 3)
-- **Multilingual** - Supports 12 languages
-- **Extreme context windows** - Up to 10M tokens (Scout variant)
-- **Customizable** - Fine-tune without restrictions
-- **Privacy** - Run entirely on your infrastructure
+### Anthropic
 
-### Best For
-- Privacy-sensitive applications
-- High-volume usage (economics favor self-hosting)
-- Deep customization and fine-tuning
-- Research and experimentation
-- On-premise deployment requirements
-- Long-context applications (10M tokens)
+Current positioning:
+- Strong for long-horizon coding, document-heavy work, agentic execution, and instruction-following
+- Especially strong when large context and stable behavior matter
 
-### Pricing
-- Free (open-source license)
-- Compute costs: Cloud GPUs ~$1-8/hour depending on model size
+Useful April 2026 reference points:
+- Claude Opus 4.7 is the current generally available Opus flagship
+- Claude Sonnet 4.6 is the default Sonnet-tier recommendation for many users
+- Claude 4.5 Haiku remains the fast, lower-cost tier
+
+What Anthropic is especially strong at:
+- long-context reasoning
+- coding agents
+- instruction adherence
+- enterprise document workflows
+
+Important caveat:
+- Sonnet 4.6's 1M-token context window is described by Anthropic as beta, so teams should confirm current limits in the exact interface they plan to use.
+
+### Google
+
+Current positioning:
+- Strong multimodal stack
+- Strong value tiers
+- Tight integration with Google products and developer tools
+
+Useful April 2026 reference points:
+- Gemini 3.1 Pro for harder reasoning-heavy tasks
+- Gemini 3 Flash for high capability with speed
+- Gemini 3.1 Flash-Lite for low-cost, high-volume workloads
+- Nano Banana 2 for fast image generation and editing
+
+What Google is especially strong at:
+- multimodal workflows
+- cost-effective high-volume deployments
+- audio and live voice experiences
+- integration with Workspace-adjacent and Google-native workflows
 
 ---
 
-## Mistral AI
+## 2. Open-Weight and Self-Hosted Options
 
-### Models
-- **Magistral Medium** - Reasoning model with chain-of-thought (released June 2025)
-- **Magistral Small** - Open-source reasoning model (released June 2025)
-- **Mistral Medium 3** - Efficiency-focused model (released May 2025)
-- **Mistral Large 24.11** - 123B parameter flagship
-- **Codestral 25.01** - Code-specialized model
+These matter when privacy, customization, or volume economics outweigh absolute frontier performance.
 
-### Strengths
-- **Reasoning capabilities** - New Magistral models feature chain-of-thought
-- **Exceptional efficiency** - Medium 3 performs at 90% of Claude Sonnet 3.7 for 8x lower cost
-- **European alternative** - EU data residency and GDPR compliance
-- **Competitive pricing** - Best performance-per-dollar in market
-- **Open models available** - Mixtral and Magistral Small are open-source
+### Meta (Llama Family)
 
-### Best For
-- European customers requiring GDPR compliance
-- Cost-conscious applications needing strong performance
-- When you want open-source with commercial support
-- Reasoning tasks (Magistral models)
-- Efficiency-critical deployments
+Current positioning:
+- Major open-weight family for self-hosting and customization
+- Llama 4 introduced native multimodality and mixture-of-experts designs into the family
 
----
+Useful April 2026 reference points:
+- Llama 4 Scout
+- Llama 4 Maverick
 
-# Open-Source vs. Closed-Source
+What Meta is especially strong at:
+- self-hosted deployments
+- ecosystem support
+- fine-tuning and customization
+- long-context experimentation
 
-## Closed-Source Models (OpenAI, Anthropic, Google)
+Important wording:
+- Llama 4 is better described as **open-weight under the Llama Community License**, not as traditional open-source software.
 
-### Advantages
-- Easier to use - API call, no infrastructure needed
-- State-of-the-art performance - Generally most capable
-- Managed service - Scaling, uptime handled for you
-- Regular updates - Models improve over time
+### Mistral
 
-### Disadvantages
-- Ongoing costs - Pay per use
-- Privacy concerns - Data sent to third parties
-- Vendor lock-in - Dependent on provider
-- Limited customization - Can't modify model behavior deeply
+Current positioning:
+- Strong European vendor with both hosted and open-weight offerings
+- Good fit for teams that want a mix of performance, deployment flexibility, and EU alignment
 
-> 🔒 **When to choose closed-source:** If you need the best performance, want minimal setup, and privacy isn't a blocker. Most businesses start here for speed and ease of use.
+Useful April 2026 reference points from current docs:
+- Mistral Large 3
+- Mistral Medium 3.1
+- Mistral Small 4
+- Devstral 2
+- Magistral Medium 1.2 and Magistral Small 1.2
 
----
-
-## Open-Source Models (Llama, Mistral, Falcon)
-
-### Advantages
-- Privacy - Run entirely on your infrastructure
-- Customizable - Fine-tune without restrictions
-- No usage limits - Run as much as you want
-- One-time costs - Pay for compute, not API calls
-- Transparency - Can inspect how model works
-
-### Disadvantages
-- Infrastructure required - Need servers/GPUs
-- Technical complexity - Setup, maintenance, optimization
-- Compute costs - Can be expensive at scale
-- Generally less capable - Behind closed-source frontier models
-
-> 🛠️ **When to choose open-source:** If you have high usage volumes, strict privacy requirements, need deep customization, or want to avoid vendor lock-in. Requires technical capability.
+What Mistral is especially strong at:
+- open-weight multimodal options
+- code-agent focused offerings
+- EU-based vendor preference
+- teams that want more deployment choice than the biggest U.S. platforms provide
 
 ---
 
-# Model Comparison Table (March 2026)
+# A Better Way to Compare Models
 
-| **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
-|---|---|---|---|---|---|
-| OpenAI | GPT-5.4 | 83% GDPval, native computer use (75% OSWorld, surpasses humans), 1.05M context, most factual model (33% fewer false claims) | 1.05M tokens | $$ ($2.50/$15 per M tokens) | No |
-| Anthropic | Claude Opus 4.7 | Current flagship; adaptive thinking, 1M context, stronger agentic coding & vision than 4.6; Opus 4.6 established 68.8% ARC AGI 2 and +144 Elo vs GPT-5.2 on GDPval-AA; Sonnet 4.6 near-Opus at lower cost | 1M tokens | $$ (67% price drop) | No |
-| Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking; Flash-Lite offers fastest + cheapest option | 1M tokens input, 64k output | $ (best value) | No |
-| Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
-| Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
+## Compare by Workflow, Not by Hype
 
-| **Provider** | **Speed/Cost Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
-|---|---|---|---|---|---|
-| OpenAI | GPT-5.4 mini | 54.4% SWE-bench Pro, 2x faster than GPT-5 mini, supports computer use (released March 17, 2026) | 400k tokens | $ ($0.75/$4.50) | No |
-| OpenAI | GPT-5.4 nano | Fastest OpenAI model, 52.4% SWE-bench Pro, optimized for subagents (released March 17, 2026) | 400k tokens | $ ($0.20/$1.25) | No |
-| Anthropic | Claude 4.5 Haiku | 73.3% SWE-bench Verified (highest in class), coding powerhouse, near-Sonnet intelligence | 200k tokens | $ ($1.00/$5.00) | No |
-| Google | Gemini 3.1 Flash-Lite | Fastest Gemini 3 model (45% faster output), outperforms 3.0 models on reasoning | 1M tokens input, 64k output | $ ($0.25/$1.50) | No |
+### Best starting point for hard, general-purpose work
+
+- OpenAI GPT-5.4
+- Anthropic Claude Opus 4.7
+- Google Gemini 3.1 Pro
+
+Use this bucket when:
+- the task is high value
+- quality matters more than cost
+- you are still learning what "good" looks like
+
+### Best for fast, lower-cost production routing
+
+- OpenAI GPT-5.4 mini or nano
+- Claude 4.5 Haiku
+- Gemini 3.1 Flash-Lite
+
+Use this bucket when:
+- latency matters
+- you expect high request volume
+- you want smaller models handling simpler sub-tasks
+
+### Best for coding-heavy and agent workflows
+
+- GPT-5.4
+- GPT-5.4 mini for cheaper support work
+- Claude Opus 4.7
+- Claude Sonnet 4.6
+- Devstral 2 if you want an open-weight-oriented code-agent option
+
+### Best for multimodal input
+
+- Gemini 3.1 Pro
+- Gemini 3 Flash
+- GPT-5.4
+- Claude Opus 4.7 for image-plus-document heavy work
+
+### Best for self-hosting and privacy-sensitive deployments
+
+- Llama 4 family
+- Mistral open-weight families
+
+Use this bucket when:
+- you need infrastructure control
+- you need custom fine-tuning or deployment
+- your economics favor running models yourself
 
 ---
 
-# How to Choose: Decision Framework
+# Cost Tiers
 
-## Question 1: What's your use case?
-- **Complex reasoning/analysis** → GPT-4 or Claude Opus 4.7
-- **Long documents** → Claude (up to 1M context on Opus 4.7 / Sonnet 4.6; 200k on Haiku 4.5)
-- **Coding** → Claude Code, GitHub Copilot
-- **Multimodal (images/video)** → Gemini, GPT-4V
-- **High volume, simple tasks** → GPT-3.5, Claude Haiku, or open-source
+Exact pricing changes often, so think in tiers first.
 
-## Question 2: What's your budget?
-- **Prototype/low volume** → Use best closed-source model
-- **Medium volume** → Mid-tier models (GPT-3.5, Claude Sonnet)
-- **High volume** → Consider open-source or cheaper APIs
-- **Enterprise budget** → Best-in-class plus premium support
+## Premium Frontier Tier
 
-## Question 3: What are your privacy requirements?
-- **Public data** → Any cloud API
-- **Business confidential** → Enterprise agreements
-- **Highly sensitive** → Self-hosted open-source or private cloud
-- **Regulatory requirements** → Check provider compliance or go open-source
+- GPT-5.4
+- GPT-5.4 Pro
+- Claude Opus 4.7
+- Gemini 3.1 Pro
 
-## Question 4: What's your technical capability?
-- **Non-technical** → Cloud APIs (OpenAI, Anthropic, Google)
-- **Some technical** → Cloud APIs with more configuration
-- **Strong technical team** → Can consider self-hosted open-source
-- **ML/AI expertise** → Full range including custom fine-tuning
+Best when:
+- request volume is modest
+- task value is high
+- errors are expensive
+
+## Mid-Tier Workhorses
+
+- Claude Sonnet 4.6
+- Gemini 3 Flash
+- Mistral Medium 3.1
+
+Best when:
+- you want strong quality but not maximum spend
+
+## High-Volume / Cost-Efficient Tier
+
+- GPT-5.4 mini
+- GPT-5.4 nano
+- Claude 4.5 Haiku
+- Gemini 3.1 Flash-Lite
+- smaller open-weight deployments
+
+Best when:
+- volume is high
+- latency matters
+- you are comfortable with model routing
 
 ---
 
-# Quick Reference Guide
+# Deployment Choices: Closed vs Open-Weight
+
+## Closed Models
+
+Examples:
+- OpenAI
+- Anthropic
+- Google
+
+Advantages:
+- easiest to start
+- strongest managed tooling
+- usually best frontier quality
+- no infrastructure burden
+
+Tradeoffs:
+- ongoing API cost
+- less deployment control
+- more vendor dependence
+
+## Open-Weight Models
+
+Examples:
+- Llama family
+- many Mistral models
+
+Advantages:
+- more control
+- self-hosting possible
+- easier fine-tuning and customization
+- can make sense economically at scale
+
+Tradeoffs:
+- infrastructure complexity
+- weaker out-of-the-box tooling
+- often behind the closed frontier on absolute capability
+
+Rule of thumb:
+- Start with closed models unless privacy, cost structure, or deployment control clearly push you elsewhere.
+
+---
+
+# Practical Decision Framework
+
+## Question 1: What is the task?
+
+- Hard reasoning, coding, or professional work: start with a frontier flagship
+- High-volume support, routing, or extraction: start with a smaller cheap model
+- Image, audio, or multimodal workflows: favor Google or OpenAI, then test against Anthropic if document-heavy
+- Self-hosted internal systems: start with Llama or Mistral families
+
+## Question 2: What matters most?
+
+- Best quality: use a flagship
+- Best speed and cost: use a smaller tier
+- Best privacy and control: use open-weight
+- Best tool and agent ecosystem: lean OpenAI or Anthropic
+
+## Question 3: Where will the system run?
+
+- Browser app
+- API-backed product
+- coding agent
+- internal workflow tool
+- on-prem or private cloud
+
+This matters because the same provider may expose different models and limits in each place.
+
+## Question 4: How expensive are mistakes?
+
+- High stakes: start with a stronger model, add retrieval, structured outputs, and evaluations
+- Medium stakes: consider routing by difficulty
+- Low stakes: optimize for cost and latency first
+
+---
+
+# Quick Reference
 
 **I want to...**
 
-💬 **...build a chatbot for customer service** → Claude Sonnet or GPT-3.5
+Build a customer-support assistant:
+- Start with Claude Sonnet 4.6, GPT-5.4 mini, or Gemini 3.1 Flash-Lite depending on quality and cost targets
 
-💻 **...build a coding assistant** → Claude Code, GitHub Copilot
+Build a coding assistant:
+- Start with GPT-5.4 or Claude Opus 4.7, then use smaller models for sub-tasks if needed
 
-🖼️ **...generate images** → DALL-E 3, Midjourney, Stable Diffusion
+Work across huge documents or large codebases:
+- Start with GPT-5.4, Claude Opus 4.7, or Sonnet 4.6 if the beta 1M context fits your interface
 
-📚 **...search my company documents** → Any LLM + RAG
+Handle highly sensitive internal data:
+- Consider open-weight deployment, private cloud, or enterprise contracts with strict data controls
 
-🔒 **...handle sensitive medical data** → Self-hosted Llama 3
+Build multimodal features:
+- Start with Gemini 3.1 Pro or GPT-5.4, then compare against Anthropic for image-plus-document tasks
 
-🌍 **...translate content** → DeepL or Google Translate
+Optimize cost at scale:
+- Route simple tasks to GPT-5.4 nano, GPT-5.4 mini, Claude 4.5 Haiku, or Gemini 3.1 Flash-Lite
 
-📊 **...analyze financial data** → BloombergGPT or GPT-4
-
-✍️ **...write marketing copy** → GPT-4 or Claude Opus 4.7
-
-🧪 **...prototype and experiment** → GPT-4 or Claude
-
-💰 **...optimize costs at scale** → Test cheaper alternatives, consider open-source
+Prototype quickly:
+- Start with the strongest closed model you can justify, then optimize once you understand the task
 
 ---
 
-> 🎯 **Key Takeaway**
+> **Key Takeaway**
 >
-> Choosing the right AI model is a strategic decision, not a technical one:
+> Choosing an AI model is mostly a workflow decision, not a leaderboard decision.
 >
-> **The Three Factors:**
-> 1. **Capability** - Can it do what you need?
-> 2. **Cost** - What's the total cost of ownership?
-> 3. **Constraints** - Privacy, compliance, technical requirements?
+> Start by matching the model to:
+> - task difficulty
+> - latency needs
+> - budget
+> - privacy constraints
+> - deployment model
 >
-> **The Decision Process:**
-> 1. **Start with the best** - Validate with GPT-4 / Claude Opus 4.7
-> 2. **Test your use case** - Create a test set, measure what matters
-> 3. **Optimize intelligently** - Try cheaper alternatives, measure trade-offs
-> 4. **Stay flexible** - Abstract your LLM calls so you can switch providers
+> In April 2026, a practical default looks like this:
+> - flagship closed model for hard work
+> - smaller cheaper model for routine work
+> - open-weight model only when control or economics clearly justify it
 >
-> **Common Patterns:**
-> - **Prototypes:** Best closed-source model (fast learning)
-> - **Production:** Tiered routing (cheap for simple, expensive for complex)
-> - **Enterprise:** Mix of closed-source (capability) and open-source (privacy/volume)
->
-> The landscape changes rapidly - models improve, new options emerge, pricing shifts. The key is building systems that can adapt, not picking one model forever.
+> The best system is usually not one model. It is a routing strategy, an interface, and a verification loop built around the model.

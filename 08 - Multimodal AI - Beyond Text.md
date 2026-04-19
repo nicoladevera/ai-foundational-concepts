@@ -1,258 +1,202 @@
 # Multimodal AI: Beyond Text
 
-**Learning goal:** Understand AI that works across images, audio, video, and combinations - expanding beyond text-only applications.
+Last updated: April 2026
+
+**Learning goal:** Understand how modern AI systems work across text, images, audio, and video, and how to choose tools by workflow fit rather than hype.
 
 ---
 
 # What is Multimodal AI?
 
-## Definition
-**Multimodal AI** refers to systems that can understand and/or generate multiple types of content: text, images, audio, video, and combinations thereof.
+Multimodal AI refers to systems that can understand or generate more than one type of content.
 
-## The Evolution
+Common modalities:
+- text
+- images
+- audio
+- video
 
-**Early AI (pre-2020):**
-- Separate models for each modality
-- Text model, image model, audio model - no connection
+Examples:
+- asking a model to analyze a chart image and summarize it in text
+- generating an image from a text prompt
+- transcribing a meeting recording
+- asking questions about a video clip
 
-**Modern Multimodal AI (2020+):**
-- Single model understands multiple types
-- Can combine modalities (describe images, generate images from text)
-- Unified understanding across formats
-
-> 🌐 **Why this matters:** Humans naturally work across modalities - we read text, look at images, listen to audio, watch videos. Multimodal AI brings AI closer to how humans actually process information.
+Why this matters:
+- real-world work is not text-only
+- documents contain images and tables
+- meetings happen in audio
+- products increasingly combine text, screenshots, voice, and video
 
 ---
 
-# The Modalities
+# The Main Modality Buckets
 
 ## Text
-Text-based AI (LLMs) covered in [02 - LLMs 101](./02%20-%20LLMs%20101.md).
+
+Covered in [02 - LLMs 101](<./02 - LLMs 101.md>).
 
 ## Images
-1. **Image Generation** (text → image)
-2. **Image Understanding** (image → text/analysis)
+
+- image generation
+- image editing
+- image understanding
 
 ## Audio
-1. **Speech-to-Text** (audio → text)
-2. **Text-to-Speech** (text → audio)
-3. **Music generation** (text/audio → audio)
+
+- speech-to-text
+- text-to-speech
+- realtime voice interaction
+- music and audio generation
 
 ## Video
-1. **Video Understanding** (analyze/describe video)
-2. **Video Generation** (text → video)
 
-## Combined
-Models that natively handle multiple modalities simultaneously
+- video understanding
+- video generation
 
----
+## Combined Systems
 
-# Image Generation
-
-## What It Is
-AI that creates images from text descriptions ("text-to-image").
-
-**Example:** "A serene mountain lake at sunset, realistic photography" → AI generates unique image
-
-## Major Tools (March 2026)
-
-### GPT Image 1.5 (OpenAI)
-**Strengths:**
-- Latest flagship image generation model (released December 16, 2025)
-- 4x faster image generation than previous model
-- Improved editing capabilities - changes only what you ask while maintaining consistency
-- Better text rendering - handles denser and smaller text
-- Keeps lighting, composition, and details consistent across edits
-- Adheres to user intent more reliably
-- Integrated creation space in ChatGPT with preset styles
-
-**Best For:** Fast generation, precise editing, complex instructions, marketing materials, images with text
-**Pricing:** ChatGPT Plus $20/month, available via API
+Models and products that handle multiple modalities in one workflow.
 
 ---
 
-### Nano Banana 2 / Gemini 3.1 Flash Image (Google)
-**Strengths:**
-- Latest state-of-the-art image model (released February 26, 2026), ranked #1 on Arena and ArtificialAnalysis benchmarks
-- Nano Banana Pro quality at Gemini Flash speed (4-6 second generation time)
-- Advanced world knowledge grounded in real-time web search for accurate infographics, diagrams, and real-world subjects
-- Pro-level text rendering: generate, translate, and localize text within images
-- Subject consistency: maintain up to 5 characters and 14 objects across a single workflow
-- Production-ready specs: 14 aspect ratios, 512px to 4K widescreen resolution
-- Enhanced instruction following: captures complex nuances precisely
-- Now the default image model across Gemini app (Fast/Thinking/Pro), Google Search, Flow, and Google Ads
-- SynthID + C2PA Content Credentials for AI provenance verification
-- 37-50% cheaper than Nano Banana Pro
+# Image Generation and Editing
 
-**Best For:** Fast, high-quality generation; storytelling and storyboarding; marketing assets; infographics; any workflow needing speed without sacrificing Pro-tier quality
-**Pricing (API, per image):** $0.045 (512px) · $0.067 (1K) · $0.101 (2K) · $0.151 (4K); 50% batch discount; included in Gemini AI Pro ($19.99/mo) and AI Ultra ($124.99/mo)
+This space is mature enough for real production use, but the best tool depends on what you are optimizing for.
 
----
+## OpenAI GPT Image 1.5
 
-### DALL-E 3 (OpenAI - Previous Model)
-**Strengths:**
-- Excellent at understanding complex prompts
-- High quality, photorealistic outputs
-- Easy via ChatGPT interface
+Good fit when you want:
+- strong instruction following
+- good editing precision
+- strong text rendering inside images
+- easy integration with OpenAI tooling
 
-**Best For:** Complex instructions, marketing materials
-**Pricing:** ChatGPT Plus $20/month, API ~$0.04-0.12 per image
+## Google Nano Banana 2
 
----
+Nano Banana 2, also called Gemini 3.1 Flash Image in Google's developer framing, is a strong fit when you want:
+- fast image generation and editing
+- production-oriented specs
+- strong subject consistency
+- a Google-centered multimodal stack
 
-### Midjourney V7
-**Strengths:**
-- Industry-leading artistic quality and photorealism
-- 25% faster than V6
-- Enhanced personalization
-- Full web interface (no longer Discord-only)
+## Midjourney
 
-**Best For:** Professional artistic work, concept art, social media, cinematic imagery
-**Pricing:** $10-60/month
+Good fit when you want:
+- highly stylized visual quality
+- strong aesthetic control
+- creative exploration and concept work
 
----
+## Stable Diffusion and Related Open Models
 
-### Stable Diffusion SDXL
-**Strengths:**
-- Open-source and free
-- Run locally for privacy
-- Highly customizable
-- Full control over generation
+Good fit when you want:
+- self-hosting
+- deeper customization
+- privacy control
+- full workflow ownership
 
-**Best For:** Privacy projects, high-volume generation, custom fine-tuning, developers
-**Pricing:** Free (pay for compute: ~$0.50-5/hour)
+## Adobe Firefly
 
----
+Good fit when you want:
+- Adobe integration
+- enterprise-friendly creative workflows
+- a stronger commercial-safety posture around training data and content provenance
 
-### Adobe Firefly
-**Strengths:**
-- Trained only on licensed content (copyright safe)
-- Integrated into Adobe products
-- Commercial use friendly
+### Practical Selection Guide
 
-**Best For:** Commercial/enterprise use, Adobe users, copyright-conscious projects
-
----
-
-> 🎨 **Choosing image generators:**
-> - **Want #1 quality + speed?** → Nano Banana 2 (ranked #1 Arena & ArtificialAnalysis, Flash-tier speed, free in Gemini app)
-> - **Need speed & precision?** → GPT Image 1.5 (4x faster, strong text rendering)
-> - **Want artistic quality?** → Midjourney
-> - **Need control/privacy?** → Stable Diffusion
-> - **Corporate/commercial?** → Adobe Firefly
+Choose by workflow:
+- editing precision and product integration: OpenAI
+- fast production image workflows: Google
+- artistic generation: Midjourney
+- self-hosting and customization: open models
+- enterprise creative stack: Adobe
 
 ---
 
 # Image Understanding
 
-## What It Is
-AI that can "see" and analyze images - describing content, answering questions, detecting objects.
+Text-plus-image understanding is now a standard capability in frontier systems.
 
-## Major Tools (October 2025)
+## OpenAI
 
-### GPT-5.4 / GPT-4o / GPT-5.2 Vision (OpenAI)
-**Capabilities:**
-- GPT-5.4: Latest frontier model (released March 5, 2026); 81.2% MMMU-Pro visual reasoning; new `original` image detail level supporting up to 10.24M pixels for full-fidelity analysis; 1.05M token context window
-- GPT-5.4: Natively multimodal; excels at complex frontend tasks, dense document parsing, and UI navigation via computer use
-- GPT-5.2: 400k token context window, halved error rates in graph reasoning
-- GPT-4o: Natively multimodal text, images, and audio inputs
-- Advanced OCR (read text in images), chart and diagram analysis
+OpenAI's current stack is strong for:
+- general-purpose image analysis
+- document parsing
+- UI and screenshot understanding
+- workflows that combine image reasoning with tool use or computer use
 
-**Best For:** General-purpose image analysis, high-fidelity image understanding (GPT-5.4 with `original` detail), multimodal applications, processing extensive visual documentation
+## Google
 
----
+Google's Gemini line is strong for:
+- multimodal reasoning across text, image, audio, and video
+- cost-conscious multimodal deployments
+- long-context multimodal workflows
 
-### Gemini 3.1 Flash-Lite / Gemini 3.1 Pro / Gemini 3 Flash / Gemini 3 Pro Vision (Google)
-**Capabilities:**
-- Gemini 3.1 Flash-Lite: Fastest, most cost-efficient Gemini 3 model (released March 3, 2026); 45% faster output, 2.5x faster TTFT vs Gemini 2.5 Flash; adjustable thinking levels; 1M token context; outperforms GPT-5 mini and Claude 4.5 Haiku on 6 of 11 benchmarks
-- Gemini 3.1 Pro: Latest flagship (released February 19, 2026), #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench Verified, dynamic thinking
-- Gemini 3 Flash: Default model (released December 17, 2025), 78% SWE-bench Verified
-- Gemini 3 Pro: Previous flagship (released November 18, 2025), "Best model in the world for multimodal understanding"
-- Achieved 1501 Elo on LMArena (first model to surpass 1500)
-- Natively multimodal: text, images, audio, and video
-- 1M token context window (~11 hours audio or 1 hour video)
-- Gemini 3 Flash: 90.4% on GPQA Diamond, 81.2% on MMMU-Pro
-- Advanced visual reasoning with code execution capabilities
-- Enhanced reasoning with Gemini 3 Deep Think mode
-- Record benchmark scores across multiple tests
+## Anthropic
 
-**Best For:** Complex multimodal tasks requiring highest performance (3.1 Pro), long video analysis, unified processing, agentic workflows; high-volume or latency-sensitive tasks (3.1 Flash-Lite)
+Anthropic is strong for:
+- technical diagrams
+- dense screenshots
+- long-context document and image tasks
+- image work tied to coding or agent workflows
 
----
-
-### Claude Opus 4.7 / Claude 4 Vision (Anthropic)
-**Capabilities:**
-- Claude Opus 4.7: Current flagship with 1M token context window and 128k output (released April 16, 2026); stronger agentic coding and image understanding than Opus 4.6
-- High-resolution vision: up to ~2576px on the long edge (~3.75MP), with 1:1 pixel-to-coordinate mapping (vs ~1568px / ~1.15MP on earlier Claude vision); higher fidelity uses more tokens
-- Adaptive thinking (introduced with Opus 4.6; Opus 4.7 continues). If you call the Messages API, extended-thinking **budget** parameters differ between Opus 4.7 and 4.6—see Anthropic’s migration guide when upgrading
-- **Opus 4.6 benchmark highlights (Feb 2026 generation):** 68.8% on ARC AGI 2, 65.4% on Terminal-Bench, 72.7% on OSWorld
-- Image understanding and analysis; strong at technical diagrams and code
-
-**Best For:** Technical document analysis, massive codebases (1M context), code-related visual tasks, complex reasoning, dense screenshots and diagrams
+Rule of thumb:
+- if the task is really document-heavy or agent-heavy, compare OpenAI and Anthropic
+- if the task is broadly multimodal across many media types, compare Google and OpenAI first
 
 ---
 
 # Audio AI
 
-## Speech-to-Text (STT)
+Audio is no longer one narrow category. In April 2026, it splits into at least three practical buckets:
 
-### Major Tools
-**OpenAI Whisper**
-- State-of-the-art accuracy
-- 99 languages
-- Handles accents, background noise
-- Open-source (can run locally)
-- Pricing: ~$0.006 per minute
+- transcription
+- speech generation
+- realtime conversational audio
 
-**Google Speech-to-Text**
-- Real-time streaming
-- 125+ languages
-- Pricing: ~$0.006-0.024 per minute
+## Speech-to-Text
 
-**Assembly AI**
-- Excellent accuracy
-- Speaker diarization (who said what)
-- Best for podcasts, meetings
+### OpenAI
 
----
+OpenAI's modern speech stack includes:
+- GPT-4o Transcribe
+- GPT-4o mini Transcribe
 
-## Text-to-Speech (TTS)
+These are positioned as more accurate speech-to-text options than the original Whisper models for many modern API use cases.
 
-### Major Tools (December 2025)
+### Whisper
 
-**ElevenLabs V3** - Industry Leader
-- Most expressive model (voices that sigh, whisper, laugh)
-- 29 languages with emotion
-- Voice cloning with customization
-- Best for professional content creation
-- Pricing: $5-330/month
+Whisper still matters:
+- it remains a well-known open model
+- it is useful for local workflows and historical context
 
-**Fish Audio 4B**
-- Ranked #1 on TTS-Arena leaderboard
-- Best AI text-to-speech available
-- Emerging as top competitor
+But if you are choosing a current managed OpenAI API transcription model, the newer GPT-4o transcribe models are the more current reference point.
 
-**OpenAI TTS**
-- Two models: TTS and TTS HD
-- Real-time streaming
-- Easy API integration
-- Pricing: ~$15 per million characters
+### Google and Others
 
----
+Google remains strong in speech and realtime interaction, especially when voice is part of a larger multimodal or live product experience.
 
-## Music Generation
+## Text-to-Speech and Voice
 
-**Suno**
-- Generate full songs from text prompts
-- Vocals, instruments, arrangement
+### OpenAI
 
-**Udio**
-- Similar to Suno
-- High-quality music generation
+OpenAI's current audio stack includes:
+- `gpt-audio` for audio input and output in chat-style APIs
+- realtime voice models for live interaction
+- GPT-4o mini TTS for text-to-speech
 
-**Stable Audio**
-- Open-source option
-- Sound effects and music
+### ElevenLabs
+
+Still a strong specialist choice when:
+- voice quality
+- expressiveness
+- voice cloning
+
+matter more than staying inside one general-purpose vendor stack.
+
+## Music and Creative Audio
+
+Tools such as Suno and Udio remain relevant for music generation, but this category changes quickly and is more product-specific than the text/image layers.
 
 ---
 
@@ -260,283 +204,123 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ## Video Understanding
 
-### Gemini 3 Flash / Gemini 3 Pro / Gemini 2.5 Pro
-- Analyze entire videos (up to 1 hour)
-- Answer questions about content
-- Find specific moments
-- Summarize long videos
-- Gemini 3 Flash: Default model (released December 17, 2025), 3x faster than 2.5 Pro with frontier-level performance
-- Gemini 3 Pro offers enhanced multimodal understanding (1501 LMArena Elo)
+Video understanding is improving steadily and is especially useful for:
+- summarizing meetings
+- finding moments in clips
+- extracting actions or events
+- combining visual and spoken context
 
-**Example:** Upload meeting recording, ask "What were the action items?", get timestamped list
+Google's Gemini family is one of the clearest current examples of a stack aimed at broad multimodal understanding across text, image, audio, and video.
 
----
+## Video Generation
 
-## Video Generation (December 2025)
+Video generation is improving fast, but it is still a less stable category than text, image, or transcription.
 
-### Sora 2.0 (OpenAI)
-- Sets standard for photorealism
-- 4K support added August 2025
-- 5-minute processing time
-- Best for premium content
-- Pricing: $200/month (Pro subscribers)
-- Limitation: Slower than competitors
+Strong practical buckets include:
+- creative video tools like Runway
+- Google's Veo line
+- creator-focused tools like Pika
 
-### Runway Gen-3/Gen-4
-- September 2025: Added "Motion Brush"
-- August 2025: Multi-shot generation
-- Most comprehensive creative toolkit
-- Best for professionals needing control
-- Pricing: $15+/month
+Important April 2026 caveat:
+- OpenAI has announced that the Sora web and app experiences will be discontinued on April 26, 2026, and the Sora API on September 24, 2026
 
-### Pika Labs 2.5
-- 30-second generation time (fastest)
-- Best value proposition
-- Best for creators just starting
-- Pricing: $10/month
-
-### Veo 2 (Google DeepMind)
-- Most realistic outputs alongside Sora
-- Competes on quality
+That means Sora should be treated as a notable recent product, not as a stable default recommendation for new planning.
 
 ---
 
-### Current Limitations (December 2025)
-Video generation has matured but still has constraints:
-- **Length:** Most generate 10-60 second clips
-- **Processing time:** 30 seconds (Pika) to 5 minutes (Sora)
-- **Cost:** $10-200/month
-- **Quality variation:** Output depends on prompt and model
+# Combined Multimodal Systems
 
-**Major 2025 Improvements:**
-- Multi-shot generation with consistent styling
-- Motion control tools
-- Better photorealism
-- 4K resolution support
-- Faster generation times
+Some systems are best understood as general-purpose multimodal stacks rather than separate point tools.
 
----
+## OpenAI
 
-# Combined Multimodal Models
+Good fit when you want:
+- strong coding plus multimodal reasoning
+- computer use
+- image understanding tied to tool use
+- one provider across text, image, and audio APIs
 
-## GPT-5.4 / GPT-5.3-Codex / GPT-5.2 (OpenAI)
-**Modalities:** Text + Images + Audio (natively multimodal)
+## Google
 
-**Capabilities:**
-- GPT-5.4: Latest frontier model (released March 5, 2026); 1.05M token context; 83% GDPval; native computer use (75% OSWorld-Verified, surpasses humans at 72.4%); 57.7% SWE-Bench Pro; 81.2% MMMU-Pro; most factual model (33% fewer false claims vs GPT-5.2); tool search reduces token usage 47% on MCP-heavy workflows
-- GPT-5.4: Excels at complex frontend development, spreadsheets, presentations, documents, and agentic browser workflows
-- GPT-5.3-Codex: Previous agentic coding leader (released February 5, 2026), 77.3% Terminal-Bench 2.0; coding strengths now incorporated into GPT-5.4
-- GPT-5.2: 400,000 token context window (3.1x larger than GPT-5.1)
-- Natively processes text, images, and voice together
-- Halved error rates in multimodal tasks (graph reasoning, interface navigation)
-- More natural interaction across modalities
+Good fit when you want:
+- broad multimodal coverage
+- strong image and video understanding
+- voice and live multimodal interaction
+- strong cost-efficiency options
 
-**Best For:** Professional knowledge work requiring highest accuracy, agentic workflows across applications and websites (GPT-5.4 computer use), agentic coding (GPT-5.4 / GPT-5.3-Codex), processing massive volumes of visual + text content (1.05M context)
+## Anthropic
 
----
+Good fit when you want:
+- long-context document and image work
+- coding and agent workflows that also involve screenshots or visual materials
 
-## Gemini 3 Flash / Gemini 3 Pro (Google)
-**Modalities:** Text + Images + Video + Audio (all natively)
+## Open-Weight Ecosystem
 
-**Key Innovation:** Highest performing multimodal models (1501 LMArena Elo, first to surpass 1500)
-
-**Capabilities:**
-- Gemini 3 Flash: Default model (released December 17, 2025), frontier intelligence built for speed
-- Gemini 3 Pro: "Best model in the world for multimodal understanding" (released November 18, 2025)
-- Only models handling ALL major modalities natively together
-- 1M token context window (11 hours audio or 1 hour video)
-- Gemini 3 Flash: 78% SWE-bench Verified, 90.4% GPQA Diamond, 81.2% MMMU-Pro
-- 3x faster than 2.5 Pro while outperforming it
-- Advanced visual reasoning with code execution capabilities
-- Enhanced reasoning with Gemini 3 Deep Think mode
-- Record benchmark scores across multiple tests
-- True multimodal understanding
-- Highly competitive pricing: Gemini 3 Pro $2/$12, Gemini 3 Flash $0.50/$3.00 per million tokens
-
-**Best For:** Complex multimodal tasks requiring highest performance, video understanding, unified processing, cost-conscious deployments, fast agentic workflows
+Useful when you want:
+- self-hosting
+- customization
+- vision-capable open-weight models
+- more control than closed APIs provide
 
 ---
 
-## Claude Opus 4.7 (Anthropic)
-**Modalities:** Text + Images
+# Modality Maturity Snapshot
 
-**Capabilities:**
-- 1M token context window, 128k output (April 16, 2026); same window class as Opus 4.6 with improved agentic and multimodal performance
-- Adaptive thinking; API note: Opus 4.7 uses adaptive thinking modes differently from extended-thinking budgets on Opus 4.6—consult provider docs for integrations
-- High-resolution image support (~2576px long edge / ~3.75MP) with 1:1 pixel coordinates
-- **Opus 4.6 reference scores:** 68.8% on ARC AGI 2, 65.4% on Terminal-Bench, 72.7% on OSWorld (reported for the 4.6 generation)
-- Strong at technical content; agent teams for parallel task execution
+## Very Mature
 
-**Best For:** Massive codebases (1M context), technical document analysis, complex reasoning tasks, code-related visual tasks, vision-heavy agent workflows
+- text generation and analysis
+- image generation
+- image understanding
+- speech-to-text
 
----
+## Mature but Fast-Moving
 
-## Llama 4 (Meta)
-**Modalities:** Text + Images + Video (multimodal)
+- text-to-speech
+- realtime voice interaction
+- document-plus-image agent workflows
 
-**Significance:** Open-source model with multimodal support
+## Improving Quickly but Less Stable
 
----
-
-## Why Multimodal Matters
-
-**Single interface for all content types:**
-- Don't switch between tools
-- Natural conversations mixing modalities
-- Context persists across different content
-
-**Richer understanding:**
-- Combine text with visual content
-- Explain images with words
-- Analyze relationships between modalities
-
-**New applications:**
-- Accessibility (describe images for blind users)
-- Education (explain diagrams, charts)
-- Healthcare (analyze medical images + records)
-- Customer service (understand product photos + questions)
-
-> 🤝 **The future is multimodal:** Just as humans combine sight, sound, and text, AI is moving toward models that naturally handle all modalities. Single-modality models will become specialized tools, while multimodal models become the default.
+- video generation
+- long-form multimodal agent loops
+- always-on voice agents with complex tool use
 
 ---
 
-# Comparison Table (March 2026)
-
-| **Modality** | **Task** | **Best Tools (2026)** | **Maturity** | **Cost** |
-|---|---|---|---|---|
-| **Text** | Generation, analysis | GPT-5.4, GPT-5.3-Codex, Claude Opus 4.7, Gemini 3 Flash/Pro | Very Mature | $ |
-| **Image** | Generation | Nano Banana 2, GPT Image 1.5, Midjourney V7, SDXL | Very Mature | $ - $$ |
-| **Image** | Understanding | GPT-5.4 (high-fidelity, computer use), Gemini 3 Flash/Pro, Claude Opus 4.7 | Very Mature | $ |
-| **Audio** | Speech-to-Text | Whisper, Google STT | Very Mature | $ |
-| **Audio** | Text-to-Speech | ElevenLabs V3, Fish Audio 4B, OpenAI | Very Mature | $ - $$ |
-| **Audio** | Music Generation | Suno, Udio, Stable Audio | Mature | $$ |
-| **Video** | Understanding | Gemini 3 Flash, Gemini 3 Pro | Mature | $ |
-| **Video** | Generation | Sora 2.0, Runway Gen-3/4, Pika 2.5, Veo 2 | Maturing | $$ - $$$ |
-| **Combined** | Multi-input/output | GPT-5.4, Claude Opus 4.7, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
-
-> 📈 **March 2026 Progress:** The pace of multimodal AI releases continues accelerating. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extended context to 1M tokens with adaptive thinking. **April 16, 2026** added **Claude Opus 4.7**, the new Opus flagship, improving on 4.6 for long-horizon agentic coding and higher-resolution vision. OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks. March 3, 2026 added OpenAI's GPT-5.3 Instant and Google's Gemini 3.1 Flash-Lite. March 5, 2026 brought OpenAI's GPT-5.4 — the first general-purpose model with native computer-use capabilities (75% OSWorld-Verified, surpassing human performance), 1.05M context window, 83% GDPval, and the title of most factual OpenAI model to date (33% fewer false claims vs GPT-5.2).
-
----
-
-# Practical Applications
-
-## E-Commerce
-- Generate product images (DALL-E, Midjourney)
-- Visual search ("Find products like this image")
-- Customer service (identify products from photos)
-
-## Healthcare
-- Analyze medical imaging
-- Accessibility (describe documents for visually impaired)
-- Transcribe doctor-patient conversations
-
-## Education
-- Generate image descriptions for blind students
-- TTS for reading assignments
-- Real-time lecture transcription
-- Create custom illustrations
-
-## Media & Entertainment
-- Generate concept art
-- Automatic transcription/subtitles
-- Highlight generation
-- Background music generation
-
----
-
-# Future Trends
-
-## 1. True Multimodal Native Models
-**Current:** Most convert non-text to text, process, convert back
-**Future:** Models that natively understand relationships between modalities
-
-## 2. Real-Time Multimodal Interaction
-**Current:** Process video/audio in batches
-**Future:** Real-time processing and generation
-
-## 3. Longer Video Generation
-**Current:** 3-10 second clips
-**Future:** Full-length videos with consistency
-
-## 4. Personalized Multimodal Models
-**Current:** One-size-fits-all
-**Future:** Models that learn your visual preferences, voice, style
-
-## 5. Cross-Modal Generation
-**Current:** Limited (text→image)
-**Future:** Any modality to any modality (Image→Music, Audio→Video)
-
----
-
-# Quick Reference
+# Practical Selection Guide
 
 **I want to...**
 
-🖼️ **...generate images** → GPT Image 1.5 (4x faster, best editing), Midjourney (artistic), Stable Diffusion (control)
+Generate marketing images:
+- compare GPT Image 1.5, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
 
-👁️ **...analyze images** → GPT-5.4 (highest fidelity + computer use), Gemini 3 Flash (fastest + frontier performance), Claude Opus 4.7 (1M context + technical + higher-res vision)
+Analyze screenshots or documents:
+- compare GPT-5.4, Claude Opus 4.7, and Gemini 3.1 Pro
 
-🎤 **...transcribe audio** → Whisper (best accuracy), Google STT (real-time)
+Transcribe meetings:
+- start with GPT-4o Transcribe or GPT-4o mini Transcribe, then compare against Google or specialist vendors if needed
 
-🔊 **...generate speech** → ElevenLabs (quality), Fish Audio 4B (#1 leaderboard), OpenAI TTS (balance)
+Build voice interactions:
+- evaluate OpenAI realtime and audio models, Google's live audio offerings, and ElevenLabs-style specialist voice tools depending on whether you want a general stack or a voice specialist
 
-🎵 **...create music** → Suno, Udio
+Build multimodal product features:
+- start with Google or OpenAI, then compare Anthropic if the workflow is long-context, code-heavy, or document-heavy
 
-🎬 **...generate video** → Sora 2.0 (premium), Runway (creative), Pika (value)
-
-📹 **...analyze video** → Gemini 3 Flash (default, 3x faster), Gemini 3 Pro (highest performance)
-
-🌍 **...work across modalities** → GPT-5.4 (professional work + computer use + 1.05M context), Gemini 3 Flash (best value + speed), Gemini 3.1 Pro (record benchmarks), Claude Opus 4.7 (1M context + adaptive thinking)
+Plan a new video-generation workflow:
+- do not anchor on Sora as the default choice because its discontinuation has been announced
 
 ---
 
-> 🎯 **Key Takeaway** (Updated March 2026)
+> **Key Takeaway**
 >
-> Multimodal AI reached new milestones in early 2026 with major releases throughout February and March:
+> Multimodal AI is no longer a side feature. It is becoming the default shape of modern AI systems.
 >
-> **Current State:**
-> - **Text:** Very mature (GPT-5.4, GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.7, Gemini 3 Flash/Pro)
-> - **Images:** Very mature for generation and understanding; GPT-5.4 brings highest-fidelity vision (10.24M pixel support)
-> - **Audio:** Very mature for speech, mature for music
-> - **Video:** Maturing rapidly - 2025-2026 brought massive improvements
-> - **Combined:** Very mature (models now feature 1M+ context, adaptive thinking, native computer use)
+> But "multimodal" is still too broad to be a buying guide.
 >
-> **February 2026 Releases:**
-> - **Claude Opus 4.6** (Feb 5): 1M token context, adaptive thinking, 68.8% ARC AGI 2, agent teams
-> - **GPT-5.3-Codex** (Feb 5): 77.3% Terminal-Bench, 25% faster, first model that helped build itself
-> - **Gemini 3.1 Pro** (Feb 19): #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench Verified, dynamic thinking
+> Choose tools based on:
+> - which modality matters most
+> - whether you need understanding, generation, or both
+> - whether you need one integrated stack or best-of-breed specialists
+> - how quickly the category is changing
 >
-> **April 2026 Releases:**
-> - **Claude Opus 4.7** (Apr 16): Current Opus flagship; 1M context, adaptive thinking, higher-resolution vision (~2576px long edge), stronger agentic coding than Opus 4.6
->
-> **March 2026 Releases:**
-> - **GPT-5.3 Instant** (Mar 3): Everyday conversational quality, 26.8% fewer hallucinations in high-stakes domains, more direct responses without defensive preambles
-> - **Gemini 3.1 Flash-Lite** (Mar 3): Fastest, most cost-efficient Gemini 3 model — 45% faster output, 2.5x faster TTFT, 1M context, $0.25/M input tokens
-> - **GPT-5.4** (Mar 5): OpenAI's most capable frontier model — 1.05M context, native computer use (75% OSWorld-Verified, surpasses humans at 72.4%), 83% GDPval, 33% fewer false claims, tool search, 81.2% MMMU-Pro visual reasoning
->
-> **Practical Guidance:**
-> - **For generation:**
->   - Images: GPT Image 1.5 (4x faster + precision), Midjourney V7 (artistic), SDXL (control)
->   - Voice: ElevenLabs V3 (best quality), Fish Audio 4B (#1 leaderboard)
->   - Video: Sora 2.0 (premium), Runway Gen-3/4 (creative), Pika 2.5 (value)
-> - **For understanding:**
->   - Best professional + computer use: GPT-5.4 (83% GDPval, native computer use, 1.05M context)
->   - Best everyday chat: GPT-5.3 Instant (reduced hallucinations, direct responses)
->   - Best value + speed: Gemini 3.1 Flash-Lite (fastest + affordable at $0.25/M input)
->   - Best frontier value: Gemini 3 Flash (frontier performance + affordable)
->   - Best multimodal: Gemini 3.1 Pro (#1 ARC-AGI-2, 80.6% SWE-bench, all modalities)
->   - Largest context: GPT-5.4 (1.05M tokens) / Claude Opus 4.7 (1M tokens + adaptive thinking)
->   - Best agentic coding: GPT-5.4 (57.7% SWE-Bench Pro) / GPT-5.3-Codex (77.3% Terminal-Bench)
->   - ARC AGI 2 (reported for Opus 4.6 generation): 68.8% — **Claude Opus 4.7** is the current Anthropic flagship for reasoning and agent workloads (see Anthropic for latest evaluations)
->
-> **The March 2026 Reality:**
-> Multimodal AI continues accelerating. GPT-5.4 redefines the frontier with native computer use (surpassing human performance on OSWorld), a 1.05M context window, and the highest professional knowledge work scores yet. **Claude Opus 4.7** carries forward 1M-token long-context reasoning with stronger multimodal and agentic performance than Opus 4.6. Google's Gemini 3.1 Flash-Lite brings the fastest and cheapest multimodal option. These advances signal AI that seamlessly processes text, images, audio, and video while operating computers autonomously.
->
-> **What's Next (2026 Trends):**
-> - Even larger context windows (beyond 1M tokens)
-> - Full-length video generation with perfect consistency
-> - Real-time multimodal interaction becomes standard
-> - Adaptive reasoning across all modalities
-> - Even higher benchmark scores and more affordable pricing
->
-> **Remember:** Every modality is production-ready. GPT-5.4 for professional work, computer use, and highest-fidelity vision; Gemini 3.1 Flash-Lite for highest speed and lowest cost; Gemini 3 Flash for best frontier value; Claude Opus 4.7 for massive context, reasoning, and high-resolution vision; GPT-5.3 Instant for everyday chat quality; Gemini 3.1 Pro for record multimodal performance; GPT Image 1.5 for fast image generation. Match the modality and tool to the task for optimal results.
+> In April 2026, text, image, and transcription are mature enough for broad use. Audio interaction is maturing fast. Video generation is improving, but it remains the most unstable part of the mainstream multimodal stack.

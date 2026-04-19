@@ -1,256 +1,245 @@
 # Customizing AI: Fine-Tuning vs. RAG vs. Prompt Engineering
 
-**Learning goal:** Choose the right customization approach to make AI work with your specific data and requirements.
+**Learning goal:** Choose the right customization approach for your data, workflow, and constraints without overengineering too early.
 
 ---
 
-# The Customization Challenge
+# The Real Customization Problem
 
-## The Problem
+Out-of-the-box models are trained for broad usefulness, not for your exact situation.
 
-Out-of-the-box LLMs are trained on general internet data. They're great at general tasks but often fall short for:
-- Your company's specific terminology
-- Your proprietary processes and knowledge
-- Your industry's specialized information
-- Your unique style and tone requirements
-- Current information (after their training cutoff)
+They often need help with:
+- company terminology
+- proprietary knowledge
+- current information
+- output formats
+- brand voice
+- policy and compliance constraints
 
-## The Question
+The common mistake is jumping straight to fine-tuning.
 
-**"How do I make this AI work with MY data and MY needs?"**
+In practice, most teams get further by improving:
+- prompt and system design
+- retrieval and tool use
+- structured outputs
+- evaluations and guardrails
 
-There are three main approaches, each with different trade-offs:
-1. **Prompt Engineering** - Craft better instructions
-2. **RAG (Retrieval-Augmented Generation)** - Add relevant context dynamically
-3. **Fine-Tuning** - Retrain the model on your data
-
-> 💡 **The Golden Rule:** Always start with the simplest, cheapest approach (prompt engineering) and only move to more complex methods if needed. Most problems can be solved without fine-tuning.
-
----
-
-# Approach 1: Prompt Engineering
-
-## What It Is
-Using better instructions, examples, and formatting to get the AI to behave how you want - without changing the model itself.
-
-## Advantages
-✅ **Instant** - Works immediately
-
-✅ **Free** - No additional costs beyond API usage
-
-✅ **Flexible** - Easy to adjust and iterate
-
-✅ **No technical complexity** - Anyone can do it
-
-✅ **No training data needed** - Just write better instructions
-
-## Disadvantages
-❌ **Limited knowledge** - Can't add facts the model doesn't know
-
-❌ **Token overhead** - Instructions count toward context limit
-
-❌ **Inconsistent** - Results can vary
-
-❌ **Doesn't scale** - Complex instructions get unwieldy
-
-❌ **Can't override training** - Hard to completely change style
-
-## Best For
-✅ Formatting and structure
-
-✅ Tone and style adjustments
-
-✅ Task framing
-
-✅ Examples-based guidance
-
-✅ Quick iteration
-
-## Cost
-**$** - Only API costs for tokens
-
-> 🎯 **When to use:** Try this FIRST for any customization need. 80% of problems can be solved with better prompts.
+before they ever fine-tune.
 
 ---
 
-# Approach 2: RAG (Retrieval-Augmented Generation)
+# The Main Levers
 
-## What It Is
-Automatically finding and inserting relevant information from your documents into the context before the AI responds.
+## 1. Prompt and System Design
 
-## How It Works
-**The Process:**
-1. **Setup Phase:** Collect documents → Break into chunks → Convert to embeddings → Store in vector database
-2. **Query Phase:** User asks question → Convert to embedding → Find similar chunks → Insert into context → LLM responds
+### What It Is
 
-## Advantages
-✅ **Access to specific knowledge** - Works with your proprietary data
+Using instructions, examples, and output contracts to shape behavior without changing the model.
 
-✅ **Always current** - Update documents, answers update
+### Best For
 
-✅ **Cites sources** - Can show where information came from
+- output structure
+- tone
+- basic policy rules
+- task framing
+- rapid iteration
 
-✅ **Scales to large knowledge bases** - Thousands of documents
+### Strengths
 
-✅ **Reduces hallucinations** - Grounds answers in real documents
+- immediate
+- cheap
+- flexible
+- low technical overhead
 
-✅ **No model retraining** - Use any LLM
+### Limits
 
-✅ **Cost-effective** - Cheaper than fine-tuning
+- does not add missing facts
+- can become verbose and fragile
+- may not be consistent enough for high-volume repeated tasks
 
-## Disadvantages
-❌ **Setup complexity** - Requires infrastructure (vector DB, embeddings)
-
-❌ **Retrieval quality matters** - Bad search = bad answers
-
-❌ **Context window limits** - Can only include limited chunks
-
-❌ **Doesn't change model behavior** - Still uses model's base style
-
-❌ **Added latency** - Search step adds ~100-500ms
-
-## Best For
-✅ Company knowledge bases
-
-✅ Customer support FAQs
-
-✅ Research and analysis
-
-✅ Current information
-
-✅ Compliance (grounding in official documents)
-
-✅ Large document collections
-
-## Cost
-**$$** - Vector database + embedding costs + API calls
-- Vector DB: $0-100/month
-- Embeddings: ~$0.10 per million tokens
-- Time: 1-2 weeks to set up properly
-
-## Tools for RAG
-**Vector Databases:**
-- **Pinecone** - Managed, easiest to start
-- **Weaviate** - Open-source, powerful
-- **Chroma** - Lightweight, local-first
-- **Qdrant** - Fast, Rust-based
-
-**RAG Frameworks:**
-- **LangChain** - Most popular
-- **LlamaIndex** - Data-focused
-- **Haystack** - Production-ready
-
-> 🔍 **When to use:** When you need AI to answer questions using your specific documents, knowledge base, or current data. This is the sweet spot for most business applications.
+Use this first.
 
 ---
 
-# Approach 3: Fine-Tuning
+## 2. Retrieval, File Search, and Tool Use
 
-## What It Is
-Continuing to train an existing model on your specific data to teach it new behaviors, knowledge, or styles.
+### What It Is
 
-## How It Works
-1. Prepare training data (100s to 1000s of examples)
-2. Fine-tune the model (start with base model, train on your examples)
-3. Deploy fine-tuned model (use like normal model)
+Giving the model access to the information or systems it needs at answer time.
 
-## Advantages
-✅ **Changes model behavior** - Can teach consistent style/personality
+This includes:
+- classic RAG over documents
+- hybrid keyword and vector search
+- file search in a codebase
+- web search
+- database lookups
+- tool calls into internal systems
 
-✅ **Specialized performance** - Excellent at specific tasks
+### Best For
 
-✅ **No retrieval needed** - Knowledge baked into model
+- company knowledge bases
+- current information
+- large document collections
+- codebase-aware assistants
+- source-grounded answers
 
-✅ **Faster inference** - No RAG search overhead
+### Strengths
 
-✅ **Better at niche tasks** - Outperforms general models in domain
+- keeps information current
+- scales better than giant prompts
+- reduces unsupported guessing
+- can preserve citations and provenance
 
-## Disadvantages
-❌ **Expensive** - $100s to $1000s per training run
+### Limits
 
-❌ **Time-consuming** - Weeks to get right
+- retrieval quality matters
+- poor chunking or ranking hurts output
+- adds system complexity
+- does not automatically fix behavior or formatting issues
 
-❌ **Requires expertise** - ML knowledge helpful
+This is usually the second major lever after prompt design.
 
-❌ **Needs lots of quality data** - 100s to 1000s of examples
+---
 
-❌ **Hard to update** - Need to retrain to add new info
+## 3. Structured Outputs and Guardrails
 
-❌ **Can forget** - May lose some general capabilities
+### What They Are
 
-❌ **Overfitting risk** - Might memorize training data
+Techniques that constrain how the model answers and how the system validates those answers.
 
-## Best For
-✅ Consistent style/tone (brand voice, personality)
+Examples:
+- JSON schemas
+- field validation
+- tool-only answers for certain tasks
+- approval checkpoints
+- policy filters
+- deterministic post-processing
 
-✅ Specialized domain (medical, legal, technical jargon)
+### Best For
 
-✅ Format compliance (always output specific structure)
+- predictable integrations
+- downstream automation
+- compliance-sensitive workflows
+- reducing malformed output
 
-✅ High volume, specific task (same task 1000s of times)
+### Strengths
 
-✅ Efficiency (make smaller models perform like larger ones)
+- improves reliability
+- makes systems easier to test
+- helps separate "generate" from "validate"
 
-## Cost
-**$$$** - Significant upfront investment
-- OpenAI fine-tuning: $0.80-8 per 1M tokens (training)
-- Self-hosted: GPU costs ($100s-1000s)
-- Time: 2-6 weeks for first successful fine-tune
+### Limits
 
-> ⚠️ **When to use:** Only after trying prompts and RAG. Fine-tuning is powerful but expensive and slow. Reserve for cases where you need consistent specialized behavior at high volume.
+- does not by itself add knowledge
+- can make systems rigid if overused
+
+---
+
+## 4. Evaluations
+
+### What They Are
+
+A repeatable way to measure whether your system is actually improving.
+
+Examples:
+- reference tasks
+- golden datasets
+- human review rubrics
+- pass/fail checks
+
+### Best For
+
+- deciding whether retrieval helped
+- deciding whether fine-tuning is justified
+- catching regressions
+
+Important point:
+- Teams often skip evals, then fine-tune blindly. That usually wastes time.
+
+---
+
+## 5. Fine-Tuning
+
+### What It Is
+
+Additional training on examples from your domain or workflow.
+
+### Best For
+
+- consistent style or behavior
+- repeated narrow tasks at scale
+- output-format discipline
+- latency and cost optimization when a smaller tuned model can replace a larger untuned one
+
+### Strengths
+
+- can improve consistency
+- can reduce prompt length
+- can improve narrow-task performance
+
+### Limits
+
+- not the best default way to inject current knowledge
+- requires careful data preparation
+- requires evaluation discipline
+- can be expensive in time, effort, or training spend
+- can underperform if the task was really a retrieval or workflow problem
+
+Use it only when you have evidence that prompts, retrieval, and structured controls are not enough.
 
 ---
 
 # Comparison Table
 
-| **Factor** | **Prompt Engineering** | **RAG** | **Fine-Tuning** |
+| **Approach** | **Best For** | **Main Strength** | **Main Limitation** |
 |---|---|---|---|
-| **Setup Time** | Minutes to hours | 1-2 weeks | 2-6 weeks |
-| **Cost** | $ (API only) | $$ (API + infrastructure) | $$$ (Training + higher inference) |
-| **Technical Skill** | Low | Medium | High |
-| **Data Required** | 0-3 examples | Your documents | 100s-1000s of examples |
-| **Adds Knowledge** | No | Yes | Yes |
-| **Changes Behavior** | Somewhat | No | Yes |
-| **Keeps Info Current** | N/A | Easy (update docs) | Hard (must retrain) |
-| **Best For** | Format, tone, task framing | Knowledge bases, current info | Consistent style, specialized domains |
+| Prompt and system design | Task framing, tone, format | Fastest and cheapest | Cannot add missing knowledge |
+| Retrieval / tool use | Current or proprietary information | Grounds answers in real sources | Adds system complexity |
+| Structured outputs / guardrails | Reliable integrations | More predictable behavior | Can be rigid |
+| Evaluations | Measuring quality | Makes decisions evidence-based | Requires setup effort |
+| Fine-tuning | Consistency and narrow specialization | Can improve repeated-task performance | Expensive and easy to misuse |
 
 ---
 
-# Decision Framework
+# A Better 2026 Decision Framework
 
-## Start Here: The Waterfall Approach
+## Step 1: Start with prompt and system design
 
-Always try approaches in this order:
+Do this when:
+- the task is still being defined
+- output shape is the main issue
+- the model mostly knows what it needs to know
 
-### 1. Prompt Engineering (Try First)
-**Try if:**
-- You haven't spent serious time crafting prompts
-- You can show examples of desired output
-- Information exists in model's training data
+## Step 2: Add retrieval or tool use
 
-**Move to RAG if:**
-- You need specific/proprietary knowledge
-- Information changes frequently
+Do this when:
+- the task depends on company data
+- the answer needs to be current
+- the model is inventing details
 
-### 2. RAG (Try Second)
-**Try if:**
-- You have documents with relevant information
-- Information needs to stay current
-- You need to cite sources
+## Step 3: Add structured outputs and guardrails
 
-**Move to Fine-Tuning if:**
-- RAG retrieves right info but model still fails
-- You need very specific output format every time
-- Style/tone needs to be deeply consistent
+Do this when:
+- the answer feeds another system
+- reliability matters more than prose quality
+- you need validation, approvals, or policy enforcement
 
-### 3. Fine-Tuning (Last Resort)
-**Try if:**
-- Prompts + RAG both failed
-- You have 100s+ quality examples
-- Task is highly specialized
-- You'll run this 1000s of times (ROI justifies cost)
+## Step 4: Add evals
 
-> 🚪 **The 90% Rule:** 90% of customization needs can be met with prompt engineering + RAG. Fine-tuning is powerful but usually overkill.
+Do this before major optimization decisions.
+
+You need evidence for:
+- whether retrieval helped
+- whether a smaller model is good enough
+- whether fine-tuning is worth the cost
+
+## Step 5: Fine-tune only when the evidence says you should
+
+Good fine-tuning signals:
+- you have many high-quality examples
+- the task is narrow and repeated
+- behavior consistency matters a lot
+- prompts plus retrieval still leave a measurable gap
 
 ---
 
@@ -258,35 +247,34 @@ Always try approaches in this order:
 
 **I want to...**
 
-🎯 **...control output format** → Prompt Engineering
+Control the output format:
+- Start with prompt design and structured outputs
 
-📖 **...answer questions from my docs** → RAG
+Answer questions from company documents:
+- Use retrieval or file search
 
-✍️ **...match my brand voice consistently** → Fine-Tuning (or try prompts first)
+Handle current information:
+- Use retrieval, web search, or tools
 
-📅 **...work with current information** → RAG
+Match a brand voice consistently:
+- Start with examples and prompting, then fine-tune only if needed
 
-🎭 **...change personality/tone** → Prompts (simple) or Fine-Tuning (complex)
+Reduce costs in a repeated narrow workflow:
+- Consider fine-tuning a smaller model after you have evals
 
-📚 **...use my knowledge base** → RAG
-
-🎨 **...generate creative content** → Prompt Engineering
-
-🔒 **...handle proprietary terminology** → RAG (for facts) or Fine-Tuning (for usage)
+Build a reliable production assistant:
+- Combine prompt design, retrieval, structured outputs, and evals
 
 ---
 
-> 🎯 **Key Takeaway**
+> **Key Takeaway**
 >
-> Customizing AI is about choosing the right tool for the job:
+> The best customization path is usually:
 >
-> **The Hierarchy:**
-> 1. **Try Prompt Engineering First** (hours, $, works 60% of the time)
-> 2. **Add RAG if needed** (weeks, $$, works another 30% of cases)
-> 3. **Fine-Tune as last resort** (months, $$$, for final 10%)
+> 1. clarify the task
+> 2. improve prompts and system instructions
+> 3. add retrieval or tool use
+> 4. add structured outputs and evaluations
+> 5. fine-tune only when simpler methods still leave a real gap
 >
-> **Use Prompts when:** Formatting, tone, task structure needs
-> **Use RAG when:** Need specific/proprietary knowledge
-> **Use Fine-Tuning when:** Tried prompts + RAG and failed, need deeply consistent behavior
->
-> **Remember:** The best solution is the simplest one that works. Don't fine-tune when prompts would suffice.
+> Most AI customization problems are not solved by training a new model. They are solved by building a better system around the model you already have.
