@@ -180,17 +180,15 @@ AI that can "see" and analyze images - describing content, answering questions, 
 
 ---
 
-### Claude Opus 4.6 / Claude 4 Vision (Anthropic)
+### Claude Opus 4.7 / Claude 4 Vision (Anthropic)
 **Capabilities:**
-- Claude Opus 4.6: Latest flagship with 1M token context window and 128k output (released February 5, 2026)
-- Adaptive thinking feature (first for Anthropic)
-- 68.8% on ARC AGI 2 reasoning benchmark
-- 65.4% on Terminal-Bench, 72.7% on OSWorld
-- Image understanding and analysis
-- Strong at technical diagrams and code
-- Extended thinking mode for reasoning
+- Claude Opus 4.7: Current flagship with 1M token context window and 128k output (released April 16, 2026); stronger agentic coding and image understanding than Opus 4.6
+- High-resolution vision: up to ~2576px on the long edge (~3.75MP), with 1:1 pixel-to-coordinate mapping (vs ~1568px / ~1.15MP on earlier Claude vision); higher fidelity uses more tokens
+- Adaptive thinking (introduced with Opus 4.6; Opus 4.7 continues). If you call the Messages API, extended-thinking **budget** parameters differ between Opus 4.7 and 4.6—see Anthropic’s migration guide when upgrading
+- **Opus 4.6 benchmark highlights (Feb 2026 generation):** 68.8% on ARC AGI 2, 65.4% on Terminal-Bench, 72.7% on OSWorld
+- Image understanding and analysis; strong at technical diagrams and code
 
-**Best For:** Technical document analysis, massive codebases (1M context), code-related visual tasks, complex reasoning
+**Best For:** Technical document analysis, massive codebases (1M context), code-related visual tasks, complex reasoning, dense screenshots and diagrams
 
 ---
 
@@ -359,18 +357,17 @@ Video generation has matured but still has constraints:
 
 ---
 
-## Claude Opus 4.6 (Anthropic)
+## Claude Opus 4.7 (Anthropic)
 **Modalities:** Text + Images
 
 **Capabilities:**
-- 1M token context window, 128k output (released February 5, 2026)
-- Adaptive thinking (first for Anthropic)
-- 68.8% on ARC AGI 2, 65.4% on Terminal-Bench, 72.7% on OSWorld
-- Extended thinking mode
-- Strong at technical content
-- Agent teams for parallel task execution
+- 1M token context window, 128k output (April 16, 2026); same window class as Opus 4.6 with improved agentic and multimodal performance
+- Adaptive thinking; API note: Opus 4.7 uses adaptive thinking modes differently from extended-thinking budgets on Opus 4.6—consult provider docs for integrations
+- High-resolution image support (~2576px long edge / ~3.75MP) with 1:1 pixel coordinates
+- **Opus 4.6 reference scores:** 68.8% on ARC AGI 2, 65.4% on Terminal-Bench, 72.7% on OSWorld (reported for the 4.6 generation)
+- Strong at technical content; agent teams for parallel task execution
 
-**Best For:** Massive codebases (1M context), technical document analysis, complex reasoning tasks, code-related visual tasks
+**Best For:** Massive codebases (1M context), technical document analysis, complex reasoning tasks, code-related visual tasks, vision-heavy agent workflows
 
 ---
 
@@ -407,17 +404,17 @@ Video generation has matured but still has constraints:
 
 | **Modality** | **Task** | **Best Tools (2026)** | **Maturity** | **Cost** |
 |---|---|---|---|---|
-| **Text** | Generation, analysis | GPT-5.4, GPT-5.3-Codex, Claude Opus 4.6, Gemini 3 Flash/Pro | Very Mature | $ |
+| **Text** | Generation, analysis | GPT-5.4, GPT-5.3-Codex, Claude Opus 4.7, Gemini 3 Flash/Pro | Very Mature | $ |
 | **Image** | Generation | Nano Banana 2, GPT Image 1.5, Midjourney V7, SDXL | Very Mature | $ - $$ |
-| **Image** | Understanding | GPT-5.4 (high-fidelity, computer use), Gemini 3 Flash/Pro, Claude Opus 4.6 | Very Mature | $ |
+| **Image** | Understanding | GPT-5.4 (high-fidelity, computer use), Gemini 3 Flash/Pro, Claude Opus 4.7 | Very Mature | $ |
 | **Audio** | Speech-to-Text | Whisper, Google STT | Very Mature | $ |
 | **Audio** | Text-to-Speech | ElevenLabs V3, Fish Audio 4B, OpenAI | Very Mature | $ - $$ |
 | **Audio** | Music Generation | Suno, Udio, Stable Audio | Mature | $$ |
 | **Video** | Understanding | Gemini 3 Flash, Gemini 3 Pro | Mature | $ |
 | **Video** | Generation | Sora 2.0, Runway Gen-3/4, Pika 2.5, Veo 2 | Maturing | $$ - $$$ |
-| **Combined** | Multi-input/output | GPT-5.4, Claude Opus 4.6, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
+| **Combined** | Multi-input/output | GPT-5.4, Claude Opus 4.7, Gemini 3 Flash, Gemini 3 Pro, Llama 4 | Very Mature | $ - $$ |
 
-> 📈 **March 2026 Progress:** The pace of multimodal AI releases continues accelerating. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extends context to 1M tokens with adaptive thinking, while OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks. March 3, 2026 added OpenAI's GPT-5.3 Instant and Google's Gemini 3.1 Flash-Lite. March 5, 2026 brought OpenAI's GPT-5.4 — the first general-purpose model with native computer-use capabilities (75% OSWorld-Verified, surpassing human performance), 1.05M context window, 83% GDPval, and the title of most factual OpenAI model to date (33% fewer false claims vs GPT-5.2).
+> 📈 **March 2026 Progress:** The pace of multimodal AI releases continues accelerating. February 5, 2026 brought major releases: Anthropic's Claude Opus 4.6 extended context to 1M tokens with adaptive thinking. **April 16, 2026** added **Claude Opus 4.7**, the new Opus flagship, improving on 4.6 for long-horizon agentic coding and higher-resolution vision. OpenAI's GPT-5.3-Codex sets new industry highs with 77.3% Terminal-Bench. Image generation remains production-ready with GPT Image 1.5's 4x speed. Google's Gemini 3 Flash combines frontier-level performance (78% SWE-bench, 90.4% GPQA Diamond) with 3x speed at competitive pricing. Combined multimodal models now feature unprecedented context windows (1M tokens), adaptive reasoning, and agentic capabilities. February 26 brought Google's Nano Banana 2 (Gemini 3.1 Flash Image), now the #1-ranked image generation model on both Arena and ArtificialAnalysis benchmarks. March 3, 2026 added OpenAI's GPT-5.3 Instant and Google's Gemini 3.1 Flash-Lite. March 5, 2026 brought OpenAI's GPT-5.4 — the first general-purpose model with native computer-use capabilities (75% OSWorld-Verified, surpassing human performance), 1.05M context window, 83% GDPval, and the title of most factual OpenAI model to date (33% fewer false claims vs GPT-5.2).
 
 ---
 
@@ -477,7 +474,7 @@ Video generation has matured but still has constraints:
 
 🖼️ **...generate images** → GPT Image 1.5 (4x faster, best editing), Midjourney (artistic), Stable Diffusion (control)
 
-👁️ **...analyze images** → GPT-5.4 (highest fidelity + computer use), Gemini 3 Flash (fastest + frontier performance), Claude Opus 4.6 (1M context + technical)
+👁️ **...analyze images** → GPT-5.4 (highest fidelity + computer use), Gemini 3 Flash (fastest + frontier performance), Claude Opus 4.7 (1M context + technical + higher-res vision)
 
 🎤 **...transcribe audio** → Whisper (best accuracy), Google STT (real-time)
 
@@ -489,7 +486,7 @@ Video generation has matured but still has constraints:
 
 📹 **...analyze video** → Gemini 3 Flash (default, 3x faster), Gemini 3 Pro (highest performance)
 
-🌍 **...work across modalities** → GPT-5.4 (professional work + computer use + 1.05M context), Gemini 3 Flash (best value + speed), Gemini 3.1 Pro (record benchmarks), Claude Opus 4.6 (1M context + adaptive thinking)
+🌍 **...work across modalities** → GPT-5.4 (professional work + computer use + 1.05M context), Gemini 3 Flash (best value + speed), Gemini 3.1 Pro (record benchmarks), Claude Opus 4.7 (1M context + adaptive thinking)
 
 ---
 
@@ -498,7 +495,7 @@ Video generation has matured but still has constraints:
 > Multimodal AI reached new milestones in early 2026 with major releases throughout February and March:
 >
 > **Current State:**
-> - **Text:** Very mature (GPT-5.4, GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.6, Gemini 3 Flash/Pro)
+> - **Text:** Very mature (GPT-5.4, GPT-5.3-Codex, GPT-5.3 Instant, Claude Opus 4.7, Gemini 3 Flash/Pro)
 > - **Images:** Very mature for generation and understanding; GPT-5.4 brings highest-fidelity vision (10.24M pixel support)
 > - **Audio:** Very mature for speech, mature for music
 > - **Video:** Maturing rapidly - 2025-2026 brought massive improvements
@@ -508,6 +505,9 @@ Video generation has matured but still has constraints:
 > - **Claude Opus 4.6** (Feb 5): 1M token context, adaptive thinking, 68.8% ARC AGI 2, agent teams
 > - **GPT-5.3-Codex** (Feb 5): 77.3% Terminal-Bench, 25% faster, first model that helped build itself
 > - **Gemini 3.1 Pro** (Feb 19): #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench Verified, dynamic thinking
+>
+> **April 2026 Releases:**
+> - **Claude Opus 4.7** (Apr 16): Current Opus flagship; 1M context, adaptive thinking, higher-resolution vision (~2576px long edge), stronger agentic coding than Opus 4.6
 >
 > **March 2026 Releases:**
 > - **GPT-5.3 Instant** (Mar 3): Everyday conversational quality, 26.8% fewer hallucinations in high-stakes domains, more direct responses without defensive preambles
@@ -525,12 +525,12 @@ Video generation has matured but still has constraints:
 >   - Best value + speed: Gemini 3.1 Flash-Lite (fastest + affordable at $0.25/M input)
 >   - Best frontier value: Gemini 3 Flash (frontier performance + affordable)
 >   - Best multimodal: Gemini 3.1 Pro (#1 ARC-AGI-2, 80.6% SWE-bench, all modalities)
->   - Largest context: GPT-5.4 (1.05M tokens) / Claude Opus 4.6 (1M tokens + adaptive thinking)
+>   - Largest context: GPT-5.4 (1.05M tokens) / Claude Opus 4.7 (1M tokens + adaptive thinking)
 >   - Best agentic coding: GPT-5.4 (57.7% SWE-Bench Pro) / GPT-5.3-Codex (77.3% Terminal-Bench)
->   - Best reasoning: Claude Opus 4.6 (68.8% ARC AGI 2)
+>   - ARC AGI 2 (reported for Opus 4.6 generation): 68.8% — **Claude Opus 4.7** is the current Anthropic flagship for reasoning and agent workloads (see Anthropic for latest evaluations)
 >
 > **The March 2026 Reality:**
-> Multimodal AI continues accelerating. GPT-5.4 redefines the frontier with native computer use (surpassing human performance on OSWorld), a 1.05M context window, and the highest professional knowledge work scores yet. Claude Opus 4.6 leads on long-context reasoning. Google's Gemini 3.1 Flash-Lite brings the fastest and cheapest multimodal option. These advances signal AI that seamlessly processes text, images, audio, and video while operating computers autonomously.
+> Multimodal AI continues accelerating. GPT-5.4 redefines the frontier with native computer use (surpassing human performance on OSWorld), a 1.05M context window, and the highest professional knowledge work scores yet. **Claude Opus 4.7** carries forward 1M-token long-context reasoning with stronger multimodal and agentic performance than Opus 4.6. Google's Gemini 3.1 Flash-Lite brings the fastest and cheapest multimodal option. These advances signal AI that seamlessly processes text, images, audio, and video while operating computers autonomously.
 >
 > **What's Next (2026 Trends):**
 > - Even larger context windows (beyond 1M tokens)
@@ -539,4 +539,4 @@ Video generation has matured but still has constraints:
 > - Adaptive reasoning across all modalities
 > - Even higher benchmark scores and more affordable pricing
 >
-> **Remember:** Every modality is production-ready. GPT-5.4 for professional work, computer use, and highest-fidelity vision; Gemini 3.1 Flash-Lite for highest speed and lowest cost; Gemini 3 Flash for best frontier value; Claude Opus 4.6 for massive context and reasoning; GPT-5.3 Instant for everyday chat quality; Gemini 3.1 Pro for record multimodal performance; GPT Image 1.5 for fast image generation. Match the modality and tool to the task for optimal results.
+> **Remember:** Every modality is production-ready. GPT-5.4 for professional work, computer use, and highest-fidelity vision; Gemini 3.1 Flash-Lite for highest speed and lowest cost; Gemini 3 Flash for best frontier value; Claude Opus 4.7 for massive context, reasoning, and high-resolution vision; GPT-5.3 Instant for everyday chat quality; Gemini 3.1 Pro for record multimodal performance; GPT Image 1.5 for fast image generation. Match the modality and tool to the task for optimal results.

@@ -328,7 +328,7 @@ Previous ML required training a separate model for each task. LLMs can perform h
 - **GPT-5.4** (OpenAI) - Most capable frontier model, 1.05M context, native computer use (75% OSWorld), 83% GDPval, most factual model (released March 2026)
 - **GPT-5.3 Instant** (OpenAI) - Everyday conversational model, 26.8% fewer hallucinations, direct responses (released March 2026)
 - **GPT-5.3-Codex** (OpenAI) - Agentic coding model, 77.3% Terminal-Bench, 25% faster; coding capabilities now incorporated into GPT-5.4 (released February 2026)
-- **Claude Opus 4.6** (Anthropic) - Latest flagship, 1M token context, adaptive thinking (released February 2026)
+- **Claude Opus 4.7** (Anthropic) - Current flagship, 1M token context, adaptive thinking, stronger agentic coding and vision than 4.6 (released April 2026)
 - **Claude Sonnet 4.6** (Anthropic) - Near-Opus performance at Sonnet pricing, 79.6% SWE-bench Verified (released February 2026)
 - **GPT-5.2** (OpenAI) - Latest model powering ChatGPT, 400k context (released December 2025)
 - **GPT-5.2-Codex** (OpenAI) - Agentic coding model, 56.4% SWE-bench Pro (released December 2025)
@@ -397,7 +397,7 @@ Previous ML required training a separate model for each task. LLMs can perform h
 **Scale:**
 - Traditional ML: Hundreds to thousands of parameters
 - Deep Learning: Millions to billions of parameters
-- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion; newer models like GPT-5.4, GPT-5.3 Instant, GPT-5.2, GPT-5.1, Claude Opus 4.6, Claude Sonnet 4.6, Gemini 3.1 Flash-Lite, and Gemini 3.1 Pro have undisclosed parameter counts)
+- LLMs: Billions to trillions of parameters (GPT-4 has ~1.7 trillion; newer models like GPT-5.4, GPT-5.3 Instant, GPT-5.2, GPT-5.1, Claude Opus 4.7, Claude Sonnet 4.6, Gemini 3.1 Flash-Lite, and Gemini 3.1 Pro have undisclosed parameter counts)
 
 ## Training vs. Inference
 

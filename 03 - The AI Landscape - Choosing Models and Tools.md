@@ -83,7 +83,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 ## Anthropic (Claude Family)
 
 ### Models
-- **Claude Opus 4.6** - Latest flagship model with 1 million token context and adaptive thinking (released February 5, 2026)
+- **Claude Opus 4.7** - Current flagship; 1 million token context, adaptive thinking, stronger agentic coding and high-resolution vision than Opus 4.6 (released April 16, 2026); API `claude-opus-4-7`
+- **Claude Opus 4.6** - Previous Opus flagship; 1 million token context and adaptive thinking (released February 5, 2026); still available
 - **Claude Sonnet 4.6** - Near-Opus performance at Sonnet pricing, default model on claude.ai (released February 17, 2026)
 - **Claude Opus 4.5** - Most powerful model, "best in the world for coding, agents, and computer use" (released November 24, 2025)
 - **Claude Sonnet 4.5** - Balanced performance with long autonomous runtime (released September 2025)
@@ -91,40 +92,42 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 - **Claude Opus 4** - Flagship with extended thinking (released May 2025)
 - **Claude Sonnet 4** - Balanced performance (released May 2025)
 - **Claude Haiku 4.5** - High-efficiency "coding powerhouse"; 73.3% SWE-bench Verified; matches earlier Sonnet models in capability (released October 15, 2025)
-- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.6)
+- **Claude Opus 3** - *Deprecated* (requests now return errors, upgrade to Opus 4.7)
 - **Claude Haiku 3.5** - *Deprecated* (upgrade to Haiku 4.5)
 
 ### Strengths
+- **Current Opus flagship (4.7)** - Anthropic's most capable generally available model as of April 2026: improved long-horizon agentic coding, higher-resolution image understanding (up to ~2576px on the long edge), and sharper instruction-following than Opus 4.6; same $5/$25 pricing; maintains 1M context and 128k max output
 - **World's best coding model** - Opus 4.5 achieves 80.9% on SWE-bench Verified (first model to cross 80% threshold)
-- **Massive 1 million token context** - Opus 4.6 extends context from 200k to 1 million tokens with 128,000 token output
-- **Adaptive thinking** - Opus 4.6 is the first Anthropic model with adaptive thinking that adjusts effort based on prompt complexity
-- **Record reasoning performance** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2)
+- **Massive 1 million token context** - Opus 4.6 extended context from 200k to 1 million tokens with 128,000 token output; Opus 4.7 keeps the same window
+- **Adaptive thinking** - Introduced with Opus 4.6; adjusts effort based on prompt complexity (Opus 4.7 continues with adaptive thinking)
+- **Record reasoning performance (Opus 4.6)** - Opus 4.6 achieves 68.8% on ARC AGI 2 (vs 37.6% for Opus 4.5, 54.2% for GPT-5.2)
 - **Near-Opus performance at Sonnet cost** - Sonnet 4.6 achieves 79.6% SWE-bench Verified, 72.5% OSWorld, and 58.3% ARC-AGI-2 at $3/$15/M tokens (vs Opus 4.6's $5/$25/M tokens)
-- **Enhanced agentic capabilities** - Opus 4.6 scores 65.4% on Terminal-Bench (up from 59.8%) and 72.7% on OSWorld (up from 66.3%)
-- **Superior long-context retrieval** - Opus 4.6 achieves 76% on MRCR v2 benchmark (vs 18.5% for Sonnet 4.5)
-- **Enterprise knowledge work leadership** - Opus 4.6 outperforms GPT-5.2 by 144 Elo points on GDPval-AA
-- **Agent teams** - Claude Code with Opus 4.6 enables parallel task execution
+- **Enhanced agentic capabilities (Opus 4.6)** - Opus 4.6 scores 65.4% on Terminal-Bench (up from 59.8%) and 72.7% on OSWorld (up from 66.3%)
+- **Superior long-context retrieval (Opus 4.6)** - Opus 4.6 achieves 76% on MRCR v2 benchmark (vs 18.5% for Sonnet 4.5)
+- **Enterprise knowledge work leadership (Opus 4.6)** - Opus 4.6 outperforms GPT-5.2 by 144 Elo points on GDPval-AA
+- **Agent teams** - Claude Code with Opus 4.7 / 4.6 enables parallel task execution
 - **Top performance on engineering tests** - Scored higher than any human candidate on Anthropic's performance engineer exam
-- **Knowledge cutoff** - March 2025 (most current among major models)
+- **Knowledge cutoff** - Opus 4.7: reliable knowledge through January 2026 (training data through January 2026 per Anthropic); older Claude 4 variants vary
 - **Hybrid reasoning** - Near-instant responses or extended thinking modes
 - **Extended thinking with tools** - Can use web search, file access during reasoning
 - **Superior memory** - Maintains continuity and builds knowledge over time
 - **Safety-focused** - Less likely to produce harmful content
 - **World's best high-efficiency coding** - Haiku 4.5 achieves 73.3% on SWE-bench Verified, outperforming many flagship models from previous generations
 - **Superior instruction-following** - More compliant, precise execution
-- **Price reduction** - 67% price drop from previous Opus pricing (maintained with 4.6)
+- **Price reduction** - 67% price drop from previous Opus pricing (maintained with Opus 4.6 and 4.7)
 
 ### Best For
 - Complex coding projects and software development (industry-leading SWE-bench performance)
 - Agentic workflows and computer use tasks with parallel execution
-- Extra-long documents and massive codebases (1M token context with Opus 4.6)
+- Extra-long documents and massive codebases (1M token context with Opus 4.7 / 4.6)
 - Complex reasoning tasks requiring adaptive thinking
 - Enterprise knowledge work requiring highest accuracy (144 Elo advantage over GPT-5.2)
 - When you need precise instruction-following
 - Enterprises prioritizing safety and reliability
-- Teams requiring most current knowledge (March 2025 cutoff)
+- Teams requiring strong recency (Opus 4.7: knowledge through January 2026)
 
 ### Pricing (as of March 2026)
+- Claude Opus 4.7: $5/$25 per million tokens (same as 4.6; API `claude-opus-4-7`)
 - Claude Opus 4.6: $5/$25 per million tokens (same as 4.5)
 - Claude Opus 4.5: $5/$25 per million tokens (67% price reduction)
 - Claude Sonnet 4.6: $3/$15 per million tokens (same as Sonnet 4.5, near-Opus performance)
@@ -292,7 +295,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 | **Provider** | **Best Model** | **Key Strength** | **Context Window** | **Cost** | **Open Source?** |
 |---|---|---|---|---|---|
 | OpenAI | GPT-5.4 | 83% GDPval, native computer use (75% OSWorld, surpasses humans), 1.05M context, most factual model (33% fewer false claims) | 1.05M tokens | $$ ($2.50/$15 per M tokens) | No |
-| Anthropic | Claude Opus 4.6 | Adaptive thinking, 1M context, 68.8% ARC AGI 2, +144 Elo vs GPT-5.2; Sonnet 4.6 offers near-Opus performance at lower cost | 1M tokens | $$ (67% price drop) | No |
+| Anthropic | Claude Opus 4.7 | Current flagship; adaptive thinking, 1M context, stronger agentic coding & vision than 4.6; Opus 4.6 established 68.8% ARC AGI 2 and +144 Elo vs GPT-5.2 on GDPval-AA; Sonnet 4.6 near-Opus at lower cost | 1M tokens | $$ (67% price drop) | No |
 | Google | Gemini 3.1 Pro | #1 ARC-AGI-2 reasoning (77.1%), 80.6% SWE-bench, dynamic thinking; Flash-Lite offers fastest + cheapest option | 1M tokens input, 64k output | $ (best value) | No |
 | Meta | Llama 4 Maverick | Open-source, 1M context, multimodal | 1M-10M tokens | $ (compute only) | Yes |
 | Mistral | Magistral Medium | Best price/performance, reasoning, EU-based | 128k tokens | $ | Some models |
@@ -309,8 +312,8 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 # How to Choose: Decision Framework
 
 ## Question 1: What's your use case?
-- **Complex reasoning/analysis** → GPT-4 or Claude Opus
-- **Long documents** → Claude (200k context)
+- **Complex reasoning/analysis** → GPT-4 or Claude Opus 4.7
+- **Long documents** → Claude (up to 1M context on Opus 4.7 / Sonnet 4.6; 200k on Haiku 4.5)
 - **Coding** → Claude Code, GitHub Copilot
 - **Multimodal (images/video)** → Gemini, GPT-4V
 - **High volume, simple tasks** → GPT-3.5, Claude Haiku, or open-source
@@ -353,7 +356,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 
 📊 **...analyze financial data** → BloombergGPT or GPT-4
 
-✍️ **...write marketing copy** → GPT-4 or Claude Opus
+✍️ **...write marketing copy** → GPT-4 or Claude Opus 4.7
 
 🧪 **...prototype and experiment** → GPT-4 or Claude
 
@@ -371,7 +374,7 @@ The AI landscape has matured significantly in 2025. Major providers now offer fr
 > 3. **Constraints** - Privacy, compliance, technical requirements?
 >
 > **The Decision Process:**
-> 1. **Start with the best** - Validate with GPT-4/Claude Opus
+> 1. **Start with the best** - Validate with GPT-4 / Claude Opus 4.7
 > 2. **Test your use case** - Create a test set, measure what matters
 > 3. **Optimize intelligently** - Try cheaper alternatives, measure trade-offs
 > 4. **Stay flexible** - Abstract your LLM calls so you can switch providers

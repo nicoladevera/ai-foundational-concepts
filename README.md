@@ -49,7 +49,7 @@ These pages are designed to build on each other, taking you from foundational co
 
 **Sets up:** Practical knowledge of available options before learning to use them
 
-**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.4 flagship/mini/nano, GPT-5.3 Instant, Claude Opus/Sonnet 4.6, Claude 4.5 Haiku, Gemini 3.1 Pro/Flash-Lite, and when to choose each.
+**Key connection:** Now that you know WHAT LLMs are, this shows you WHICH ones to use and when. You'll learn about GPT-5.4 flagship/mini/nano, GPT-5.3 Instant, Claude Opus 4.7, Claude Sonnet 4.6, Claude 4.5 Haiku, Gemini 3.1 Pro/Flash-Lite, and when to choose each.
 
 ---
 
