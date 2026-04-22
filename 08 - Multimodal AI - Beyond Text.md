@@ -64,13 +64,14 @@ Models and products that handle multiple modalities in one workflow.
 
 This space is mature enough for real production use, but the best tool depends on what you are optimizing for.
 
-## OpenAI GPT Image 1.5
+## OpenAI GPT Image 2
 
 Good fit when you want:
 - strong instruction following
 - good editing precision
 - strong text rendering inside images
 - easy integration with OpenAI tooling
+- OpenAI's current top image-generation and editing model in the API
 
 ## Google Nano Banana 2
 
@@ -292,7 +293,7 @@ Useful when you want:
 **I want to...**
 
 Generate marketing images:
-- compare GPT Image 1.5, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
+- compare GPT Image 2, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
 
 Analyze screenshots or documents:
 - compare GPT-5.4, Claude Opus 4.7, and Gemini 3.1 Pro
