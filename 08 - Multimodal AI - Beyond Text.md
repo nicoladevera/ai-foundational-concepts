@@ -124,7 +124,7 @@ OpenAI's current stack is strong for:
 - general-purpose image analysis
 - document parsing
 - UI and screenshot understanding
-- workflows that combine image reasoning with tool use or computer use
+- workflows that combine image reasoning with tool use or computer use, especially with GPT-5.5
 
 ## Google
 
@@ -237,8 +237,8 @@ Some systems are best understood as general-purpose multimodal stacks rather tha
 
 Good fit when you want:
 - strong coding plus multimodal reasoning
-- computer use
-- image understanding tied to tool use
+- computer use, especially with GPT-5.5
+- image understanding tied to tool use and agent workflows
 - one provider across text, image, and audio APIs
 
 ## Google
@@ -296,7 +296,7 @@ Generate marketing images:
 - compare GPT Image 2, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
 
 Analyze screenshots or documents:
-- compare GPT-5.4, Claude Opus 4.7, and Gemini 3.1 Pro
+- compare GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro
 
 Transcribe meetings:
 - start with GPT-4o Transcribe or GPT-4o mini Transcribe, then compare against Google or specialist vendors if needed

@@ -57,7 +57,8 @@ Current positioning:
 - Broadest mainstream ecosystem across ChatGPT, API, and coding products
 
 Useful April 2026 reference points:
-- `gpt-5.4` is OpenAI's flagship for reasoning, coding, and agentic workflows
+- `gpt-5.5` is OpenAI's flagship for reasoning, coding, agentic workflows, and computer use
+- `gpt-5.5-pro` is the higher-accuracy premium option for the hardest work
 - `gpt-5.4-mini` and `gpt-5.4-nano` are the smaller cost and latency tiers
 - `gpt-5.3-chat-latest` is the API alias for the GPT-5.3 Instant chat model
 
@@ -66,9 +67,11 @@ What OpenAI is especially strong at:
 - tool-heavy agent systems
 - computer use
 - document and spreadsheet-style knowledge work
+- long-context API workflows, including up to 1M tokens for GPT-5.5
 
 Important caveat:
 - ChatGPT and API availability are not the same. For example, GPT-4o and several older ChatGPT models were retired from ChatGPT on February 13, 2026, while remaining available in the API.
+- GPT-5.5 is positioned above GPT-5.4 on capability and token efficiency, but it is also more expensive. Use the smaller GPT-5.4 tiers when latency or cost matters more than maximum quality.
 
 ### Anthropic
 
@@ -161,7 +164,7 @@ What Mistral is especially strong at:
 
 ### Best starting point for hard, general-purpose work
 
-- OpenAI GPT-5.4
+- OpenAI GPT-5.5
 - Anthropic Claude Opus 4.7
 - Google Gemini 3.1 Pro
 
@@ -183,7 +186,7 @@ Use this bucket when:
 
 ### Best for coding-heavy and agent workflows
 
-- GPT-5.4
+- GPT-5.5
 - GPT-5.4 mini for cheaper support work
 - Claude Opus 4.7
 - Claude Sonnet 4.6
@@ -193,7 +196,7 @@ Use this bucket when:
 
 - Gemini 3.1 Pro
 - Gemini 3 Flash
-- GPT-5.4
+- GPT-5.5
 - Claude Opus 4.7 for image-plus-document heavy work
 
 ### Best for self-hosting and privacy-sensitive deployments
@@ -214,8 +217,8 @@ Exact pricing changes often, so think in tiers first.
 
 ## Premium Frontier Tier
 
-- GPT-5.4
-- GPT-5.4 Pro
+- GPT-5.5
+- GPT-5.5 Pro
 - Claude Opus 4.7
 - Gemini 3.1 Pro
 
@@ -332,16 +335,16 @@ Build a customer-support assistant:
 - Start with Claude Sonnet 4.6, GPT-5.4 mini, or Gemini 3.1 Flash-Lite depending on quality and cost targets
 
 Build a coding assistant:
-- Start with GPT-5.4 or Claude Opus 4.7, then use smaller models for sub-tasks if needed
+- Start with GPT-5.5 or Claude Opus 4.7, then use smaller models for sub-tasks if needed
 
 Work across huge documents or large codebases:
-- Start with GPT-5.4, Claude Opus 4.7, or Sonnet 4.6 if the beta 1M context fits your interface
+- Start with GPT-5.5, Claude Opus 4.7, or Sonnet 4.6 if the beta 1M context fits your interface
 
 Handle highly sensitive internal data:
 - Consider open-weight deployment, private cloud, or enterprise contracts with strict data controls
 
 Build multimodal features:
-- Start with Gemini 3.1 Pro or GPT-5.4, then compare against Anthropic for image-plus-document tasks
+- Start with Gemini 3.1 Pro or GPT-5.5, then compare against Anthropic for image-plus-document tasks
 
 Optimize cost at scale:
 - Route simple tasks to GPT-5.4 nano, GPT-5.4 mini, Claude 4.5 Haiku, or Gemini 3.1 Flash-Lite
