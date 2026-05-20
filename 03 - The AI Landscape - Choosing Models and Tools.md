@@ -60,7 +60,7 @@ Useful April 2026 reference points:
 - `gpt-5.5` is OpenAI's flagship for reasoning, coding, agentic workflows, and computer use
 - `gpt-5.5-pro` is the higher-accuracy premium option for the hardest work
 - `gpt-5.4-mini` and `gpt-5.4-nano` are the smaller cost and latency tiers
-- `gpt-5.3-chat-latest` is the API alias for the GPT-5.3 Instant chat model
+- `chat-latest` is the API alias for OpenAI's current Instant chat model, which was updated to GPT-5.5 Instant in May 2026
 
 What OpenAI is especially strong at:
 - coding workflows
@@ -72,6 +72,7 @@ What OpenAI is especially strong at:
 Important caveat:
 - ChatGPT and API availability are not the same. For example, GPT-4o and several older ChatGPT models were retired from ChatGPT on February 13, 2026, while remaining available in the API.
 - GPT-5.5 is positioned above GPT-5.4 on capability and token efficiency, but it is also more expensive. Use the smaller GPT-5.4 tiers when latency or cost matters more than maximum quality.
+- `chat-latest` can change as OpenAI updates ChatGPT's default Instant model, so prefer pinned model IDs such as `gpt-5.5` or smaller tier models for production systems that need predictable behavior.
 
 ### Anthropic
 

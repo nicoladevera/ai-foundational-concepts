@@ -162,6 +162,7 @@ Audio is no longer one narrow category. In April 2026, it splits into at least t
 OpenAI's modern speech stack includes:
 - GPT-4o Transcribe
 - GPT-4o mini Transcribe
+- `gpt-realtime-whisper` for low-latency streaming transcription
 
 These are positioned as more accurate speech-to-text options than the original Whisper models for many modern API use cases.
 
@@ -183,7 +184,8 @@ Google remains strong in speech and realtime interaction, especially when voice 
 
 OpenAI's current audio stack includes:
 - `gpt-audio` for audio input and output in chat-style APIs
-- realtime voice models for live interaction
+- `gpt-realtime-2` for high-capability live voice agents
+- `gpt-realtime-translate` for live multilingual speech translation
 - GPT-4o mini TTS for text-to-speech
 
 ### ElevenLabs
