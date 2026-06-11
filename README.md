@@ -1,6 +1,6 @@
 # AI Foundational Concepts
 
-Last updated: April 2026
+Last updated: June 2026
 
 These pages are designed to build from first principles to practical implementation. Most chapters are intentionally evergreen. The most time-sensitive material lives in:
 

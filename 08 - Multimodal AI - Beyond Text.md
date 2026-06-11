@@ -1,6 +1,6 @@
 # Multimodal AI: Beyond Text
 
-Last updated: April 2026
+Last updated: June 2026
 
 **Learning goal:** Understand how modern AI systems work across text, images, audio, and video, and how to choose tools by workflow fit rather than hype.
 
@@ -140,6 +140,8 @@ Anthropic is strong for:
 - dense screenshots
 - long-context document and image tasks
 - image work tied to coding or agent workflows
+- Fable 5 for the hardest vision-plus-document and long-context agent tasks
+- Opus 4.8 for premium Claude multimodal work when Fable 5 is not the right operational fit
 
 Rule of thumb:
 - if the task is really document-heavy or agent-heavy, compare OpenAI and Anthropic
@@ -149,7 +151,7 @@ Rule of thumb:
 
 # Audio AI
 
-Audio is no longer one narrow category. In April 2026, it splits into at least three practical buckets:
+Audio is no longer one narrow category. In June 2026, it splits into at least three practical buckets:
 
 - transcription
 - speech generation
@@ -224,7 +226,7 @@ Strong practical buckets include:
 - Google's Veo line
 - creator-focused tools like Pika
 
-Important April 2026 caveat:
+Important current caveat:
 - OpenAI has announced that the Sora web and app experiences will be discontinued on April 26, 2026, and the Sora API on September 24, 2026
 
 That means Sora should be treated as a notable recent product, not as a stable default recommendation for new planning.
@@ -256,6 +258,8 @@ Good fit when you want:
 Good fit when you want:
 - long-context document and image work
 - coding and agent workflows that also involve screenshots or visual materials
+- Fable 5-level capability for demanding vision, document, and agent tasks
+- Opus 4.8 as a premium Claude default when Fable 5's operational constraints are not a fit
 
 ## Open-Weight Ecosystem
 
@@ -298,7 +302,7 @@ Generate marketing images:
 - compare GPT Image 2, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
 
 Analyze screenshots or documents:
-- compare GPT-5.5, Claude Opus 4.7, and Gemini 3.1 Pro
+- compare GPT-5.5, Claude Fable 5 or Opus 4.8, and Gemini 3.1 Pro
 
 Transcribe meetings:
 - start with GPT-4o Transcribe or GPT-4o mini Transcribe, then compare against Google or specialist vendors if needed
@@ -326,4 +330,4 @@ Plan a new video-generation workflow:
 > - whether you need one integrated stack or best-of-breed specialists
 > - how quickly the category is changing
 >
-> In April 2026, text, image, and transcription are mature enough for broad use. Audio interaction is maturing fast. Video generation is improving, but it remains the most unstable part of the mainstream multimodal stack.
+> In June 2026, text, image, and transcription are mature enough for broad use. Audio interaction is maturing fast. Video generation is improving, but it remains the most unstable part of the mainstream multimodal stack.

@@ -1,6 +1,6 @@
 # The AI Landscape: Choosing Models and Tools
 
-Last updated: April 2026
+Last updated: June 2026
 
 **Learning goal:** Navigate the current AI ecosystem without getting trapped by hype, stale recommendations, or provider marketing.
 
@@ -27,7 +27,7 @@ For current decisions, always confirm against the provider's official docs.
 
 # The Current State of the Market
 
-As of April 2026, the frontier has a few clear patterns:
+As of June 2026, the frontier has a few clear patterns:
 
 - Closed frontier models from OpenAI, Anthropic, and Google dominate general-purpose cloud usage
 - Open-weight families from Meta, Mistral, and others remain important for self-hosting, privacy, and custom deployment
@@ -56,7 +56,7 @@ Current positioning:
 - Strong small-model tier for cost-sensitive coding, tool use, and subagent patterns
 - Broadest mainstream ecosystem across ChatGPT, API, and coding products
 
-Useful April 2026 reference points:
+Useful June 2026 reference points:
 - `gpt-5.5` is OpenAI's flagship for reasoning, coding, agentic workflows, and computer use
 - `gpt-5.5-pro` is the higher-accuracy premium option for the hardest work
 - `gpt-5.4-mini` and `gpt-5.4-nano` are the smaller cost and latency tiers
@@ -80,19 +80,24 @@ Current positioning:
 - Strong for long-horizon coding, document-heavy work, agentic execution, and instruction-following
 - Especially strong when large context and stable behavior matter
 
-Useful April 2026 reference points:
-- Claude Opus 4.7 is the current generally available Opus flagship
+Useful June 2026 reference points:
+- Claude Fable 5 is Anthropic's most capable widely released model, built for the hardest reasoning, coding, vision, and long-horizon agentic work
+- Claude Opus 4.8 is the current Opus-tier flagship and a practical premium default for complex reasoning, coding agents, and high-autonomy work
 - Claude Sonnet 4.6 is the default Sonnet-tier recommendation for many users
-- Claude 4.5 Haiku remains the fast, lower-cost tier
+- Claude Haiku 4.5 remains the fast, lower-cost tier
+- Claude Mythos 5 has Fable-class capabilities but is limited-access through Project Glasswing and should not be treated as a normal production recommendation
 
 What Anthropic is especially strong at:
 - long-context reasoning
 - coding agents
 - instruction adherence
+- vision-heavy knowledge work
 - enterprise document workflows
 
 Important caveat:
-- Sonnet 4.6's 1M-token context window is described by Anthropic as beta, so teams should confirm current limits in the exact interface they plan to use.
+- Fable 5 has a 1M-token context window, up to 128k output tokens, and premium pricing at $10 per million input tokens and $50 per million output tokens.
+- Fable 5 includes safety classifiers that can decline requests. In the Messages API, these return `stop_reason: "refusal"` as a successful HTTP 200 response, so integrations should explicitly handle refusal and fallback behavior.
+- Opus 4.8 is often the cleaner Claude default when a team wants premium capability without Fable 5's special refusal handling, fallback design, or 30-day data-retention limitation.
 
 ### Google
 
@@ -101,7 +106,7 @@ Current positioning:
 - Strong value tiers
 - Tight integration with Google products and developer tools
 
-Useful April 2026 reference points:
+Useful June 2026 reference points:
 - Gemini 3.1 Pro for harder reasoning-heavy tasks
 - Gemini 3 Flash for high capability with speed
 - Gemini 3.1 Flash-Lite for low-cost, high-volume workloads
@@ -125,7 +130,7 @@ Current positioning:
 - Major open-weight family for self-hosting and customization
 - Llama 4 introduced native multimodality and mixture-of-experts designs into the family
 
-Useful April 2026 reference points:
+Useful June 2026 reference points:
 - Llama 4 Scout
 - Llama 4 Maverick
 
@@ -144,7 +149,7 @@ Current positioning:
 - Strong European vendor with both hosted and open-weight offerings
 - Good fit for teams that want a mix of performance, deployment flexibility, and EU alignment
 
-Useful April 2026 reference points from current docs:
+Useful June 2026 reference points from current docs:
 - Mistral Large 3
 - Mistral Medium 3.1
 - Mistral Small 4
@@ -166,7 +171,8 @@ What Mistral is especially strong at:
 ### Best starting point for hard, general-purpose work
 
 - OpenAI GPT-5.5
-- Anthropic Claude Opus 4.7
+- Anthropic Claude Fable 5
+- Anthropic Claude Opus 4.8
 - Google Gemini 3.1 Pro
 
 Use this bucket when:
@@ -177,7 +183,7 @@ Use this bucket when:
 ### Best for fast, lower-cost production routing
 
 - OpenAI GPT-5.4 mini or nano
-- Claude 4.5 Haiku
+- Claude Haiku 4.5
 - Gemini 3.1 Flash-Lite
 
 Use this bucket when:
@@ -189,7 +195,8 @@ Use this bucket when:
 
 - GPT-5.5
 - GPT-5.4 mini for cheaper support work
-- Claude Opus 4.7
+- Claude Fable 5 for the hardest long-running work
+- Claude Opus 4.8 for premium Claude coding and agent workflows
 - Claude Sonnet 4.6
 - Devstral 2 if you want an open-weight-oriented code-agent option
 
@@ -198,7 +205,7 @@ Use this bucket when:
 - Gemini 3.1 Pro
 - Gemini 3 Flash
 - GPT-5.5
-- Claude Opus 4.7 for image-plus-document heavy work
+- Claude Fable 5 or Opus 4.8 for image-plus-document heavy work
 
 ### Best for self-hosting and privacy-sensitive deployments
 
@@ -220,7 +227,8 @@ Exact pricing changes often, so think in tiers first.
 
 - GPT-5.5
 - GPT-5.5 Pro
-- Claude Opus 4.7
+- Claude Fable 5
+- Claude Opus 4.8
 - Gemini 3.1 Pro
 
 Best when:
@@ -241,7 +249,7 @@ Best when:
 
 - GPT-5.4 mini
 - GPT-5.4 nano
-- Claude 4.5 Haiku
+- Claude Haiku 4.5
 - Gemini 3.1 Flash-Lite
 - smaller open-weight deployments
 
@@ -336,19 +344,19 @@ Build a customer-support assistant:
 - Start with Claude Sonnet 4.6, GPT-5.4 mini, or Gemini 3.1 Flash-Lite depending on quality and cost targets
 
 Build a coding assistant:
-- Start with GPT-5.5 or Claude Opus 4.7, then use smaller models for sub-tasks if needed
+- Start with GPT-5.5, Claude Fable 5, or Claude Opus 4.8, then use smaller models for sub-tasks if needed
 
 Work across huge documents or large codebases:
-- Start with GPT-5.5, Claude Opus 4.7, or Sonnet 4.6 if the beta 1M context fits your interface
+- Start with GPT-5.5, Claude Fable 5, Claude Opus 4.8, or Sonnet 4.6 depending on budget, context needs, and operational constraints
 
 Handle highly sensitive internal data:
-- Consider open-weight deployment, private cloud, or enterprise contracts with strict data controls
+- Consider open-weight deployment, private cloud, or enterprise contracts with strict data controls; do not assume Fable 5 fits zero-data-retention requirements
 
 Build multimodal features:
-- Start with Gemini 3.1 Pro or GPT-5.5, then compare against Anthropic for image-plus-document tasks
+- Start with Gemini 3.1 Pro or GPT-5.5, then compare against Claude Fable 5 or Opus 4.8 for image-plus-document tasks
 
 Optimize cost at scale:
-- Route simple tasks to GPT-5.4 nano, GPT-5.4 mini, Claude 4.5 Haiku, or Gemini 3.1 Flash-Lite
+- Route simple tasks to GPT-5.4 nano, GPT-5.4 mini, Claude Haiku 4.5, or Gemini 3.1 Flash-Lite
 
 Prototype quickly:
 - Start with the strongest closed model you can justify, then optimize once you understand the task
@@ -366,7 +374,7 @@ Prototype quickly:
 > - privacy constraints
 > - deployment model
 >
-> In April 2026, a practical default looks like this:
+> In June 2026, a practical default looks like this:
 > - flagship closed model for hard work
 > - smaller cheaper model for routine work
 > - open-weight model only when control or economics clearly justify it
