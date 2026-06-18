@@ -108,6 +108,7 @@ Current positioning:
 
 Useful June 2026 reference points:
 - Gemini 3.1 Pro for harder reasoning-heavy tasks
+- Gemini 3.5 Flash (`gemini-3.5-flash`) for stable, high-capability agentic, coding, and multimodal work where speed matters
 - Gemini 3 Flash for high capability with speed
 - Gemini 3.1 Flash-Lite for low-cost, high-volume workloads
 - Nano Banana 2 for fast image generation and editing
@@ -184,6 +185,7 @@ Use this bucket when:
 
 - OpenAI GPT-5.4 mini or nano
 - Claude Haiku 4.5
+- Gemini 3.5 Flash when you need stronger quality while staying below flagship-tier spend
 - Gemini 3.1 Flash-Lite
 
 Use this bucket when:
@@ -203,6 +205,7 @@ Use this bucket when:
 ### Best for multimodal input
 
 - Gemini 3.1 Pro
+- Gemini 3.5 Flash
 - Gemini 3 Flash
 - GPT-5.5
 - Claude Fable 5 or Opus 4.8 for image-plus-document heavy work
@@ -239,6 +242,7 @@ Best when:
 ## Mid-Tier Workhorses
 
 - Claude Sonnet 4.6
+- Gemini 3.5 Flash
 - Gemini 3 Flash
 - Mistral Medium 3.1
 
@@ -353,7 +357,7 @@ Handle highly sensitive internal data:
 - Consider open-weight deployment, private cloud, or enterprise contracts with strict data controls; do not assume Fable 5 fits zero-data-retention requirements
 
 Build multimodal features:
-- Start with Gemini 3.1 Pro or GPT-5.5, then compare against Claude Fable 5 or Opus 4.8 for image-plus-document tasks
+- Start with Gemini 3.1 Pro, Gemini 3.5 Flash, or GPT-5.5, then compare against Claude Fable 5 or Opus 4.8 for image-plus-document tasks
 
 Optimize cost at scale:
 - Route simple tasks to GPT-5.4 nano, GPT-5.4 mini, Claude Haiku 4.5, or Gemini 3.1 Flash-Lite

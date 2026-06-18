@@ -132,6 +132,7 @@ Google's Gemini line is strong for:
 - multimodal reasoning across text, image, audio, and video
 - cost-conscious multimodal deployments
 - long-context multimodal workflows
+- Gemini 3.5 Flash when you want stable, high-capability multimodal performance with lower latency than flagship models
 
 ## Anthropic
 
@@ -302,7 +303,7 @@ Generate marketing images:
 - compare GPT Image 2, Nano Banana 2, Midjourney, and Firefly by editing style, brand workflow, and approval needs
 
 Analyze screenshots or documents:
-- compare GPT-5.5, Claude Fable 5 or Opus 4.8, and Gemini 3.1 Pro
+- compare GPT-5.5, Claude Fable 5 or Opus 4.8, Gemini 3.1 Pro, and Gemini 3.5 Flash when speed matters
 
 Transcribe meetings:
 - start with GPT-4o Transcribe or GPT-4o mini Transcribe, then compare against Google or specialist vendors if needed
